@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>项目管理 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='项目管理 > 项目列表';
+        </php>
+        <include file="Common:intoHead" />
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">项目列表</div>
+                    </div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                            <tr>
+                                <td width="64%">项目分类：<volist name="category" id="vok"><a href="__URL__/index?cid={$vok.cid}">{$vok.name}</a>&nbsp;&nbsp;&nbsp;</a></volist></td>
+                                <form action="__URL__/index" method="post">
+                                <td width="36%">查询标题：<input type="text" name="keywords"  size="20"/> 
+                                 &nbsp; &nbsp;<button class="btn">查询</button></td>
+                                 </form>
+                            </tr>
+                        </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+<thead>
+                            <tr>
+                                <td>选择</td>
+                                <td>封面</td>
+                                <td>项目名称</td>
+                                <td>状态</td>
+                                <td>时间</td>
+                                <td>团购价</td>
+                                <td>排序</td>
+                                <td>操作</td>
+                            </tr>
+                        </thead>
+                        <form action="__URL__/submit" method="post" id="opForm">
+                        <volist name="list" id="vo">
+                            <tr align="center" id="From_{$vo.id}">
+                                <td><input name="t_id"  type='checkbox' id="t_id_{$vo.id}" value='{$vo.id}'></td>
+                                <td><img src="/Uploads/image/picture/{$vo.pic}" width="107" height="63"></td>
+                                <td align="left">[{$vo.cidName}]&nbsp;&nbsp; {$vo.title}</td>
+                                <td>{$vo.status}</td>
+                                <td>团购时间：{$vo.tuangoustart|date="Y-m-d",###} &lt;-&gt; {$vo.tuangouend|date="Y-m-d",###}<br />
+                                    使用时间：{$vo.shiyongstart|date="Y-m-d",###} &lt;-&gt; {$vo.shiyongend|date="Y-m-d",###}
+                                   </td>
+                                   <td>{$vo.tuangoujia}元</td>
+                                 <td><input type="text" value="{$vo.paixu}" name="t_orderid_{$vo.id}" id="t_orderid_{$vo.id}" class="input" onkeyup="this.value=this.value.replace(/\D/g,'');" size="6" maxlength="6" ovalue="{$vo.paixu}"/><a href="javascript:void(0);" onclick="Save({$vo.id});return false;" p="7">保存</a>
+                               </td>
+                                <td><if condition="$vo.caselist eq 1"></if>[ <a href="__URL__/youhuiedit?id={$vo.id}">编辑 </a> ] [ <a href="javascript:void(0);" onclick="Del({$vo.id});return false;" p="8">删除</a> ]</td>
+                            </tr>
+                        </volist>
+                        </form>
+                    </table>
+                     <form id="BatchSubmit" name="BatchSubmit" method="post" action="{:U('Project/youhuizongpai')}" target="_blank" style="display:none">
+                    </form>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                            <tr>
+                              <td width="50%"><label><input name="" class="chooseAll" type="checkbox"/> 全选</label>&nbsp;&nbsp;&nbsp;&nbsp;<label><input name="" class="unsetAll" type="checkbox"/> 反选</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" class=" btn"  onclick="Del(0);return false;">删除选中</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="btn" onclick="Save(0);return false;">批量排序保存</a></td>
+                                
+                                <td width="50%" align="right">{$page}</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <script type="text/javascript">
+        function Save(ID) {
+            var t_ids = ID == 0 ? $('input[name="t_id"]') : $('#t_id_' + ID);
+            var o;
+			var ids='';
+			var pai='';
+            for (var i = 0; i < t_ids.length; i++) {
+                o = $('#t_orderid_' + t_ids[i].value).val();
+                if (o != $('#t_orderid_' + t_ids[i].value).attr('ovalue')) {
+                   ids = ids==''?  t_ids[i].value :ids+','+t_ids[i].value;
+				   pai = pai==''? o:pai+','+o;
+                }
+            }
+			 $.getJSON("__URL__/youhuizongpai", { id:ids,paixu:pai}, function(json){
+					  if(json.status == 0){
+						  alert(json.info);
+					   }
+					  else{
+						  alert(json.info);
+						  top.window.location.href=window.location.href;
+					  }
+					 });
+        }
+		clickCheckbox();
+        function Del(ID) {
+            var t_ids;
+            if (ID > 0) {
+                t_ids=  ID;
+            } else {
+                t_ids = $("input[name='t_id']").serialize().replace(/&t_id=/g, ',').replace('t_id=','');
+            }
+			if(t_ids==''){
+				alert('请选择');
+				}
+			else{	
+           popup.confirm('删除后将无法恢复，你真的打算删?','温馨提示',function(action){
+                        if(action == 'ok'){
+                           $.getJSON("__URL__/youhuisubmit", { id:t_ids}, function(json){
+								if(json.status == 0){
+									alert(json.info);
+								 }
+								else{
+									alert(json.info);
+									top.window.location.href=window.location.href;
+								}
+							});
+                        }
+                    });
+                    return false; 
+		    }
+        }
+        
+    //-->
+    </script>
+    </body>
+</html>

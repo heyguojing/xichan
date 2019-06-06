@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>用户管理 - {$systemConfig.SITE_INFO.name}</title> 
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/member.css" rel="stylesheet" type="text/css" />
+     <script src="__PUBLIC__/js/jquery-1.9.0.min.js"></script>
+    <link href="__PUBLIC__/Css/base.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Js/asyncbox/skins/default.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/Js/base.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/functions.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.form.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/asyncbox/asyncbox.js"></script>
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+   <include file="Public:menu" />
+    <div class="wrapper">
+    	<div class="memberbox">
+            <div class="myportrait clearfix">
+            	<a href="{:U('Member/avatar')}">{$newsinfo.avatar}<strong>{$userinfo.nickname}</strong></a>
+                <span class="nowp">设置头像</span>
+            </div>
+        	<div class="myaccountbox">
+            	<dl>
+                <form id="form1" action="" method="post">
+                	<dt>修改密码</dt>
+                	<dd class="clearfix">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td> 当前头像：</td>
+                          
+                        </tr>
+                        <tr>
+                          <td> {$newsinfo.avatar}</td>
+                          
+                        </tr>
+                      </table>
+                    </dd>
+                    <dd class="clearfix">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td> 更改头像：<input type="file" class="input" name='upload'></td>
+                          
+                        </tr>
+                      </table>
+                    </dd>
+                    </form>
+                    <dd class="noborder clearfix"><a href="javascript:;" class="btn_outlogin submit">修改头像</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public:footer" />
+
+<script type="text/javascript">
+        $(function(){
+            $(".submit").click(function(){
+                commonAjaxSubmit();
+            });
+            
+        });
+    </script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

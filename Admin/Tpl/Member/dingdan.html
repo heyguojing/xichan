@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>订单管理 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='订单管理 > 订单列表';
+        </php>
+        <include file="Common:intoHead" />
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">订单列表</div>
+                    </div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                       <thead>
+                            <tr>
+                                <td>选择</td>
+                                <td>订单编号</td>
+                                <td>支付方式</td>
+                                <td>项目</td>
+                                <td>手机号码</td>
+                                <td>支付金额</td>
+                                <td>订单时间</td>
+                                <td>是否支付</td>
+                                <td>操作</td>
+                            </tr>
+                        </thead>
+                        <form action="__URL__/submit" method="post" id="opForm">
+                        <tbody>
+                          <volist name="list" id="vo">
+                            <tr id="{$vo.uid}">
+                                <td><input name="dell[]"  type='checkbox' value='{$vo.id}'></td>
+                                <td align="left">{$vo.code}</td>
+                                <td align="left">{$vo.type}</td>
+                              <td align="left">{$vo.title}</td>
+                              <td align="left">{$vo.mobile}</td>
+                              <td align="left">{$vo.rmb}</td>
+                              <td>{$vo.time|date="Y-m-d",###}</td>
+                              <td align="left">{$vo.yes}</td>
+                              <td align="center"><a link="{$vo['id']}" href="javascript:void(0)" name="{$vo.code}" class="del">删除 </a></td>
+                           </tr>
+                         </volist>
+                         </form>
+                       </tbody>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                            <tr>
+                              <td width="50%"><label><input name="" class="chooseAll" type="checkbox"/> 全选</label>&nbsp;&nbsp;&nbsp;&nbsp;<label><input name="" class="unsetAll" type="checkbox"/> 反选</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button value="delete" name="dels" class=" btn delsubmit" id="delsubmit">删除选中</button></td>
+                                
+                                <td width="50%" align="right">{$page}</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <script type="text/javascript">
+            $(function(){
+                $(".del").click(function(){
+                    var delLink=$(this).attr("link");
+                    popup.confirm('你真的打算删除订单【<b>'+$(this).attr("name")+'</b>】吗?\n删除后将无法再恢复！','温馨提示',function(action){
+                        if(action == 'ok'){
+                            $.getJSON("__URL__/dingdandel", { id:delLink}, function(json){
+								if(json.status == 0){
+									alert(json.info);
+								 }
+								else{
+									alert(json.info);
+									top.window.location.href=json.url;
+								}
+							});
+                        }
+                    });
+                    return false;
+                });
+				clickCheckbox();
+                $(".delsubmit").click(function(){
+					var allid = $("tbody input[type='checkbox']:checked").size();
+                    if($("tbody input[type='checkbox']:checked").size()==0){
+                        popup.alert("请先选择要删除的内容吧");
+                        return false;
+                    }else{
+						popup.confirm('你真的打算删除选总的信息吗?\n删除后将无法再恢复！','温馨提示',function(action){
+								if(action == 'ok'){
+									commonAjaxSubmit("__URL__/dingdansubmit","#opForm");
+								}
+							});
+							return false;
+						}
+                });
+            });
+        </script>
+    </body>
+</html>

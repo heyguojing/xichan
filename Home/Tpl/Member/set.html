@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+   <title>通用设置-用户管理 - {$systemConfig.SITE_INFO.name}</title> 
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/member.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/member_login.css" rel="stylesheet" type="text/css" />
+    <script src="__PUBLIC__/js/jquery-1.9.0.min.js"></script>
+    <link href="__PUBLIC__/Css/base.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Js/asyncbox/skins/default.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/Js/base.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/functions.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.form.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/asyncbox/asyncbox.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.js"></script>
+    <style>.wrapper{background:none;margin-top:23px;}#overLayBody{margin-top:20px;}</style>
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+   <include file="Public:menu" />
+    	<div class="memberbox">
+             <div class='top'><label><a href='javascript:history.back(-1)' style='display:block;height:40px;'></a></label><h1>设置</h1></div> 
+             <div class='bang'>社交账号绑定</div>
+             <div class='set_content'>
+                <div class='list'><a href='#'><div class='yq sina' style='background: #ea5d5c;'><img src='__PUBLIC__/img/member/sina.png'/></div>微博<span class='xq'>已绑定</span><label class='x_right'></label></a></div>
+                <div class='list'><a href='#'><div class='yq sina'><img src='__PUBLIC__/img/member/qq.png'/></div>QQ<span class='xq'>未绑定</span><label class='x_right'></label></a></div>
+             </div>
+             <div class='logout'><a href="{:U('Member/loginOut')}">退出登录</a></div>
+        </div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

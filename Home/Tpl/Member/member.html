@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+   <title>用户管理 - {$systemConfig.SITE_INFO.name}</title> 
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/member.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/member_login.css" rel="stylesheet" type="text/css" />
+    <script src="__PUBLIC__/js/jquery-1.9.0.min.js"></script>
+    <link href="__PUBLIC__/Css/base.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Js/asyncbox/skins/default.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/Js/base.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/functions.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.form.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/asyncbox/asyncbox.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.js"></script>
+    <style>.wrapper{background:none;}.memberbox{margin-top:-46px !important;} </style>
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+   <include file="Public:menu" />
+    <div class="wrapper">
+            <div class='M_photo'>
+                <img class='MCenter_bg ' src='__PUBLIC__/img/member/MCenter_bg.png'/>
+                <div class="myportrait clearfix">
+                	<div class='photo'>
+                        <a href="{:U('Member/index')}"><img src="__PUBLIC__/img/member/linshi/photo.png" /></a></div>
+                    <p>{$userinfo.nickname}</p>
+                </div>
+            </div>
+            <div class='M_order'>
+                <div class='my_order'><a href='{:U("order/myorder")}'><li class='left'>我的订单</li><li class='right m_r'>全部订单<span> ></span></li><div class='clear'></div></a></div>
+            </div>
+            <div class='my_d'>
+              <a href='{:U("Order/myorder?k=1")}'><li class='dfk left'>待付款</li></a>
+                <a href='{:U("Order/myorder?k=2")}'><li class='dyz right'><span>待验证</li></a><div class='clear'></div>
+            </div>
+            <div class='M_list'>
+                <a href='{:U("Member/data")}'><img src='__PUBLIC__/img/member/personal.png'/></a>
+                <a href='{:U("Member/EditP")}'><img src='__PUBLIC__/img/member/security.png'/></a>
+                <a href='{:U("Member/set")}'><img src='__PUBLIC__/img/member/currency_set.png'/></a>
+            </div>
+        	<!-- <div class="memberindex">
+            	<ul>
+                	<li><a href="{:U('Member/myorders')}">我的订单</a></li>
+                	<li><a href="{:U('Member/myvoucher')}">代金券</a></li>
+                	<li><a href="{:U('Member/myaccount')}">账户设置</a></li>
+                </ul>
+            </div> -->
+        </div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

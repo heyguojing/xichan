@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{$titlename} - 手册管理 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='手册管理 > '.$titlename;
+        </php>
+        
+        <include file="Common:intoHead" />
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">{$titlename}</div>
+                    </div>
+                    <form enctype="multipart/form-data">
+                    <input type="hidden" name="refeurl" value="{$refeurl}" />
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                            <tr>
+                                <th width="100">手册名称：</th>
+                                <td><input id="title" type="text" class="input" size="40" name="info[name]" value="{$info.name}"/> 
+                            <tr>
+                                <th width="100">发布状态：</th>
+                                <td><label><input type="radio" name="info[status]" value="0" <if condition="$info.status eq 0"> checked="checked"</if> /> 审核状态</label> &nbsp; <label><input type="radio" name="info[status]" value="1" <if condition="$info.status eq 1"> checked="checked"</if> /> 发布状态</label> </td>
+                            </tr>
+                             <tr>
+                                <th width="100">排序：</th>
+                                <td><input id="title" type="text" class="input" size="5" name="info[paixu]" value="{$info.paixu}"/> 
+                            <tr>
+                            <tr>
+                                <th>手册内容：</th>
+                                <td><textarea id="content" class="input" style="height: 700px; width: 100%;" name="info[content]">{$info.content}</textarea></td>
+                            </tr>
+                        </table>
+                        <input type="hidden" name="info[id]" value="{$info.id}" />
+                    </form>
+                    <div class="commonBtnArea" >
+                        <button class="btn submit">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <js href="__PUBLIC__/kindeditor/kindeditor.js,__PUBLIC__/kindeditor/lang/zh_CN.js"/>
+        <script type="text/javascript">
+            $(function(){var  content ;
+                KindEditor.ready(function(K) {
+                    content = K.create('#content');
+                });
+                $(".submit").click(function(){
+                    content.sync();
+                    commonAjaxSubmit();
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>首页 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='网站管理 > 后台首页';
+        </php>
+   
+        <include file="Common:intoHead" />
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">系统信息</div>
+                    </div>
+					
+					<table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+					<tr>
+						<td width="120" align="right">网站名称：</td>
+							<td>{$site.SITE_INFO.name}</td>
+					</tr>
+					
+					</table>
+					<div class="Item hr">
+                        <div class="current">关于我们</div>
+                    </div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+					<tr>
+						<td width="120" align="right">系统名称：</td>
+							<td>企业网站管理系统</td>
+					</tr>
+					<tr>
+						<td width="120" align="right">系统版本：</td>
+							<td>{$site.SITE_INFO.version}</td>
+					</tr>
+					<tr>
+						<td width="120" align="right">程序开发：</td>
+							<td>蜗牛</td>
+					</tr>
+					<tr>
+						<td width="120" align="right">界面设计：</td>
+							<td>蜗牛</td>
+					</tr>
+					<tr>
+						<td width="120" align="right">版权所有：</td>
+							<td>焚天冻地 - 版权所有</td>
+					</tr>
+					<tr>
+						<td width="120" align="right">许可协议：</td>
+							<td>任何网站转载本站点内容时需注明来源。否则将根据《<a href="http://www.cnnic.cn/ggfw/fwzxxgzcfg/2010/201207/t20120720_32417.htm" target="_blank">互联网著作权行政保护办法</a>》追究其相应法律责任。<br/>
+							 如因作品内容、版权和其它问题需要同本网联系的，请与我取得联系。<br/>
+							 本系统为内部定制软件系统，由焚天冻地开发，未经授权，您不得复制、镜像、传播，修改本软件版权，否则我司将追究其相关法律责任。 </td>
+					</tr>
+
+					</table>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <script type="text/javascript">
+            $(function(){
+                $.post("{:U('SysData/backup')}", { systemBackup: 1 },function(json){
+                    if(json.status==1){
+                        popup.success(json.info,"系统定期备份成功提醒");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

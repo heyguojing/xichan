@@ -1,0 +1,83 @@
+.wrapper{background:#ffffff;width:100%;margin-top:-12px;}
+.left{float:left;}
+.right{float:right;}
+.relative{position:relative;}
+.absolute{position:absolute;}
+.clear{clear:both;}
+/*购物车*/
+.wrapper .title{width:100%;background:#ec6023;text-align: center;}
+.wrapper .title h1{color:#ffffff;font-size:24px;letter-spacing:2px;line-height:40px;height:40px;padding-top:20px;padding-bottom:20px;}
+.title .edit{position:absolute;top:25px;right:8px;}
+.title .edit img{width:60%;padding-top:3px;cursor:pointer;}
+.title h1 a{display: block;position:absolute;top:22px;right:15%;color:#fff;font-size:16px;}
+.shop_content{margin-bottom: 60px;}
+.shop_content .shop_title{padding-top:15px;padding-bottom:10px;border-bottom:1px solid #dfe0e2;margin-left:5%;}
+.shop_content img{width:100%;}
+.shop_content .shop_title ul li{float:left;padding-left:5%;letter-spacing:1px;font-size:16px;}
+.shop_title ul #check_all{display: none;}
+.shop_title ul li .selected_all{display: none;}
+.shop_title .s_xc{color:#ec6023;line-height: 35px;padding-left:10px !important;}
+.shop_title a{color:#ec6023;}
+.shop_title a:hover{color:#ec6023;}
+.shop_title .s_all{width:22px;padding-top:6px;padding-left:0 !important;}
+.shop_title .s_all span{background:url('../img/shop/select.png') no-repeat;display: block;width:27px;padding-left:0 !important;
+height:27px;overflow:hidden;background-size:27px;}
+.shop_title .s_ioc{width:30px;padding-top:5px;}
+.shop_title .edit{float:right !important;padding-right:21px;padding-top:7px;color:#000;}
+.shop_title .edit a{color:#888;}
+.shop_title .edit a:hover{color:#888;}
+.car_list{margin-left:5%;margin-top:5px;}
+.car_list .list .list_sel{margin-top: 10%;background:url('../img/shop/select.png')no-repeat;
+background-size:27px;width:27px;height:27px;overflow:hidden;}
+.list .pro_img{width:29%;max-width:205px;min-width:90px;padding-left: 4%;}
+.list .cont{padding-left:4%;width:53%;}
+.cont ul li{color:#888;padding-top:1%;}
+.cont .pro_title{color:#333;font-size:18px;padding-top:0 !important;}
+.cont .pro_des{line-height:24px;height:48px;font-size:15px;padding-top:2% !important;}
+.cont .price .pri_num{color:#ec6023;font-size:17px;}
+.cont .price{border-bottom: 1px solid #dfe0e2;}
+.footer{position:fixed;bottom:0;left:0;background:#fff;width:100%;max-width:1280px;}
+.footer .total{margin-left:5%;letter-spacing:2px;}
+.footer .total span{margin-top:7px;display: block;width:27px;height:27px;overflow:hidden;background:url('../img/shop/select.png') no-repeat;background-size:27px;}
+.footer .total ul li{font-size:10px;float:left;line-height:40px;height:40px;}
+.total .sec_all{font-size:17px !important;color:#000;padding-left:5%;cursor:pointer;}
+.total .heji{font-size:17px !important;padding-left:5%;}
+.total .heji leael{font-size:17px;letter-spacing: 1px;color:#ec6023;}
+.total .jiesuan{float:right !important;padding-right:21px;font-size:17px !important;cursor:pointer;}
+.goods_num input{width:20px;text-align: center;}
+.goods_num{font-size:15px;}
+.con{display:block;}
+.cartsNull{display: none;width:100%;position:relative;}
+.cartsNull img{width:34%;position:absolute;top:80px;left:31%;}
+/*确认订单*/
+.wrapper .js{width:100%;background:#fff;text-align: center;border-bottom:1px solid #dfe0e2; }
+.wrapper .js h1{color:#777;font-size:24px;letter-spacing:2px;line-height:40px;height:40px;padding-top:20px;padding-bottom:20px;}
+.js .js_x_left{position:absolute;width:20px;height:38px;background:url('../img/shop/x_left_black.png') no-repeat;top:24px;background-size:24px;left:5%;}
+.pleft0{padding-left:0 !important;}
+.width65{width:65% !important;}
+.b0{border-bottom: none !important;}
+.b0 .right ul li{float:left;}
+.b0 .right .bor{background:#ec6023;padding:0px 10px;color:white;}
+.b0 .right .num{margin:0 6px;}
+.dd_list{background:#f7f7f7;}
+.pay_sel{margin-top:20px;background:#fff;padding-left:5%;}
+.pay_sel h3{padding-top:4px;padding-bottom:10px;font-size:15px;}
+.pay_sel ul li{float:left;}
+.pay_sel .zfbao .zfbao_ico span{width:40px;height:40px;display:block;background:url('../img/shop/zfbao_ico.png')no-repeat;background-size:40px;}
+.pay_sel .zfbao .zfbao_des{padding-left:5%;font-size:15px;color:#999;}
+.pay_sel .zfbao .zfbao_des font{font-size:17px;color:#000;font-weight: 600;}
+.pay_sel .zfbao .zfbao_select{float:right;margin-right:21px;}
+.pay_sel .zfbao .zfbao_select span{margin-top:8px;width:27px;height:27px;display: block;background:url('../img/shop/select.png')no-repeat;background-size:27px;overflow:hidden;}
+.pay_sel .zfbao .zfbao_select input{display:none;}
+.pay_sel .wechat{margin-top:20px;padding-bottom:20px;}
+.pay_sel .wechat .wechat_ico span{width:40px;height:40px;display:block;background:url('../img/shop/wechat_ico.png')no-repeat;background-size:40px;}
+.pay_sel .wechat .wechat_des{padding-left:5%;font-size:15px;color:#999;}
+.pay_sel .wechat .wechat_des font{font-size:17px;color:#000;font-weight: 600;}
+.pay_sel .wechat .wechat_select{float:right;margin-right:21px;}
+.pay_sel .wechat .wechat_select span{margin-top:10px;width:27px;height:27px;display: block;background:url('../img/shop/select.png')no-repeat;background-size:27px;overflow:hidden;}
+.pay_sel .wechat .wechat_select input{display:none;}
+.pay_con{margin-bottom: 0;background:#fff;}
+.bg0{background:#efefef !important;margin-bottom: 60px;}
+
+.footer .total .go{cursor:pointer;float:right;padding-right:21px;font-size:18px;color:#fff;background:#ec6023;height:40px;line-height: 40px;padding-left:21px;}
+.bgp{background-position:0 -29px !important;}

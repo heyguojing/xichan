@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>西婵美白、瘦脸针一张电影票根就能搞定- {$systemConfig.SITE_INFO.name}</title>
+		<meta name="description" content="西婵美白、瘦脸针一张电影票根就能搞定" />
+		<meta name="keywords" content="西婵美白、瘦脸针一张电影票根就能搞定,更多优惠项目尽在西婵" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+		<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+		<link href='__PUBLIC__/push/special909/909.css' rel='stylesheet' type='text/css'/>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/jquery-1.9.0.min.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/js/common.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/jquery-1.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/scrollReveal.js'></script>
+	<style>
+		
+		
+		.loading{display:block;position:fixed;top:0;left:0;height:100%;width:100%;background:rgb(255,255,255);z-index: 10;text-align: center;padding-top:40%;}
+	</style>
+	</head>
+	<body>
+		<!--<div class='loading'><img src='__PUBLIC__/push/img/load.jpg'/><br>&nbsp;加载中...</div>-->
+		<include file="Public:head" />
+		<div class='wrapper' style='max-width:750px;margin-left:auto;margin-right:auto;'>
+			 <include file="Public:menu" />
+				<div style='clear:both;'></div>
+				<div class='main'>
+					<div class='index1 index'>
+						<img src='__PUBLIC__/push/special909/index1_01.png'/>
+						<img src='__PUBLIC__/push/special909/index1_02.png'/>
+						<div class='wenzi' data-scroll-reveal="enter left after .2s"><img src='__PUBLIC__/push/special909/index1_wenzi.png'/></div>
+					</div>	
+					<div class='index2 index'>
+						<ul>
+								<li data-scroll-reveal="enter top after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special909/index2_01.png'/></a></li>
+								<li data-scroll-reveal="enter left after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special909/index2_02.png'/></a></li>
+							</ul>
+							<ul>
+								<li data-scroll-reveal="enter bottom after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special909/index2_03.png'/></a></li>
+								<li data-scroll-reveal="enter left after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special909/index2_04.png'/></a></li>
+							</ul>
+							<ul>
+								<li data-scroll-reveal="enter bottom after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special909/index2_05.png'/></a></li>
+								<li data-scroll-reveal="enter left after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special909/index2_06.png'/></a></li>
+							</ul>
+							<div style='clear:both;'></div>
+					</div>
+					<div class='index3 index'>
+						<img src='__PUBLIC__/push/special909/index3_1.png'/>
+						<img src='__PUBLIC__/push/special909/index3_2.png'/>
+						<img src='__PUBLIC__/push/special909/index3_3.png'/>
+						<img src='__PUBLIC__/push/special909/index3_4.png'/>
+						<img src='__PUBLIC__/push/special909/index3_5.png'/>
+						<img src='__PUBLIC__/push/special909/index3_6.png'/>
+						<img src='__PUBLIC__/push/special909/index3_7.png'/>
+							<div class='ewm'><img src='__PUBLIC__/push/special909/index_ewm.png'/></div>
+					</div>
+				</div>
+		 <include file="Public:footer" />
+	</div>
+	</body>
+	<script>
+		(function(){
+			window.scrollReveal = new scrollReveal({reset: true});
+		})();
+	</script> 
+</html>

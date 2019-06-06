@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>{$info.title}-{$ex.name}-品牌中心 - {$systemConfig.SITE_INFO.name}</title>
+    <meta name="keywords" content="{$info.keywords}" />
+    <meta name="description" content="{$info.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+    <!--<link href="__PUBLIC__/assets/css/bootstrapTheme.css" rel="stylesheet"> -->
+    <link href="__PUBLIC__/assets/css/custom.css" rel="stylesheet">
+    <!-- Owl Carousel Assets -->
+    <link href="__PUBLIC__/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="__PUBLIC__/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="__PUBLIC__/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+    	<div class="brandpage">
+        	<div class="articlebox">
+            	<div class="artitlce_title">
+                	<h1>{$info.title}</h1>
+                    <div class="artitlce_time">
+                        <span>{$info.published|date="Y年m月d日",###}</span>                        
+                        <div class="shareop">
+                            <a href="javascript:;" title="赞" class="good {$info.hover}" id="btngood" link="{$info['id']}"></a>
+                            <a href="javascript:;" title="分享" class="share" id="btnshare"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="article_photo">
+                	<img src="__newspic__{$info.pic}">
+                    <div class="article_class">
+                    	<em class="bg_red"><a href="{:U('/brandlist/'.$cat['cid'].'')}">{$cat.name}</a></em>
+                    </div>
+                </div>
+                <div class="article_content">
+                	{$info.content}                    
+                </div>
+            </div>
+            <div class="articlebox">
+            	<div class="guesstit">猜你喜欢</div>
+                <div id="demo">
+                    <div class="container">
+                      <div class="row">
+                        <div class="span12">
+                          <div id="owl-example" class="owl-carousel">
+                            <volist name="lovelist" id="vo">
+                              <div class="item"><a href="{$vo.urlclass}"><img src="__pictureimg__{$vo.picurl}"><p>{$vo.title}</p></a></div>
+                            </volist>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+    	</div>
+    </div>
+</div>
+<include file="public:footer" />
+<!--分享到-->
+<div class="sharediv">
+	<div class="shareul">
+        <ul id="shareli" class="clearfix">
+             <li><a href="javascript:;"><img src="__PUBLIC__/images/share/weixin.jpg" alt="微信好友" /></a></li>
+            <li><a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?to=pengyou&url={:U('../?brandinfo='.$info['id'].'')}" target="_blank"><img src="__PUBLIC__/images/share/pyq.jpg" alt="朋友圈" /></a></li>
+            <li><a href="http://v.t.sina.com.cn/share/share.php?url={:U('../?brandinfo='.$info['id'].'')}&title='{$info.title}'" target="_blank"><img src="__PUBLIC__/images/share/sina.jpg" alt="新浪微博" /></a></li>
+            <li><a href="http://connect.qq.com/widget/shareqq/index.html?title=qqhaoyou&url={:U('../?brandinfo='.$info['id'].'')}&desc={$info.title}&pics=&site=西婵整形" target="_blank"><img src="__PUBLIC__/images/share/qq.jpg" alt="QQ" /></a></li>
+            <li><a href="http://v.t.qq.com/share/share.php?url={:U('../?brandinfo='.$info['id'].'')}&title='{$info.title}'" target="_blank"><img src="__PUBLIC__/images/share/qqweibo.jpg" alt="腾讯微博" /></a></li>
+            <li><a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={:U('../?brandinfo='.$info['id'].'')}" target="_blank"><img src="__PUBLIC__/images/share/qqkj.jpg" alt="QQ空间" /></a></li>
+            <li><a href="javascript:;"><img src="__PUBLIC__/images/share/email.jpg" alt="邮件分享" /></a></li>
+            <li><a href="javascript:;"><img src="__PUBLIC__/images/share/sc.jpg" alt="收藏文章" /></a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/pagerefetch.js"></script>
+<script src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+<script src="__PUBLIC__/owl-carousel/owl.carousel.min.js"></script>
+
+<!-- Frontpage Demo -->
+<script>
+
+    $(document).ready(function($) {
+      $("#owl-example").owlCarousel();
+    });
+
+
+    $("body").data("page", "frontpage");
+
+    </script>
+<script src="__PUBLIC__/assets/js/bootstrap-collapse.js"></script>
+<script src="__PUBLIC__/assets/js/bootstrap-transition.js"></script>
+<script src="__PUBLIC__/assets/js/google-code-prettify/prettify.js"></script>
+<script src="__PUBLIC__/assets/js/application.js"></script>
+<script type="text/javascript">
+    jQuery(function($){
+      var disqus_loaded = false;
+      var top = $("#faq").offset().top; 
+      var owldomain = window.location.hostname.indexOf("owlgraphic");
+      var comments = window.location.href.indexOf("comment");
+
+      if(owldomain !== -1){
+        function check(){
+          if ( (!disqus_loaded && $(window).scrollTop() + $(window).height() > top) || (comments !== -1) ){
+            $(window).off( "scroll" )
+            disqus_loaded = true;
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'owlcarousel'; // required: replace example with your forum shortname
+            var disqus_identifier = 'OWL Carousel';
+            //var disqus_url = 'http://owlgraphic.com/owlcarousel/';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          }
+        }
+        $(window).on( "scroll", check )
+        check();
+      } else {
+        $('.disqus').hide();
+      }
+    });
+    </script>
+
+<script>
+$(function(){
+	var boady_height=parseFloat($(document).height());	
+	$(".sharediv").css({"height":boady_height+"px"});
+})
+$("#btnshare").click(function(){
+	$(".sharediv").show();
+})
+
+$("#btngood").click(function(){
+	var delLink=$(this).attr("link");
+	if($(this).hasClass("hover")){
+		alert('你已经赞过了');
+		}else{
+	   $.getJSON("{:U('brandzhan/"+delLink+"')}", function(json){
+			if(json.status == 1){
+			$("#btngood").addClass("hover");
+			}
+		});
+		}
+});
+</script>
+</body>
+</html>

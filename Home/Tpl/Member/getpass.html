@@ -1,0 +1,113 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+   <title>找回密码-用户管理 - {$systemConfig.SITE_INFO.name}</title> 
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/member.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/member_login.css" rel="stylesheet" type="text/css" />
+    <script src="__PUBLIC__/js/jquery-1.9.0.min.js"></script>
+    <link href="__PUBLIC__/Css/base.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/layout.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/Js/base.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.form.js"></script>
+    <script type='text/javascript' src='__PUBLIC__/layer/layer.js'></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/functions.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.js"></script>
+    <style>.wrapper{background:none;margin-top:23px;}#overLayBody{margin-top:20px;}</style>
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+   <include file="Public:menu" />
+    	<div class="memberbox">
+             <div class='top'><label><a style='height:40px;display: block;' href='javascript:history.back(-1)'></a></label><h1>找回密码</h1></div> 
+             <div class='edit_content'>
+                <form id='myform'>
+                    <input placeholder='手机号码' id='mobile' name='mobile' value=''></input><br>
+                    <div class='relative'><input placeholder='请输入右方验证码' id='verify' name='verify' value=''/>
+                        <div class='verify'><img id='verify_img' src="/index.php/Public/verify"  title="看不清？单击此处刷新" onClick="this.src+='?&rand='+Math.random();"/></div>
+                    </div>
+                    <div class='relative'><input placeholder='手机验证码' id='code' name='code' value=''/><div><input id="getcode" onclick='time()'  class='getcode no_read' type='button' value='获取验证码'/><br>
+                    <div class='sbt'>确认提交</div>
+                </form>
+             </div>
+        </div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type='text/javascript' src='__PUBLIC__/js/member_ver.js'></script>
+<script type='text/javascript'>
+    $(function(){
+        $('.sbt').click(function(){
+            if(!isMobile($('#mobile').val())){
+                layerAlert('手机号码格式错误');
+                return false;
+            }
+            if($('#verify').val() =='' || $('#code').val() == ''){
+                layerAlert('请填写完整的记录提交');
+                return false;
+            }
+           $.ajax({
+                url:'',
+                type:"POST",
+                data:$('form').serialize(),
+                dataType:'json',
+                success:function(data){
+                    if(data.status==1){
+                        layer.open({
+                            title:'温馨提示',
+                            icon:1,
+                            offset:'170px',
+                            content:data.info,
+                            time:2000,
+                        });
+                    }else{
+                        layer.open({
+                            title:'温馨提示',
+                            icon:2,
+                            offset:'170px',
+                            content:data.info,
+                            time:2000,
+                        });
+                    }
+                    if(data.url&&data.url!=''){
+                        setTimeout(function(){
+                            top.window.location.href=data.url;
+                        },1000);
+                    }
+                    if(data.url==''){
+                        setTimeout(function(){
+                            top.window.location.reload();
+                        },1000);
+                    }
+                }
+            });
+        })
+    })
+</script>
+<script type='text/javascript'>
+var wait=60*2;
+document.getElementById("getcode").disabled = false;
+function time(o) {
+    if (wait == 0) {
+      o.removeAttribute("disabled");
+      o.value="获取验证码";
+      wait = 60*2;
+    } else {
+      o.setAttribute("disabled", true);
+      o.value="重新发送(" + wait + ")";
+      wait--;
+      setTimeout(function() {
+        time(o)
+      },
+      1000)
+    }
+  }
+document.getElementById("getcode").onclick=function(){time(this);}
+</script>
+</body>
+</html>

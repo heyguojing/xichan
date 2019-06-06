@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>礼包码确认 - {$systemConfig.SITE_INFO.name}</title> 
+    <meta name="keywords" content="{$systemConfig.SITE_INFO.keywords}" />
+    <meta name="description" content="{$systemConfig.SITE_INFO.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+	 <link rel="stylesheet" type="text/css" href="__PUBLIC__/push/0627/tipDialog.css"/>
+	<style>
+		.wrapper{max-width: 640px;margin: 0 auto;}
+		.main{width:100%;background:#ffffff;position:relative;margin-top:-20px;}
+		.main img{width:100%;display: block;}
+		.fixedbottom{display: none;}
+		.main .back{position:absolute;top:4%;left:3%;font-size:16px;background: #f0ac1c;line-height: 40px;padding:0 20px;border-radius: 8px;}
+		.main .back a{color:#000;}
+	</style>
+</head>
+
+<body>
+<include file="Public:head" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+    	<div class='main'>
+    		<div class='back'><a href='./verify'>继续验证</a></div>
+    		<img src="__PUBLIC__/img/pass1.png"/>
+    		<img src="__PUBLIC__/img/pass2.png"/>
+    		<img src="__PUBLIC__/img/pass3.png"/>
+    	</div>
+    </div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/pagerefetch.js"></script>
+<script type='text/javascript'>
+	$('.loading').ajaxStart(function(){
+		$(this).css('display','block');
+	}).ajaxStop(function(){
+		$(this).css('display','none');
+	})
+	
+</script>
+</body>
+</html>

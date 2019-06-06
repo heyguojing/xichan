@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>订单管理 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='订单管理 > 订单列表';
+        </php>
+        <include file="Common:intoHead" />
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">订单列表</div>
+                    </div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                            <tr>
+                                <form action="__URL__/order" method="post">
+                                <td width="36%">查找订单：<input type="text" placeholder='请输入订单号' name="keywords"  size="20"/> 
+                                 &nbsp; &nbsp;<button class="btn">查询</button></td>
+                                 </form>
+                            </tr>
+                        </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+<thead>
+                            <tr>
+                                <td>选择</td>
+                                <td>ID</td>
+                                <td>订单编号</td>
+                                <td>订单名称</td>
+                                <td>用户ID</td>
+                                <td>订单总额</td>
+                                <td>创建时间</td>
+                                <td>订单商品数量</td>
+                                <td>订单状态</td>
+                                <td>操作</td>
+                            </tr>
+                        </thead>
+                        <form action="__URL__/submit" method="post" id="opForm">
+                        <volist name="list" id="vo">
+                            <tr align="center" id="From_{$vo.uid}">
+                                <td><input name="t_id"  type='checkbox' id="t_id_{$vo.uid}" value='{$vo.uid}'></td>
+                                <td>{$vo.id}</td>
+                                <td align="left">{$vo.order_num}</td>
+                                <td>{$vo.title}</td>
+                                <td>{$vo.uid}</td> 
+                                <td>{$vo.price}</td>
+                                <td>{$vo.ctime|date="Y-m-d",###}</td>
+                                <td>{$vo.total_num}</td>
+                                <td><if condition='$vo.status eq 0'><font style='color:#b5b5b5'>已取消</font><elseif condition='$vo.status eq 1'/>已完成<elseif condition='$vo.status eq 2'/>待支付<elseif condition='$vo.status eq 3'/>已支付未使用</if></td>
+                                <td>[ <a href="__URL__/readOrder?id={$vo.id}">查看 </a> ] [ <a href="javascript:void(0);" onclick="Del({$vo.uid});return false;" p="8">删除</a> ]</td>
+                            </tr>
+                        </volist>
+                        </form>
+                    </table>
+                     <form id="BatchSubmit" name="BatchSubmit" method="post" action="{:U('Project/zongpai')}" target="_blank" style="display:none">
+                    </form>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                            <tr>
+                                 <!-- <td width="50%"><label><input name="" class="chooseAll" type="checkbox"/> 全选</label>&nbsp;&nbsp;&nbsp;&nbsp;<label><input name="" class="unsetAll" type="checkbox"/> 反选</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" class=" btn"  onclick="Del(0);return false;">禁用选中</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td> -->
+                                <td width="50%" align="right">{$page}</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <include file="Common:foot" />
+       <script type="text/javascript">
+        function Save(ID) {
+            var t_ids = ID == 0 ? $('input[name="t_id"]') : $('#t_id_' + ID);
+            var o;
+			var ids='';
+			var pai='';
+            for (var i = 0; i < t_ids.length; i++) {
+                o = $('#t_orderid_' + t_ids[i].value).val();
+                if (o != $('#t_orderid_' + t_ids[i].value).attr('ovalue')) {
+                   ids = ids==''?  t_ids[i].value :ids+','+t_ids[i].value;
+				   pai = pai==''? o:pai+','+o;
+                }
+            }
+			 $.getJSON("__URL__/paixu", { id:ids,paixu:pai}, function(json){
+					  if(json.status == 0){
+						  alert(json.info);
+					   }
+					  else{
+						  alert(json.info);
+						  top.window.location.href=window.location.href;
+					  }
+					 });
+        }
+		clickCheckbox();
+        function Del(ID) {
+            var t_ids;
+            if (ID > 0) {
+                t_ids=  ID;
+            } else {
+                t_ids = $("input[name='t_id']").serialize().replace(/&t_id=/g, ',').replace('t_id=','');
+            }
+			if(t_ids==''){
+				alert('请选择');
+				}
+			else{	
+           popup.confirm('禁用之后用户将无法正常登录!点击确认继续','温馨提示',function(action){
+                        if(action == 'ok'){
+                           $.getJSON("__URL__/forbid", { id:t_ids}, function(json){
+								if(json.status == 0){
+									popup.alert(json.info);
+								 }
+								else{
+									popup.alert(json.info);
+									top.window.location.href=json.url;
+								}
+							});
+                        }
+                    });
+                    return false; 
+		    }
+        }
+    </script>
+    </body>
+</html>

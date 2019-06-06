@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>{$systemConfig.SITE_INFO.name}</title>
+    <meta name="keywords" content="{$systemConfig.SITE_INFO.keywords}" />
+    <meta name="description" content="{$systemConfig.SITE_INFO.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/index.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="__PUBLIC__/css/swiper/idangerous.swiper.css">
+</head>
+
+<body>
+<script type="text/javascript">
+  var browser={
+    versions:function(){
+            var u = navigator.userAgent, app = navigator.appVersion;
+            return {         //移动终端浏览器版本信息
+                 trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+                iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1, //是否iPad
+                webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+            };
+         }(),
+         language:(navigator.browserLanguage || navigator.language).toLowerCase()
+}
+if(browser.versions.android==true){
+	var url="mqqwpa://im/chat?chat_type=wpa&uin=501863587";
+    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+	}
+else{
+	}
+
+//document.writeln(" 是否为移动终端: "+browser.versions.mobile);
+//document.writeln(" ios终端: "+browser.versions.ios);
+//document.writeln(" android终端: "+browser.versions.android);
+//document.writeln(" 是否为iPhone: "+browser.versions.iPhone);
+//document.writeln(" 是否iPad: "+browser.versions.iPad);
+
+  </script>
+<include file="Public:head" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="bannerbox">
+        <div class="swiper-container" style='height: 352px;'>
+            <div class="swiper-wrapper">
+               <volist name="adlist" id="vo">
+                <div class="swiper-slide">
+                    <a href="{$vo.httpurl}"><img src="__adimg__{$vo.pic}" alt="" /></a>
+                </div>
+                </volist>
+            </div>
+            <div class="ptBg">
+                <div class="pagination"></div>
+            </div>
+        </div>
+    </div>
+    <div class="index_three">
+    	<ul class="clearfix">
+            <li><a href="{$guanggao1.httpurl}"><img src="__adimg__{$guanggao1.pic}" width="100%"/></a></li>
+            <li><a href="{$guanggao2.httpurl}"><img src="__adimg__{$guanggao2.pic}" width="100%" /></a></li>
+            <li class="nomr"><a href="{$guanggao3.httpurl}"><img src="__adimg__{$guanggao3.pic}" width="100%" /></a></li>
+        </ul>
+    </div>
+
+    <volist name="list" id="vo">
+    <div class="indexbox">
+    	<div class="index_box_tit">{$vo.name}<span>{$vo.ename}</span></div>
+        <div class="index_box_ul">
+        	<ul class="clearfix">
+               <volist name="vo['indexbox']" id="is">
+            	<li {$is.more}><a href="{$is.httpurl}">{$is.title}{$is.shuxing}</a></li>
+                </volist>
+            	<!--<li><a href="{:U('/P_category/'.$vo['cid'].'')}">查看更多</a></li> -->
+            </ul>
+        </div>
+    </div>
+   </volist>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/imgReady.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/swiper/idangerous.swiper-2.1.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/index.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/pagerefetch.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".kfjs").click(function(){
+			var delLink=$(this).attr("link");
+			var sqlname=$(this).attr("name");
+			$.getJSON("{:U('Index/kefu')}",{id:delLink,sqlname:sqlname}, function(json){
+				if(json.status == 1){
+				$("#kefuback"+sqlname+delLink).html(json.info);
+				   window.location.href = "https://static.meiqia.com/dist/standalone.html?eid=9041";
+				}
+			})
+		});
+		$(".zhan").click(function(){
+			var delLink=$(this).attr("link");
+			var delname=$(this).attr("name");
+			//alert(delLink);
+			if($(this).hasClass("zhan")){
+		   $.getJSON(""+delLink+"", function(json){
+				if(json.status == 1){
+				$("#good"+delname).html(json.info) ;
+				$("#good"+delname).addClass("hover") ;
+				$("#gd"+delname).removeClass("zhan");
+				$("#gd"+delname).addClass("hodden");
+				}
+			});
+			}
+		  else
+		  {
+			  alert("您已经赞过了");
+		  }
+		});
+	});
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?96e76211d21b66fbdaf1a05498b4417a";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+</body>
+</html>

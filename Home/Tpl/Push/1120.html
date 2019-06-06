@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>全球注射名医交流会，尽在西禅- {$systemConfig.SITE_INFO.name}</title>
+		<meta name="description" content="国际学者访问交流活动，西禅全球注射名医交流会" />
+		<meta name="keywords" content="全球注射名医交流会" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+		<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="__PUBLIC__/push/0627/tipDialog.css" rel="stylesheet" type="text/css" />
+		<link href='__PUBLIC__/push/special1120/basic.css' rel='stylesheet' type='text/css'/>
+		<link href='__PUBLIC__/push/special1120/swiper.min.css' rel='stylesheet' type='text/css'/>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/jquery-1.9.0.min.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/js/common.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/jquery-1.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/scrollReveal.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/tipDialog.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/special1120/swiper.min.js'></script>
+	</head>
+	<body>
+		<include file="Public:head" />
+		<div class='wrapper' style='max-width:750px;margin-left:auto;margin-right:auto;'>
+			 <include file="Public:menu" />
+				<div style='clear:both;'></div>
+				<div class='main'>
+					<div class='index'>
+						<img src='__PUBLIC__/push/special1120/qyd_01.png'/>
+					</div>
+					<!-- 滚屏-->
+					<div class='index'>
+						<img src='__PUBLIC__/push/special1120/bg.png'/>
+						<!-- <div style='position:absolute;top:-26px;'> -->
+						 <div id='banner'  class='banner swiper-container' style='position:absolute;width:100%;height:100%;'>
+					        <div class="swiper-wrapper" >
+					          <div class='swiper-slide'><img src='__PUBLIC__/push/special1120/banner_01.png'/></div>
+					          <div class='swiper-slide'><img src='__PUBLIC__/push/special1120/banner_02.png'/></div>
+					          <div class='swiper-slide'><img src='__PUBLIC__/push/special1120/banner_03.png'/></div>
+					          <div class='swiper-slide'><img src='__PUBLIC__/push/special1120/banner_04.png'/></div>
+					          <div class='swiper-slide'><img src='__PUBLIC__/push/special1120/banner_05.png'/></div>
+					          <div class='swiper-slide'><img src='__PUBLIC__/push/special1120/banner_06.png'/></div>
+					          <div class='swiper-slide'><img src='__PUBLIC__/push/special1120/banner_07.png'/></div>
+					          <div class='swiper-slide'><img src='__PUBLIC__/push/special1120/banner_08.png'/></div>
+					          <div class='swiper-slide'><img src='__PUBLIC__/push/special1120/banner_09.png'/></div>
+					          <div class='swiper-slide'><img src='__PUBLIC__/push/special1120/banner_10.png'/></div>
+					        </div>
+					      <!-- </div> -->
+					    </div>
+					</div>
+					<div class='index i2'>
+						<img src='__PUBLIC__/push/special1120/qyd_02.png'/>
+						<img src='__PUBLIC__/push/special1120/qyd_03.png'/>
+					</div>
+				</div>
+		 <include file="Public:footer" />
+	</div>
+	</body>
+	<script>
+		(function(){
+			window.scrollReveal = new scrollReveal({reset: true});
+		})();
+	</script>
+	<script type="text/javascript">
+	      window.onload = function() {
+	        var mySwiper = new Swiper('.swiper-container',{
+	          direction:"horizontal", 
+	              loop:true,
+	              nextButton: '.swiper-button-next',
+	              prevButton: '.swiper-button-prev',
+	              autoplay:5000,  
+	              autoplayDisableOnInteraction : false,
+	        });  
+	      }
+	  </script>
+
+</html>

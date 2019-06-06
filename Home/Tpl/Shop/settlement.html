@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+   <title>确认订单-用户管理 - {$systemConfig.SITE_INFO.name}</title> 
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/shop.css" rel="stylesheet" type="text/css" />
+    <script src="__PUBLIC__/js/jquery-1.9.0.min.js"></script>
+    <link href="__PUBLIC__/Css/base.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/layout.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/Js/base.js"></script>
+    <script type='text/javascript' src='__PUBLIC__/layer/layer.js'></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.form.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/functions.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.js"></script>
+    <style>.wrapper{margin-top:-20px;}#overLayBody{margin-top:5px;}</style>
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+   <include file="Public:menu" />
+    <div class="wrapper bg0">
+    	<div class="shopbox">
+             <div class='js relative'>
+                <h1 class='relative'><span class='js_x_left'><a style='display: block;height:38px;' href='javascript:history.back(-1)'></a></span>确认订单</h1>
+            </div> 
+             <div class='shop_content pay_con'>
+                <div class='shop_title'>
+                    <ul>
+                        <li class='s_ioc pleft0'><img src='__PUBLIC__/img/shop/shop_ioc.png'/></li>
+                        <li class='s_xc'><a href='javascript:;'>西婵整形美容医院 ></a></li>
+                        <div class='clear'></div>
+                    </ul>
+                </div>
+                <volist name='list' id='vo'>
+                    <div class='car_list dd_list'>
+                        <div class='list relative'>
+                            <div class='left pro_img pleft0'><if condition='$vo.img neq NULL'><img src='/Uploads/image/goods/{$vo.img}'/><else/><img src='__PUBLIC__/img/shop/pro_img.png'/></if></div>
+                            <div class='left cont width65'>
+                                <ul>
+                                    <li class='pro_title'>{$vo.goods_name}</li>
+                                    <li class='pro_des'>{$vo.description}</li>
+                                    <li class='price b0'>
+                                        <div class='left pri_num'>￥ {$vo.price}</div>
+                                        <div class='right'>x {$vo.num}</div>
+                                        <div class='clear'></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class='clear'></div>
+                            <input type='hidden' class='id_num' value='{$vo.id}_{$vo.num}'/>
+                        </div>
+                    </div>
+                </volist>
+                <form action='' id='myform' method='post'>
+                    <input type='hidden' id='gid' name='WIDprojectid' value='<volist name="list" id='v'>{$v.id}_{$v.num},</volist>'/>
+                    <input type='hidden' id='total_price' name='WIDtotal_fee' value='{$res.total_price}'/>
+                    <input type='hidden' id='goods_name' name='WIDsubject' value='<volist name="list" id='v'>{$v.goods_name},</volist>'/>
+                    <input type='hidden' id='mobile' name='WIDreceive_mobile' value='{$res.mobile}'/>
+                </form>
+             </div>
+        </div>
+         <div class='pay_sel'>
+            <h3>请选择支付方式</h3>
+            <div class='zfbao'>
+                <ul>
+                    <input type='checkbox' style='display: none;' name='zfbao' value='zfbao'/>
+                    <li class='zfbao_ico'><span></span></li>
+                    <li class='zfbao_des'><font>支付宝</font><br>推荐支付宝用户使用</li>
+                    <li class='zfbao_select'><input type='checkbox' name='zfb'/><span class='bg'></span></li>
+                    <div class='clear'></div>
+                </ul>
+            </div>
+            <div class='wechat'>
+                <ul>
+                    <input type='checkbox' style='display: none;' name='wechat' value='wechat'/>
+                    <li class='wechat_ico'><span></span></li>
+                    <li class='wechat_des'><font>微信支付</font><br>推荐微信用户使用</li>
+                    <li class='wechat_select'><input type='checkbox' name='zfb'/><span class='bg'></span></li>
+                    <div class='clear'></div>
+                </ul>
+            </div>
+         </div>
+    </div>
+</div>
+<div class='footer'>
+    <div class='total'>
+        <ul>
+            <li class='heji pleft0'>合计:<leael>￥ {$res.total_price}</leael></li>
+            <li class='go'>去支付</li>
+            <div class='clear'></div>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type='text/javascript' src='__PUBLIC__/js/settlement.js'></script>
+</body>
+</html>

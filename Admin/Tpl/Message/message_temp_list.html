@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>短信管理 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='短信管理 > 短信模板列表';
+        </php>
+        <include file="Common:intoHead" />
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">项目列表</div>
+                    </div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+<thead>
+                            <tr>
+                                <td>ID</td>
+                                <td>模板名称</td>
+                                <td>最后修改时间</td>
+                                <td>模板内容</td>
+                                <td>操作</td>
+                            </tr>
+                        </thead>
+                        <form action="__URL__/submit" method="post" id="opForm">
+                        <volist name="list" id="vo">
+                            <tr align="center" id="From_{$vo.id}">
+                                <td><input name="t_id"  type='checkbox' id="t_id_{$vo.id}" value='{$vo.id}'></td>
+                    		  	<td align="center">{$vo.title}</td>
+                    		  	<td>{$vo.utime|date="Y-m-d",###}</td>
+                      			<td align="left" style='width:300px;'>{$vo.content}</td>
+                               </td>
+                                <td> [ <a href="__URL__/edit_template?id={$vo.id}">编辑 </a> ] [ <a href="javascript:void(0);" onclick="Del({$vo.id});return false;" p="8">删除</a> ]</td>
+                            </tr>
+                        </volist>
+                        </form>
+                    </table>
+                     <form id="BatchSubmit" name="BatchSubmit" method="post" action="{:U('Project/zongpai')}" target="_blank" style="display:none">
+                    </form>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                            <tr>
+                              <td width="50%"><label><input name="" class="chooseAll" type="checkbox"/> 全选</label>&nbsp;&nbsp;&nbsp;&nbsp;<label><input name="" class="unsetAll" type="checkbox"/> 反选</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" class=" btn"  onclick="Del(0);return false;">删除选中</a> 
+                                
+                            </tr>
+                        </table>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <include file="Common:foot" />
+       <script type="text/javascript">
+        function Save(ID) {
+            var t_ids = ID == 0 ? $('input[name="t_id"]') : $('#t_id_' + ID);
+            var o;
+			var ids='';
+			var pai='';
+            for (var i = 0; i < t_ids.length; i++) {
+                o = $('#t_orderid_' + t_ids[i].value).val();
+                if (o != $('#t_orderid_' + t_ids[i].value).attr('ovalue')) {
+                   ids = ids==''?  t_ids[i].value :ids+','+t_ids[i].value;
+				   pai = pai==''? o:pai+','+o;
+                }
+            }
+			 $.getJSON("__URL__/paixu", { id:ids,paixu:pai}, function(json){
+					  if(json.status == 0){
+						  alert(json.info);
+					   }
+					  else{
+						  alert(json.info);
+						  top.window.location.href=window.location.href;
+					  }
+					 });
+        }
+		clickCheckbox();
+        function Del(ID) {
+            var t_ids;
+            if (ID > 0) {
+                t_ids=  ID;
+            } else {
+                t_ids = $("input[name='t_id']").serialize().replace(/&t_id=/g, ',').replace('t_id=','');
+            }
+			if(t_ids==''){
+				alert('请选择');
+				}
+			else{	
+           popup.confirm('删除后将无法恢复，你真的打算删?','温馨提示',function(action){
+                        if(action == 'ok'){
+                           $.getJSON("__URL__/Delete", { id:t_ids,tname:'message_template'}, function(json){
+								if(json.status == 0){
+									alert(json.info);
+								 }
+								else{
+									alert(json.info);
+									top.window.location.href=json.url;
+								}
+							});
+                        }
+                    });
+                    return false; 
+		    }
+        }
+        
+    //-->
+    </script>
+    </body>
+</html>

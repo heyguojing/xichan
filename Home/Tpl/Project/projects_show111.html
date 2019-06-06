@@ -1,0 +1,322 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>{$info.title}-{$info.cidname.name}-{$info.pidname.name}-{$systemConfig.SITE_INFO.name}</title>   
+    <meta name="keywords" content="{$info.keywords}" />
+    <meta name="description" content="{$info.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="__PUBLIC__/js/ss/jquery.min.js"></script>
+<script src="__PUBLIC__/js/ss/hammer.min.js"></script>
+<script src="__PUBLIC__/js/ss/hammer.jquery.min.js"></script>
+<script src="__PUBLIC__/js/ss/itemslide.min.js"></script>
+<!--Scripts--->
+<script src="__PUBLIC__/js/ss/sliding.js"></script>
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+    	<div class="projectshow_box">
+        	<div class="projectsad">
+            	<img src="__pictureimg__{$info.pic}" />
+                <div class="cname">
+                <if condition="$info.tuangou eq 1"><em class="bg_green"><a href="{:U('../?tuangou=1')}">团购</a></em></if>
+                <if condition="$info.tuangou eq 2"><em class="bg_yellow"><a href="{:U('../?tuangou=2')}">折扣</a></em></if>
+                <em class="bg_red"><a href="{:U('/projectlist/'.$info['cid'].'')}">{$info.cidname.name}</a></em>
+                </div>
+            </div>
+            <div class="projects_basic">
+            	<div class="projects_basic_tit clearfix">
+                	<div class="tith">{$info.title}</div>
+                    <div class="shareop">
+                    	<a href="javascript:;" title="赞" class="good" id="btngood" link="{$info['id']}"></a>
+                    	<a href="javascript:;" title="分享" class="share" id="btnshare"></a>
+                    </div>
+                </div>
+                <div class="projects_basic_con">{$info.description}</div>
+            </div>
+            <if condition="$info.tuangou eq 0">
+            <div class="projects_showmain">
+            	<div class="project_show_price clearfix">
+                    <div class="project_show_pl">
+                    	<strong class="price">{$info.jiage}元</strong>
+                    </div>
+                    <div class="project_show_pr">
+                    	<div class="project_buy_btn bg_green"><a href="{:U('../?payment='.$info['id'].'')}" style="color:#FFF">正在团购</a></div>
+                    </div>
+                </div>
+                <div class="project_show_time clearfix">
+                    <div class="project_show_pl">
+                    	
+                    </div>
+                    <div class="project_show_pr">
+                    	<ul>
+                        	<li class="yes">支持随时退款</li>
+                            <li class="salen">已售{$info.chushou}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </if>
+            <if condition="$info.tuangou eq 1">
+            <div class="projects_showmain">
+            	<div class="project_show_price clearfix">
+                    <div class="project_show_pl">
+                    	<strong class="price">{$info.tuangoujia}</strong><em>元</em> <del>{$info.jiage}元</del>
+                    </div>
+                    <div class="project_show_pr">
+                    	<div class="project_buy_btn bg_green"><a href="{:U('../?payment='.$info['id'].'')}" style="color:#FFF">正在团购</a></div>
+                    </div>
+                </div>
+                <div class="project_show_time clearfix">
+                    <div class="project_show_pl">
+                    	<p>团购时间：{$info.tuangoustart|date="Y.m.d",###}-{$info.tuangoustart|date="m.d",###}</p>
+						<p>使用期限：{$info.shiyongstart|date="Y.m.d",###}-{$info.shiyongend|date="m.d",###}</p>
+                    </div>
+                    <div class="project_show_pr">
+                    	<ul>
+                        	<li class="yes">支持随时退款</li>
+                            <li class="salen">已售{$info.chushou}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </if>
+            <if condition="$info.tuangou eq 2">
+            <div class="projects_showmain">
+            	<div class="project_show_price clearfix">
+                    <div class="project_show_pl">
+                    	<strong class="price">{$info.tuangoujia}</strong><em>元</em> <del>{$info.jiage}元</del>
+                    </div>
+                    <div class="project_show_pr">
+                    	<div class="project_buy_btn bg_green"><a href="{:U('../?payment='.$info['id'].'')}" style="color:#FFF">正在打折</a></div>
+                    </div>
+                </div>
+                <div class="project_show_time clearfix">
+                    <div class="project_show_pl">
+                    	<p>打折时间：{$info.tuangoustart|date="Y.m.d",###}-{$info.tuangoustart|date="m.d",###}</p>
+						<p>使用期限：{$info.shiyongstart|date="Y.m.d",###}-{$info.shiyongend|date="m.d",###}</p>
+                    </div>
+                    <div class="project_show_pr">
+                    	<ul>
+                        	<li class="yes">支持随时退款</li>
+                            <li class="salen">已售{$info.chushou}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </if>
+            <div class="projects_showmain">
+            	<div class="showtit">项目概述</div>
+                <div class="projects_gaishu">
+                	<ul>
+                    	<li>
+                        	<strong class="dt">效果：</strong>
+                            <p>{$info.xiaoguo}</p>
+                        </li>
+                    	<li>
+                        	<strong class="dt">疗程：</strong>
+                            <p>{$info.liaocheng}</p>
+                        </li>
+                    	<li>
+                        	<strong class="dt">恢复：</strong>
+                            <p>{$info.huifu}</p>
+                        </li>
+                    	<li>
+                        	<strong class="dt">价格：</strong>
+                            <p><if condition="$info.tuangou neq 0"><strong>{$info.tuangoujia}元</strong>&nbsp;&nbsp; <del>原价：{$info.jiage}元</del><else />{$info.jiage}元</if></p>
+                        </li>
+                    	<li>
+                        	<strong class="dt">适应：</strong>
+                            <p>{$info.shiying}</p>
+                        </li>
+                        <li>
+                        	<strong class="dt">专家：</strong>
+                            
+                            <p>
+                             <volist name="info['zhuanjia']" id="vo">
+                               <a href="{:U('../?expertinfo='.$vo['id'].'')}">{$vo.title}</a>
+                            </volist></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="projects_showmain">
+            	<div class="showtit">项目详情</div>
+                <div class="projects_tese">
+                	{$info.content}
+                </div>
+            </div>
+            <div class="projects_showmain">
+            	<div class="showtit"><span><a href="{:U('/case/index')}" class="more">更多</a></span>经典案例</div>
+                <div class="guess_yourlove">
+                	<ul class="clearfix">
+                        <volist name="info['caselist']" id="vo">
+                    	<li>
+                        	<a href="{:U('../?caseinfo='.$vo['id'].'')}"><img src="__pictureimg__{$vo.pic}"></a>
+                            <p>{$vo.title}</p>
+                            </a>
+                        </li>
+                       </volist>
+                    </ul>
+                </div>
+            </div>
+            <div class="projects_showmain">
+            	<div class="showtit">注意事项</div>
+                <div class="projects_zysx">
+                	<ul>
+                    	<li>
+                        	<strong class="dt">术前：</strong>
+                            <p>{$info.shuqian}</p>
+                        </li>
+                    	<li>
+                        	<strong class="dt">术后：</strong>
+                            <p>{$info.shuhou}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <if condition="$info.videoty eq 1">
+            <div class="projects_showmain">
+            	<div class="showtit">参考视频</div>
+                <div class="project_voide">
+                	
+                </div>
+            </div>
+            </if>
+            <div class="projects_showmain">
+            	<div class="guesstit">猜你喜欢</div>
+                <div class="guess_yourlove">
+                <div class="divssd">
+                   <ul>
+                     <li>
+                        <dl><a href="">
+                            <img src="__PUBLIC__/images/index/ad1280x522.jpg">
+                            <p>一个月祛痘</p>
+                            </a>
+                         </dl>
+                        <dl><a href="">
+                            <img src="__PUBLIC__/images/index/ad1280x522.jpg">
+                            <p>一个月祛痘</p>
+                            </a>
+                         </dl>
+                         <dl><a href="">
+                            <img src="__PUBLIC__/images/index/ad1280x522.jpg">
+                            <p>一个月祛痘</p>
+                            </a>
+                         </dl>
+                     </li>
+                     <li>
+                        <dl><a href="">
+                            <img src="__PUBLIC__/images/index/ad1280x522.jpg">
+                            <p>一个月祛痘</p>
+                            </a>
+                         </dl>
+                        <dl><a href="">
+                            <img src="__PUBLIC__/images/index/ad1280x522.jpg">
+                            <p>一个月祛痘</p>
+                            </a>
+                         </dl>
+                         <dl><a href="">
+                            <img src="__PUBLIC__/images/index/ad1280x522.jpg">
+                            <p>一个月祛痘</p>
+                            </a>
+                         </dl>
+                     </li>
+                     <li>
+                        <dl><a href="">
+                            <img src="__PUBLIC__/images/index/ad1280x522.jpg">
+                            <p>一个月祛痘</p>
+                            </a>
+                         </dl>
+                        <dl><a href="">
+                            <img src="__PUBLIC__/images/index/ad1280x522.jpg">
+                            <p>一个月祛痘</p>
+                            </a>
+                         </dl>
+                         <dl><a href="">
+                            <img src="__PUBLIC__/images/index/ad1280x522.jpg">
+                            <p>一个月祛痘</p>
+                            </a>
+                         </dl>
+                     </li>
+                   </ul>
+                </div>
+                </div>
+            </div>
+    	</div>
+    </div>
+</div>
+<include file="Public:footer" />
+<!--底部固定咨询-->
+<div class="fixedbottom">
+	<ul class="clearfix">
+    	<li class="uzx"><a href="http://b.qq.com/webc.htm?new=0&sid={$systemConfig.SITE_INFO.qq}&o={$systemConfig.WEB_ROOT}&q=7', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no" target="_blank" class="fus" title="在线咨询">立刻咨询</a></li>
+    	<li class="uqq"><a href="http://b.qq.com/webc.htm?new=0&sid={$systemConfig.SITE_INFO.qq}&o={$systemConfig.WEB_ROOT}&q=7', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no" target="_blank" class="fus" title="在线咨询">QQ咨询</a></li>
+    	<li class="utel"><a href="tel:{$systemConfig.SITE_INFO.tel}">免费电话</a></li>
+    	<li class="share"><a href="javascript:;" id="fixeopenmore"></a></li>
+    </ul>
+</div>
+<!--分享到-->
+<div class="sharediv">
+	<div class="shareul">
+        <ul id="shareli" class="clearfix">
+            <li><a href="javascript:;"><img src="__PUBLIC__/images/share/weixin.jpg" alt="微信好友" /></a></li>
+            <li><a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?to=pengyou&url={:U('../?proinfo='.$info['id'].'')}" target="_blank"><img src="__PUBLIC__/images/share/pyq.jpg" alt="朋友圈" /></a></li>
+            <li><a href="http://v.t.sina.com.cn/share/share.php?url={:U('../?proinfo='.$info['id'].'')}&title='{$info.title}'" target="_blank"><img src="__PUBLIC__/images/share/sina.jpg" alt="新浪微博" /></a></li>
+            <li><a href="http://connect.qq.com/widget/shareqq/index.html?title=qqhaoyou&url={:U('../?proinfo='.$info['id'].'')}&desc={$info.title}&pics=&site=西婵整形" target="_blank"><img src="__PUBLIC__/images/share/qq.jpg" alt="QQ" /></a></li>
+            <li><a href="http://v.t.qq.com/share/share.php?url={:U('../?proinfo='.$info['id'].'')}&title='{$info.title}'" target="_blank"><img src="__PUBLIC__/images/share/qqweibo.jpg" alt="腾讯微博" /></a></li>
+            <li><a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={:U('../?proinfo='.$info['id'].'')}" target="_blank"><img src="__PUBLIC__/images/share/qqkj.jpg" alt="QQ空间" /></a></li>
+            <li><a href="javascript:;"><img src="__PUBLIC__/images/share/email.jpg" alt="邮件分享" /></a></li>
+            <li><a href="javascript:;"><img src="__PUBLIC__/images/share/sc.jpg" alt="收藏文章" /></a></li>
+        </ul>
+    </div>
+</div>
+
+<!--更多热门项目-->
+<div class="divmoreitem">
+	<div class="itemmoer">
+    	<h3>热门项目</h3>
+        <p>
+           <volist name="hotlist" id="vo">
+            <a href="{:U('../?proinfo='.$vo['id'].'')}">{$vo.title}</a>
+           </volist>
+        </p>
+    </div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/pagerefetch.js"></script>
+<script>
+$(function(){
+		var boady_height=parseFloat($(document).height());	
+		$(".sharediv").css({"height":boady_height+"px"});
+})
+$("#btnshare").click(function(){
+	$(".sharediv").show();
+})
+
+$("#btngood").click(function(){
+	var delLink=$(this).attr("link");
+	//alert(delLink);
+   $.getJSON("{:U('projectzhan/"+delLink+"')}", function(json){
+		if(json.status == 1){
+		//$("#good"+delLink).html('<span class="zan hover">'+json.info+'</span>')
+		$("#btngood").addClass("hover");
+		}
+	});
+});
+$("#shareli li").click(function(){
+	$(".sharediv").hide();
+})
+$("#fixeopenmore").click(function(){
+	$(".divmoreitem").show();
+})
+</script>
+</body>
+</html>

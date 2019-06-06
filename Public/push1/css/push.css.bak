@@ -1,0 +1,27 @@
+html{overflow-x:hidden;}
+body{padding: 0;margin: 0; font: 14px "Î¢ÈíÑÅºÚ";}
+.wamp1{width:100%;background: #fdccdd;padding:0;margin:0;margin-bottom: -23px !important;}
+ul,li,img,a,div{margin: 0;padding: 0;list-style-type: none;}
+img{width:100%;display:block;}
+ul,li{display:black;}
+.head2 ul{width:90%;position:absolute;top:26%;background: none no-repeat;}
+.head2 ul li {width:30%;float:left;margin-left:2%;}
+.head{position:relative;}
+.main1{position:relative;width:100%;text-align: center;}
+.main1 ul li {width:49%;float: left;position:relative;}
+.main1 ul{padding-top:20px;}
+.main1 ul li span{display: block;position:absolute;top:38%;left:11%;text-align: left;line-height: 1.5;}
+.main1 ul li span font{color:red;font-size:15px;}
+.sqsm_online{width:35%;margin:0 auto;position:absolute;bottom: -8%;left:31%;}
+.sqsm{background: #fdccdd;}
+.sqsm_xm{width:92%;margin:2% auto;padding:1% 2%;margin-bottom: 0;background: #ea4876;}
+.sqsm_xm ul{width:100%;display: block;background: #ea4876;}
+.sqsm_xm ul li{width:32%;float:left;margin-left:1%;margin-top:4%;}
+.sdxm ul{width:100%:display:block;background:#fdccdd;}
+.sdxm ul li{width:98%;float:left;margin-left:1%;}
+.gfjh_online{width:35%;margin:0 auto;position:absolute;bottom: -128%;left:31%;}
+.sdxm_online{width:35%;margin:0 auto;background: #fdccdd;padding-bottom: 5%;}
+.gfjh{width:100%;overflow-x:hidden;position:relative;}
+#footer{margin-top:0px;}
+
+

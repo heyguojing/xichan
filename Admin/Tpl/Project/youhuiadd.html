@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>编辑项目关联 - 项目管理 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='项目管理 > 编辑项目关联信息';
+        </php>
+        
+        <include file="Common:intoHead" />
+		<script type="text/javascript" src="__PUBLIC__/Js/my97datepicker/wdatepicker.js"></script>
+        <style type="text/css">
+           .t_link a{ padding:5px; background:#CCC; }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">团购项目设置</div>
+                    </div>
+                    <form enctype="multipart/form-data">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                          <!--<tr>
+                             <th width="100">当前选中项目：</th>
+                              <td>&nbsp;</td>
+                          </tr> -->
+                          <tr>
+                             <th width="120">可参加项目：</th>
+                              <td width="875">
+                              <volist name="list" id="vo">
+                              <div style="background:#F3F3F3; width:100%; height:30px; line-height:30px; ">{$vo.name}</div>
+                                <volist name="vo['project']" id="vk">
+                                <input name="info[xihuanid]" type="radio" value="{$vk.id}" />&nbsp;{$vk.title}&nbsp;&nbsp;&nbsp;
+                                </volist>
+                              </volist>
+                              </td>
+                          </tr>
+                          <tr>
+                                <th width="100">发布状态：</th>
+                                <td><label><input type="radio" name="info[status]" value="0" <if condition="$info.status eq 0"> checked="checked"</if> /> 审核状态</label> &nbsp; <label><input type="radio" name="info[status]" value="1" <if condition="$info.status eq 1"> checked="checked"</if> /> 发布状态</label> </td>
+                            </tr>
+                          <tr>
+                                <th>团购时间：</th>
+                                <td>
+                                     <input name="info[tuangoustart]" value="{$info.tuangoustart|date="Y-m-d",###}"type="text" size="15"  id="tuangoustart" class="input"  onFocus="WdatePicker({isShowClear:false,readOnly:true,skin:'blue'})" readonly="readonly"  />
+                          - 
+                          <input name="info[tuangouend]" class="input" value="{$info.tuangouend|date="Y-m-d",###}" type="text" size="15"  id="tuangouend" onFocus="WdatePicker({isShowClear:false,readOnly:true,skin:'blue'})" readonly="readonly" />
+                                </td>
+                            </tr>
+                             <tr>
+                                <th> 使用时间：</th>
+                                <td>
+                          
+                           <input name="info[shiyongstart]" value="{$info.shiyongstart|date="Y-m-d",###}" type="text" size="15"  id="shiyongstart"  class="input" onFocus="WdatePicker({isShowClear:false,readOnly:true,skin:'blue'})" readonly="readonly"  />
+                          - 
+                          <input name="info[shiyongend]" value="{$info.shiyongend|date="Y-m-d",###}" class="input" type="text" size="15"  id="shiyongend" onFocus="WdatePicker({isShowClear:false,readOnly:true,skin:'blue'})" readonly="readonly" />
+                                
+                                </td>
+                            </tr>
+                             <tr>
+                                <th>团购价：</th>
+                                <td>
+                                   <input type="text" class="input" size="15" name="info[tuangoujia]" value="{$info.tuangoujia}"/>
+                                   元</td>
+                            </tr>
+                         </table> 
+                    </form>
+                    <div class="commonBtnArea" >
+                        <button class="btn submit">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <script type="text/javascript">
+            $(function(){
+                $(".submit").click(function(){
+                    commonAjaxSubmit();
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>

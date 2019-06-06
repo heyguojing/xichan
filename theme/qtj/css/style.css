@@ -1,0 +1,81 @@
+body{
+	font-family: 微软雅黑;
+	background: #fff;
+	font-size: 0.8em;
+}
+
+div.wrapper{
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+html.mobile div.wrapper{
+	width: 100%;
+}
+
+/*----------header----------*/
+.header{
+	height: 45px;
+	background: url(../img/bg_hd.png) repeat center;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.header .logo{
+	width: 80px;
+	height: 26px;
+	background: url(../img/logo.png);
+	position: absolute;
+	top: 10px;
+	left: 1em;
+}
+.header .menu{
+	width: 80px;
+	height: 26px;
+	background: url(../img/menu.png);
+	position: absolute;
+	top: 10px;
+	right: 1em;
+}
+
+/*----------mainer----------*/
+.mainer{
+	/*padding-top: 34px;*/
+	padding-bottom: 38px;
+}
+
+/*----------footer----------*/
+.footer{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+.footer .btns{
+	height: 38px;
+	background: #efe8e5;
+	position: relative;
+}
+.footer .btns a{
+	width: 33.33%;
+	float: left;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	color: #fff;
+}
+.footer .btns a.e1{
+	background: #b28850;
+}
+.footer .btns a.e2{
+	background: #81511c;
+}
+.footer .btns a.e3{
+	background: #1b1b1b;
+}
+
+/*----------common----------*/
+/**/

@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>优惠中心 - {$systemConfig.SITE_INFO.name}</title>
+    <meta name="keywords" content="{$info.keywords}" />
+    <meta name="description" content="{$info.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+    	<div class="projectspage">
+        	<div class="yhzkclass">
+            	<ul class="clearfix">
+                   <li class="first"><a href="{:U('../?tuangou=1')}" <if condition="$tuangouid eq 1">class="hover"</if>>团购</a></li>
+                   <li class="last"><a href="{:U('../?tuangou=2')}"  <if condition="$tuangouid eq 2">class="hover"</if>>折扣</a></li>
+                </ul>
+            </div>
+
+            <div  id="masonrybox" class="masonry">
+            <volist name="list" id="vo">
+                <div class="projectslist masonry-brick">
+                    <a href="{:U('../?proinfo='.$vo['project']['id'].'')}"><img src="__pictureimg__{$vo.project.pic}" class="aimg"></a>
+                    <div class="txt">
+                        <h3>{$vo.project.keywords}</h3>
+                        <h1><a href="{:U('../?proinfo='.$vo['project']['id'].'')}">{$vo.project.title}</a></h1>
+                    </div>
+                    <div class="newshare clearfix">
+                        <p class="tshar">
+                             <a link="{$vo['project']['id']}" href="javascript:void(0)" class="{$vo.project.liclass}" id="gd{$vo['project']['id']}"><span id="good{$vo['project']['id']}" class="zan {$vo.project.hover}">{$vo.project.views}</span></a><!--点赞之前不要hover，点赞后才加hover-->
+                            <a link="{$vo['project']['id']}" href="javascript:void(0)" class="kfjs"><span class="read" id="kefuback{$vo['project']['id']}">{$vo.project.reshow}</span></a>
+                            <span class="share">{$vo.project.fenxiang}</span>
+                        </p>
+                        <div class="cname">
+                            <if condition="$vo.tuangou eq 1"><em class="bg_green"><a href="{:U('../?tuangou=1')}">团购</a></em></if>
+                            <if condition="$vo.tuangou eq 2"><em class="bg_yellow"><a href="{:U('../?tuangou=2')}">折扣</a></em></if>
+                            <em class="bg_red"><a href="{:U('/projectlist/'.$vo['project']['cid'].'')}">{$vo.project.category}</a></em>
+                        </div>
+                    </div>
+                </div>
+                </volist>
+                
+            </div>    	
+            <if condition="$pa eq 1">  	
+            <div id="page_loading"><img src="__PUBLIC__/images/loading.gif"><span>正在加载</span></div>
+            <div id="next_page" style="display:none">{$page}</div>
+            </if>
+            </div>
+    	</div>
+    </div>
+
+<include file="public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/pagerefetch.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".kfjs").click(function(){
+			var delLink=$(this).attr("link");
+			$.getJSON("{:U('Index/kefu')}",{id:delLink,sqlname:'project'}, function(json){
+				if(json.status == 1){
+				$("#kefuback"+delLink).html(json.info); 
+				   window.location.href = "https://static.meiqia.com/dist/standalone.html?eid=9041";
+				}
+			})
+		});
+		$(".zhan").click(function(){
+			var delLink=$(this).attr("link");
+			if($(this).hasClass("zhan")){
+		   $.getJSON("{:U('discountzhan/"+delLink+"')}", function(json){
+				if(json.status == 1){
+				$("#good"+delLink).html(json.info);
+				$("#good"+delLink).addClass("hover");
+				$("#gd"+delLink).removeClass("zhan"); 
+				$("#gd"+delLink).addClass("hodden"); 
+				}
+			});
+			 }
+		  else
+		  {
+			  alert("您已经赞过了");
+		  }
+		});
+	});
+</script>
+</body>
+</html>

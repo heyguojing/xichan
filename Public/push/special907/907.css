@@ -1,0 +1,85 @@
+.main{width:100%;margin-top:-23px;max-width:750px;}
+.main img{width:100%;}		
+.main .index{position:relative;}
+.index1 .movie{width:28%;position:absolute;top:70.5%;right:41%;}
+.index1 .buy{width:26%;position:absolute;top:72%;right:11%;}
+.index2 div{position:absolute;top:46%;}
+.index2 .meituan{left:23%;width:14.5%;}
+.index2 .dianpin{left:39.5%;width:19.5%;}
+.index2 .nuomi{left:62.5%;width:20.6%;}
+.index3{margin-top:12px;background:#fff;padding-bottom: 15px;}
+.index3 ul{display: block;}
+.index3 ul li{width:44.6%;float:left;padding-left:3.6%;padding-top:20px;}
+.index4{margin-top:18px;background:#fff;padding: 20px 0 20px 0;}
+.index5{margin-top:12px;background:#fff;padding-bottom: 15px;}
+.index5 ul{display: block;}
+.index5 ul li{width:44.6%;float:left;padding-left:3.6%;padding-top:20px;position:relative;}
+/*.index5 ul li span{color:white;position:absolute;}
+@media screen and (max-width:480px){
+	.index5 ul li span {font-size:12px;line-height:17px;}
+	.index5 ul li span font{font-size:9px;padding-top:5px;display: block;line-height:13px;}
+	.index5 ul li .s99{top:26%;}
+}
+@media screen and (min-width:480px) and (max-width:640px){
+	.index5 ul li span {font-size:19px;line-height:30px;}
+	.index5 ul li span font{font-size:16px;padding-top:15px;display: block;line-height:23px;}
+	.index5 ul li .s99{top:21%;}
+}
+@media screen and (min-width:640px) and (max-width:860px){
+	.index5 ul li span {font-size:24px;line-height:35px;}
+	.index5 ul li span font{font-size:21px;padding-top:20px;display: block;line-height:28px;}
+	.index5 ul li .s99{top:20%;}
+	
+}
+@media screen and (min-width:860px){
+	.index5 ul li span {font-size:30px;line-height:50px;}
+	.index5 ul li span font{font-size:27px;padding-top:30px;display: block;line-height:35px;}
+	.index5 ul li .s99{top:18%;}
+}
+.index5 ul li .s99{left:18%;}*/
+.index5_b{margin-top:18px;}
+.index5_b .botton{width:21%;position:absolute;bottom: 13%;left:37%;}
+.index6{margin-top:12px;background:#fff;padding-bottom: 15px;}
+.index6 ul{display: block;}
+.index6 ul li{width:44.6%;float:left;padding-left:3.6%;padding-top:20px;position:relative;}
+.index6_b{margin-top:18px;position:relative;}
+.index6_b .botton{position:absolute;bottom: 21%;right:7.5%;width:30.4%;}
+.index6_c{margin-top:18px;}
+.index7{margin-top:12px;background:#fff;padding-bottom: 15px;}
+.index7 ul{display: block;}
+.index7 ul li{width:28%;float:left;padding-left:3.8%;padding-top:18px;}
+.index8{margin-top:18px;}
+.index9{margin-top:18px;}
+#footer{margin-top:-24px !important;}
+
+
+.animation1{
+animation:mymove 1s linear 0s infinite;
+-webkit-animation:mymove 1s  linear 0s infinite  ; /*Safari and Chrome*/
+-ms-animation:mymove 1s  linear 0s infinite  ;
+-moz-animation:mymove 1s  linear 0s infinite  ;
+}
+@keyframes mymove
+{
+25% {transform: translatex(-2px);}
+0%,50%, 100% {transform: translatex(0);}
+75% {transform: translatex(2px);}
+}
+@-moz-keyframes mymove
+{
+ 25% {transform: translatex(-2px);}
+ 0%, 50%, 100% {transform: translatex(0);}
+ 75% {transform: translatex(2px);}
+}
+@-ms-keyframes mymove
+{
+ 25% {transform: translatex(-2px);}
+ 0%, 50%, 100% {transform: translatex(0);}
+ 75% {transform: translatex(2px);}
+}
+@-webkit-keyframes mymove
+{
+ 25% {transform: translatex(-2px);}
+ 0%, 50%, 100% {transform: translatex(0);}
+ 75% {transform: translatex(2px);}
+}

@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>西婵-小脸逆龄随拍季 - {$systemConfig.SITE_INFO.name}</title>
+		<meta name="description" content="脸大星人,长效修容术,抚平皱纹,瘦脸,大脸变小,皱纹变少,西婵-小脸逆龄随拍季" />
+		<meta name="keywords" content="脸大星人,长效修容术,抚平皱纹,瘦脸,大脸变小,皱纹变少,小脸逆龄随拍季" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+		<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="__PUBLIC__/push/0627/tipDialog.css" rel="stylesheet" type="text/css" />
+		<link href='__PUBLIC__/push/special928/basic.css' rel='stylesheet' type='text/css'/>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/jquery-1.9.0.min.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/js/common.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/jquery-1.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/scrollReveal.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/tipDialog.js'></script>
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?9fae3ce1f7640b29e0bcf3896f991f6d";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+	</script>
+	</head>
+	<body>
+		<include file="Public:head" />
+		<div class='wrapper'>
+			 <include file="Public:menu" />
+				<div style='clear:both;'></div>
+				<div class='main'>
+					<div class='index'>
+						<img src='__PUBLIC__/push/special928/xv01.png'/>
+						<div style='position:relative;'>
+							<img src='__PUBLIC__/push/special928/xv02.png'/>
+							<div style='position:absolute;top:20%;left:22%;width:58%;'><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img class='animation1' src='__PUBLIC__/push/special928/btn.png'/></a></div>
+						</div>
+						<img src='__PUBLIC__/push/special928/xv03.png'/>
+						<img src='__PUBLIC__/push/special928/xv04.png'/>
+						<img src='__PUBLIC__/push/special928/xv05.png'/>
+						<img src='__PUBLIC__/push/special928/xv06.png'/>
+						<img src='__PUBLIC__/push/special928/xv07.png'/>
+						<img src='__PUBLIC__/push/special928/xv08.png'/>
+						<img src='__PUBLIC__/push/special928/xv09.png'/>
+						<img src='__PUBLIC__/push/special928/xv10.png'/>
+						<img src='__PUBLIC__/push/special928/xv11.png'/>
+						<img src='__PUBLIC__/push/special928/xv12.png'/>
+						<img src='__PUBLIC__/push/special928/xv13.png'/>
+						<img src='__PUBLIC__/push/special928/xv14.png'/>
+						<img src='__PUBLIC__/push/special928/xv15.png'/>
+						<div class='sub'>
+							<div style='width:70%;max-width:520px;margin-left:auto;margin-right:auto;letter-spacing: 2px;'>
+								<span>预约送580艺术照</span><br>
+								<form id='myform'>
+									姓名:<input type='text' name='username' id='name' /><br>
+									电话:<input type='text' name='tel_number' id='tel'/><br>
+									备注:<input style='line-height:24px;height:48px;' type='text' name='consult_object'/><br>
+								</form>
+								<div class='sbt'>提交</div>
+							</div>
+						</div>
+						<img src='__PUBLIC__/push/special928/xv16.png'/>
+					
+					</div>
+			</div>
+		 <include file="Public:footer" />
+	</div>
+	</body>
+	<script>
+		(function(){
+			window.scrollReveal = new scrollReveal({reset: true});
+		})();
+	</script>
+	<script type='text/javascript'>
+	$(function(){
+		$('.sbt').click(function(){
+			if($('#name').val() =='' ){
+				tipDialog('请填写您的姓名！','error','',2);
+				return false;
+			}
+			if($('#tel').val() ==''){
+				tipDialog('请填写十一位手机号码！','error','',2);
+				return false;
+			}
+			$.ajax({
+				type:'post',
+				url:'__SELF__',
+				data:$('#myform').serialize(),
+				dataType:'json',
+				success:function(dat){
+					if(dat.status == 1){
+						tipDialog(dat.info,'ok','',2);
+						setTimeout(function(){
+							window.location.reload();	
+						},2000);
+					}
+					if(dat.status == 0){
+						tipDialog(dat.info,'error','',2);
+					}
+				}
+			})
+		});
+	})</script>
+
+</html>

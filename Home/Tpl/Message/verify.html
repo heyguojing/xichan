@@ -1,0 +1,109 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>礼包码确认 - {$systemConfig.SITE_INFO.name}</title> 
+    <meta name="keywords" content="{$systemConfig.SITE_INFO.keywords}" />
+    <meta name="description" content="{$systemConfig.SITE_INFO.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+	 <link rel="stylesheet" type="text/css" href="__PUBLIC__/push/0627/tipDialog.css"/>
+	<style>
+		.wrapper{max-width: 640px;margin: 0 auto;}
+		.wrapper .loading{background:rgb(255,255,255);width:100%;height:100%;position:fixed;top:0;left:0;text-align: center;display:none;padding-top:40%;}
+		.main{width:100%;background:#efefef;}
+		.main .logo{padding-top:20px;margin-left:auto;margin-right:auto;text-align: center;font-size: 30px;padding-bottom: 30px;}
+		.main .logo img{width:100%;}
+		.main .myf{margin-left:auto;margin-right: auto;width:290px;margin-top:20px;font-size:15px;}
+		.main .myf input{margin-top:25px;border-radius: 19px;border:none;line-height: 32px;width:200px;font-size:16px;padding:5px 0 5px 15px;-webkit-border-radius: 19px;
+            -moz-border-radius: 19px;}
+		.main .button{width:275px;background:#000000;color:white;margin:0 auto;text-align: center;margin-top:40px;line-height: 42px;font-size:18px;border-radius: 19px;cursor:pointer;-webkit-border-radius: 19px;-moz-border-radius: 19px;}
+		.fixedbottom{display: none;}
+		.success{width:100%;display:none;background:#ffffff;position:fixed;margin-top:57px;top:0;left:auto;max-width:640px;z-index:10;}
+		.success img{width:100%;display: block;}
+		.fixedbottom{display: none;}
+		.success .back{position:absolute;top:4%;left:3%;font-size:16px;background: #f0ac1c;line-height: 40px;padding:0 20px;border-radius: 8px;}
+		.success .back a{color:#000;}
+		.people_num{position: absolute;left: 17%;top:65%;font-size:18px;}
+		.footcon p.weibo, .footcon p.weibo a{display: none;}
+	</style>
+</head>
+
+<body>
+<include file="Public:head" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+    	<div class='loading'><img src='__PUBLIC__/img/loading.gif'/><br>验证中...</div>
+    	<div class='main'>
+    		<div class='logo'>西婵会员乘车页面</div>
+    		<div class='myf'>
+	    		<form id='myform'>
+		    		电话号码：<input type='text' name='tel'  id='tel' placeholder='请输入电话号码后四位'/><br>
+		    		　验证码：<input type='text' name='code' id='code' placeholder='输入收到的验证码'/>
+	    		</form>
+    		</div>
+    		<div class='button'>立即验证</div>
+    	</div>
+		<div class='success'>
+    		<div class='back'><a href='./verify'>继续验证</a></div>
+    		<img src="__PUBLIC__/img/pass1.png"/>
+    		<img src="__PUBLIC__/img/pass2.png"/>
+    		<img src="__PUBLIC__/img/pass3.png"/>
+    		<div class='people_num'></div>
+		</div>
+    </div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/push/0627/tipDialog.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/pagerefetch.js"></script>
+<script type='text/javascript'>
+	$(function(){
+		$('.button').click(function(){
+			if($('#tel').val() =='' || $('#tel').val().length != 4){
+				tipDialog('请输入需要验证的4位数手机尾数','error','',2);
+				return false;
+			}
+			if($('#code').val() ==''){
+				tipDialog('请输入收到的验证码哦！','error','',2);
+				return false;
+			}
+			$.ajax({
+				type:'post',
+				url:'__SELF__',
+				data:$('#myform').serialize(),
+				dataType:'json',
+				success:function(dat){
+					if(dat.status == 1){
+						tipDialog(dat.info,'ok','',2);
+						if(dat.num && dat.num > 1){
+							$('.people_num').append("此验证码可供乘车人数<font id='people_num'>"+dat.num+"</font>人");
+						}
+						if(dat.url && dat.url =='success'){
+							$('.success').css('display','block');
+						}
+					}
+					if(dat.status == 0){
+						tipDialog(dat.info,'error','',2);
+					}
+				}
+			})
+		});
+		$('.back').click(function(){
+			if($(".success").display=='blick'){
+				$('.success').css('display','none');
+			}
+		})
+	})
+	$('.loading').ajaxStart(function(){
+		$(this).css('display','block');
+	}).ajaxStop(function(){
+		$(this).css('display','none');
+	})
+	
+</script>
+</body>
+</html>

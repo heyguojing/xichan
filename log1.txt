@@ -1,0 +1,565 @@
+执行日期：20180102172003
+接受到的信息有Array\r\nArray
+执行日期：20180102172003
+其他失败-
+
+执行日期：20180102172041
+接受到的信息有Array\r\nArray
+执行日期：20180102172041
+其他失败-
+
+执行日期：20180102172209
+接受到的信息有Array\r\nArray
+执行日期：20180102172209
+其他失败-
+
+执行日期：20180102172428
+接受到的信息有array (
+  'service' => 'alipay.wap.trade.create.direct',
+  'sign' => '97165a491503b978714600e5f47f54e3',
+  'sec_id' => 'MD5',
+  'v' => '1.0',
+  'notify_data' => '<notify><payment_type>1</payment_type><subject>素颜水光测试</subject><trade_no>2018010221001004420286701868</trade_no><buyer_email>763837997@qq.com</buyer_email><gmt_create>2018-01-02 17:20:47</gmt_create><notify_type>trade_status_sync</notify_type><quantity>1</quantity><out_trade_no>M201801021720341514884834347</out_trade_no><notify_time>2018-01-02 17:24:35</notify_time><seller_id>2088201228403271</seller_id><trade_status>TRADE_SUCCESS</trade_status><is_total_fee_adjust>N</is_total_fee_adjust><total_fee>0.01</total_fee><gmt_payment>2018-01-02 17:20:49</gmt_payment><seller_email>shesays@xichan.cn</seller_email><price>0.01</price><buyer_id>2088602199710427</buyer_id><notify_id>22f1901c7524d77e734822dd7a821acj8q</notify_id><use_coupon>N</use_coupon></notify>',
+)\r\narray (
+  'service' => 'alipay.wap.trade.create.direct',
+  'sign' => '97165a491503b978714600e5f47f54e3',
+  'sec_id' => 'MD5',
+  'v' => '1.0',
+  'notify_data' => '<notify><payment_type>1</payment_type><subject>素颜水光测试</subject><trade_no>2018010221001004420286701868</trade_no><buyer_email>763837997@qq.com</buyer_email><gmt_create>2018-01-02 17:20:47</gmt_create><notify_type>trade_status_sync</notify_type><quantity>1</quantity><out_trade_no>M201801021720341514884834347</out_trade_no><notify_time>2018-01-02 17:24:35</notify_time><seller_id>2088201228403271</seller_id><trade_status>TRADE_SUCCESS</trade_status><is_total_fee_adjust>N</is_total_fee_adjust><total_fee>0.01</total_fee><gmt_payment>2018-01-02 17:20:49</gmt_payment><seller_email>shesays@xichan.cn</seller_email><price>0.01</price><buyer_id>2088602199710427</buyer_id><notify_id>22f1901c7524d77e734822dd7a821acj8q</notify_id><use_coupon>N</use_coupon></notify>',
+  '_URL_' => 
+  array (
+    0 => 'pay',
+    1 => 'notify_url',
+  ),
+)
+执行日期：20180102172428
+其他失败-
+
+执行日期：20180102172453
+接受到的信息有array (
+  'service' => 'alipay.wap.trade.create.direct',
+  'sign' => '90398f3e7214a0cf9d44fb9d2ed78c8e',
+  'sec_id' => 'MD5',
+  'v' => '1.0',
+  'notify_data' => '<notify><payment_type>1</payment_type><subject>素颜水光测试</subject><trade_no>2018010221001004420285607897</trade_no><buyer_email>763837997@qq.com</buyer_email><gmt_create>2018-01-02 17:24:59</gmt_create><notify_type>trade_status_sync</notify_type><quantity>1</quantity><out_trade_no>M201801021724461514885086925</out_trade_no><notify_time>2018-01-02 17:25:01</notify_time><seller_id>2088201228403271</seller_id><trade_status>TRADE_SUCCESS</trade_status><is_total_fee_adjust>N</is_total_fee_adjust><total_fee>0.02</total_fee><gmt_payment>2018-01-02 17:25:00</gmt_payment><seller_email>shesays@xichan.cn</seller_email><price>0.02</price><buyer_id>2088602199710427</buyer_id><notify_id>0aec2e7d4cab9a5df21740b88bba4c8j8q</notify_id><use_coupon>N</use_coupon></notify>',
+)\r\narray (
+  'service' => 'alipay.wap.trade.create.direct',
+  'sign' => '90398f3e7214a0cf9d44fb9d2ed78c8e',
+  'sec_id' => 'MD5',
+  'v' => '1.0',
+  'notify_data' => 
+  '<notify>
+  		<payment_type>1</payment_type>
+  		<subject>素颜水光测试</subject>
+  		<trade_no>2018010221001004420285607897</trade_no>
+  		<buyer_email>763837997@qq.com</buyer_email>
+  		<gmt_create>2018-01-02 17:24:59</gmt_create>
+  		<notify_type>trade_status_sync</notify_type>
+  		<quantity>1</quantity>
+  		<out_trade_no>M201801021724461514885086925</out_trade_no>
+  		<notify_time>2018-01-02 17:25:01</notify_time>
+  		<seller_id>2088201228403271</seller_id>
+  		<trade_status>TRADE_SUCCESS</trade_status>
+  		<is_total_fee_adjust>N</is_total_fee_adjust>
+  		<total_fee>0.02</total_fee>
+  		<gmt_payment>2018-01-02 17:25:00</gmt_payment>
+  		<seller_email>shesays@xichan.cn</seller_email>
+  		<price>0.02</price>
+  		<buyer_id>2088602199710427</buyer_id>
+  		<notify_id>0aec2e7d4cab9a5df21740b88bba4c8j8q</notify_id>
+  		<use_coupon>N</use_coupon>
+  	</notify>',
+  '_URL_' => 
+  array (
+    0 => 'pay',
+    1 => 'notify_url',
+  ),
+)
+执行日期：20180102172453
+其他失败-
+
+执行日期：20180102173205
+接受到的信息有'<notify><payment_type>1</payment_type><subject>素颜水光,祛痘水光</subject><trade_no>2018010221001004420285422851</trade_no><buyer_email>763837997@qq.com</buyer_email><gmt_create>2018-01-02 17:08:12</gmt_create><notify_type>trade_status_sync</notify_type><quantity>1</quantity><out_trade_no>M201801021707541514884074356</out_trade_no><notify_time>2018-01-02 17:32:13</notify_time><seller_id>2088201228403271</seller_id><trade_status>TRADE_SUCCESS</trade_status><is_total_fee_adjust>N</is_total_fee_adjust><total_fee>0.02</total_fee><gmt_payment>2018-01-02 17:08:13</gmt_payment><seller_email>shesays@xichan.cn</seller_email><price>0.02</price><buyer_id>2088602199710427</buyer_id><notify_id>c1b3be35987c3701ff188ae81fbfccfj8q</notify_id><use_coupon>N</use_coupon></notify>'\r\n
+执行日期：20180102173205
+其他失败-
+
+执行日期：20180102173243
+接受到的信息有'<notify><payment_type>1</payment_type><subject>素颜水光测试</subject><trade_no>2018010221001004420285788181</trade_no><buyer_email>763837997@qq.com</buyer_email><gmt_create>2018-01-02 17:32:49</gmt_create><notify_type>trade_status_sync</notify_type><quantity>1</quantity><out_trade_no>M201801021732361514885556663</out_trade_no><notify_time>2018-01-02 17:32:51</notify_time><seller_id>2088201228403271</seller_id><trade_status>TRADE_SUCCESS</trade_status><is_total_fee_adjust>N</is_total_fee_adjust><total_fee>0.01</total_fee><gmt_payment>2018-01-02 17:32:50</gmt_payment><seller_email>shesays@xichan.cn</seller_email><price>0.01</price><buyer_id>2088602199710427</buyer_id><notify_id>3b073a2c0585a746aef0c73ee9ef0a2j8q</notify_id><use_coupon>N</use_coupon></notify>'\r\n
+执行日期：20180102173243
+其他失败-
+
+执行日期：20180102173406
+接受到的信息有'<notify><payment_type>1</payment_type><subject>素颜水光测试</subject><trade_no>2018010221001004420286701868</trade_no><buyer_email>763837997@qq.com</buyer_email><gmt_create>2018-01-02 17:20:47</gmt_create><notify_type>trade_status_sync</notify_type><quantity>1</quantity><out_trade_no>M201801021720341514884834347</out_trade_no><notify_time>2018-01-02 17:34:14</notify_time><seller_id>2088201228403271</seller_id><trade_status>TRADE_SUCCESS</trade_status><is_total_fee_adjust>N</is_total_fee_adjust><total_fee>0.01</total_fee><gmt_payment>2018-01-02 17:20:49</gmt_payment><seller_email>shesays@xichan.cn</seller_email><price>0.01</price><buyer_id>2088602199710427</buyer_id><notify_id>22f1901c7524d77e734822dd7a821acj8q</notify_id><use_coupon>N</use_coupon></notify>'\r\n
+执行日期：20180102173406
+其他失败-
+
+执行日期：20180102173631
+接受到的信息有\r\n
+执行日期：20180102173631
+其他失败-
+
+执行日期：20180102173927
+接受到的XML信息:array (
+  'payment_type' => '1',
+  'subject' => '素颜水光测试',
+  'trade_no' => '2018010221001004420285607897',
+  'buyer_email' => '763837997@qq.com',
+  'gmt_create' => '2018-01-02 17:24:59',
+  'notify_type' => 'trade_status_sync',
+  'quantity' => '1',
+  'out_trade_no' => 'M201801021724461514885086925',
+  'notify_time' => '2018-01-02 17:39:35',
+  'seller_id' => '2088201228403271',
+  'trade_status' => 'TRADE_SUCCESS',
+  'is_total_fee_adjust' => 'N',
+  'total_fee' => '0.02',
+  'gmt_payment' => '2018-01-02 17:25:00',
+  'seller_email' => 'shesays@xichan.cn',
+  'price' => '0.02',
+  'buyer_id' => '2088602199710427',
+  'notify_id' => '0aec2e7d4cab9a5df21740b88bba4c8j8q',
+  'use_coupon' => 'N',
+)
+执行日期：20180102173927
+其他失败-
+
+执行日期：20180102174015
+接受到的XML信息:array (
+  'payment_type' => '1',
+  'subject' => '祛痘水光测试',
+  'trade_no' => '2018010221001004420287457094',
+  'buyer_email' => '763837997@qq.com',
+  'gmt_create' => '2018-01-02 17:16:05',
+  'notify_type' => 'trade_status_sync',
+  'quantity' => '1',
+  'out_trade_no' => 'M201801021715521514884552723',
+  'notify_time' => '2018-01-02 17:40:22',
+  'seller_id' => '2088201228403271',
+  'trade_status' => 'TRADE_SUCCESS',
+  'is_total_fee_adjust' => 'N',
+  'total_fee' => '0.02',
+  'gmt_payment' => '2018-01-02 17:16:07',
+  'seller_email' => 'shesays@xichan.cn',
+  'price' => '0.02',
+  'buyer_id' => '2088602199710427',
+  'notify_id' => 'a9c39f3d40123a0e64bb40141e9ed56j8q',
+  'use_coupon' => 'N',
+)
+执行日期：20180102174015
+其他失败-
+
+执行日期：20180102174426
+接受到的XML信息:array (
+  'payment_type' => '1',
+  'subject' => '素颜水光测试',
+  'trade_no' => '2018010221001004420286701868',
+  'buyer_email' => '763837997@qq.com',
+  'gmt_create' => '2018-01-02 17:20:47',
+  'notify_type' => 'trade_status_sync',
+  'quantity' => '1',
+  'out_trade_no' => 'M201801021720341514884834347',
+  'notify_time' => '2018-01-02 17:44:33',
+  'seller_id' => '2088201228403271',
+  'trade_status' => 'TRADE_SUCCESS',
+  'is_total_fee_adjust' => 'N',
+  'total_fee' => '0.01',
+  'gmt_payment' => '2018-01-02 17:20:49',
+  'seller_email' => 'shesays@xichan.cn',
+  'price' => '0.01',
+  'buyer_id' => '2088602199710427',
+  'notify_id' => '22f1901c7524d77e734822dd7a821acj8q',
+  'use_coupon' => 'N',
+)
+执行日期：20180102174426
+其他失败-
+
+执行日期：20180102174553
+接受到的XML信息:array (
+  'payment_type' => '1',
+  'subject' => '素颜水光测试',
+  'trade_no' => '2018010221001004420285788181',
+  'buyer_email' => '763837997@qq.com',
+  'gmt_create' => '2018-01-02 17:32:49',
+  'notify_type' => 'trade_status_sync',
+  'quantity' => '1',
+  'out_trade_no' => 'M201801021732361514885556663',
+  'notify_time' => '2018-01-02 17:46:00',
+  'seller_id' => '2088201228403271',
+  'trade_status' => 'TRADE_SUCCESS',
+  'is_total_fee_adjust' => 'N',
+  'total_fee' => '0.01',
+  'gmt_payment' => '2018-01-02 17:32:50',
+  'seller_email' => 'shesays@xichan.cn',
+  'price' => '0.01',
+  'buyer_id' => '2088602199710427',
+  'notify_id' => '3b073a2c0585a746aef0c73ee9ef0a2j8q',
+  'use_coupon' => 'N',
+)
+执行日期：20180102174553
+订单信息修改失败-,金额:b,时间:1514886353
+
+执行日期：20180102174553
+买家已经确认收货-
+
+执行日期：20180102174911
+接受到的XML信息:array (
+  'payment_type' => '1',
+  'subject' => '素颜水光测试',
+  'trade_no' => '2018010221001004420285607897',
+  'buyer_email' => '763837997@qq.com',
+  'gmt_create' => '2018-01-02 17:24:59',
+  'notify_type' => 'trade_status_sync',
+  'quantity' => '1',
+  'out_trade_no' => 'M201801021724461514885086925',
+  'notify_time' => '2018-01-02 17:49:18',
+  'seller_id' => '2088201228403271',
+  'trade_status' => 'TRADE_SUCCESS',
+  'is_total_fee_adjust' => 'N',
+  'total_fee' => '0.02',
+  'gmt_payment' => '2018-01-02 17:25:00',
+  'seller_email' => 'shesays@xichan.cn',
+  'price' => '0.02',
+  'buyer_id' => '2088602199710427',
+  'notify_id' => '0aec2e7d4cab9a5df21740b88bba4c8j8q',
+  'use_coupon' => 'N',
+)
+执行日期：20180102174911
+订单信息修改失败-,金额:b,时间:1514886551
+
+执行日期：20180102174911
+买家已经确认收货-
+
+执行日期：20180102175607
+订单信息修改失败-,金额:b
+
+执行日期：20180102175607
+支付成功-
+
+执行日期：20180102181405
+其他失败:array (
+  'payment_type' => '1',
+  'subject' => '素颜水光测试',
+  'trade_no' => '2018010221001004420285505733',
+  'buyer_email' => '763837997@qq.com',
+  'gmt_create' => '2018-01-02 18:14:11',
+  'notify_type' => 'trade_status_sync',
+  'quantity' => '1',
+  'out_trade_no' => 'M201801021813571514888037113',
+  'notify_time' => '2018-01-02 18:14:12',
+  'seller_id' => '2088201228403271',
+  'trade_status' => 'TRADE_SUCCESS',
+  'is_total_fee_adjust' => 'N',
+  'total_fee' => '0.02',
+  'gmt_payment' => '2018-01-02 18:14:12',
+  'seller_email' => 'shesays@xichan.cn',
+  'price' => '0.02',
+  'buyer_id' => '2088602199710427',
+  'notify_id' => 'c71c4b68624921dc018533c28350304j8q',
+  'use_coupon' => 'N',
+)
+执行日期：20180102181519
+订单信息修改失败-,金额:0.02
+
+执行日期：20180102181519
+没有查询到相关订单信息order:
+
+执行日期：20180102181602
+订单信息修改失败-,金额:0.01
+
+执行日期：20180102181602
+没有查询到相关订单信息order:
+
+执行日期：20180102181821
+订单信息修改失败-,金额:0.02
+
+执行日期：20180102181821
+没有查询到相关订单信息order:
+
+执行日期：20180102182024
+支付成功-M201801021815551514888155928
+
+执行日期：20180102182820
+支付成功-M201801021813571514888037113
+
+执行日期：20180102183003
+订单信息修改失败-M201801021815551514888155928,金额:0.01
+
+执行日期：20180102183157
+支付成功-M201801021831491514889109448
+
+执行日期：20180102183214
+支付成功-M201801021707541514884074356
+
+执行日期：20180102183554
+订单信息修改失败-M201801021831491514889109448,金额:0.03
+
+执行日期：20180102184011
+支付成功-M201801021715521514884552723
+
+执行日期：20180102184040
+订单信息修改失败-M201801021815551514888155928,金额:0.01
+
+执行日期：20180102184426
+支付成功-M201801021720341514884834347
+
+执行日期：20180102184616
+订单信息修改失败-M201801021831491514889109448,金额:0.03
+
+执行日期：20180102184616
+支付成功-M201801021831491514889109448
+
+执行日期：20180102184918
+支付成功-M201801021724461514885086925
+
+执行日期：20180102185556
+支付成功-M201801021732361514885556663
+
+执行日期：20180102185609
+订单信息修改失败-M201801021831491514889109448,金额:0.03
+
+执行日期：20180102185609
+支付成功-M201801021831491514889109448
+
+执行日期：20180102193136
+支付成功-M201801021607181514880438711
+
+执行日期：20180102193817
+订单信息修改失败-M201801021813571514888037113,金额:0.02
+
+执行日期：20180102193817
+支付成功-M201801021813571514888037113
+
+执行日期：20180102194039
+订单信息修改失败-M201801021815551514888155928,金额:0.01
+
+执行日期：20180102194039
+支付成功-M201801021815551514888155928
+
+执行日期：20180102195637
+订单信息修改失败-M201801021831491514889109448,金额:0.03
+
+执行日期：20180102195637
+支付成功-M201801021831491514889109448
+
+执行日期：20180102204024
+订单信息修改失败-M201801021715521514884552723,金额:0.02
+
+执行日期：20180102204024
+支付成功-M201801021715521514884552723
+
+执行日期：20180102204442
+订单信息修改失败-M201801021720341514884834347,金额:0.01
+
+执行日期：20180102204442
+支付成功-M201801021720341514884834347
+
+执行日期：20180102204941
+订单信息修改失败-M201801021724461514885086925,金额:0.02
+
+执行日期：20180102204941
+支付成功-M201801021724461514885086925
+
+执行日期：20180102205059
+支付成功-M201801021127181514863638418
+
+执行日期：20180102205642
+订单信息修改失败-M201801021732361514885556663,金额:0.01
+
+执行日期：20180102205642
+支付成功-M201801021732361514885556663
+
+执行日期：20180102213839
+订单信息修改失败-M201801021813571514888037113,金额:0.02
+
+执行日期：20180102213839
+支付成功-M201801021813571514888037113
+
+执行日期：20180102214009
+订单信息修改失败-M201801021815551514888155928,金额:0.01
+
+执行日期：20180102214009
+支付成功-M201801021815551514888155928
+
+执行日期：20180102215640
+订单信息修改失败-M201801021831491514889109448,金额:0.03
+
+执行日期：20180102215640
+支付成功-M201801021831491514889109448
+
+执行日期：20180103001536
+支付成功-M201801021451301514875890316
+
+执行日期：20180103013058
+订单信息修改失败-M201801021607181514880438711,金额:0.02
+
+执行日期：20180103013058
+支付成功-M201801021607181514880438711
+
+执行日期：20180103023209
+订单信息修改失败-M201801021707541514884074356,金额:0.02
+
+执行日期：20180103023210
+支付成功-M201801021707541514884074356
+
+执行日期：20180103024005
+订单信息修改失败-M201801021715521514884552723,金额:0.02
+
+执行日期：20180103024005
+支付成功-M201801021715521514884552723
+
+执行日期：20180103024353
+订单信息修改失败-M201801021720341514884834347,金额:0.01
+
+执行日期：20180103024353
+支付成功-M201801021720341514884834347
+
+执行日期：20180103024927
+订单信息修改失败-M201801021724461514885086925,金额:0.02
+
+执行日期：20180103024927
+支付成功-M201801021724461514885086925
+
+执行日期：20180103025632
+订单信息修改失败-M201801021732361514885556663,金额:0.01
+
+执行日期：20180103025632
+支付成功-M201801021732361514885556663
+
+执行日期：20180103033812
+订单信息修改失败-M201801021813571514888037113,金额:0.02
+
+执行日期：20180103033812
+支付成功-M201801021813571514888037113
+
+执行日期：20180103034005
+订单信息修改失败-M201801021815551514888155928,金额:0.01
+
+执行日期：20180103034005
+支付成功-M201801021815551514888155928
+
+执行日期：20180103035617
+订单信息修改失败-M201801021831491514889109448,金额:0.03
+
+执行日期：20180103035617
+支付成功-M201801021831491514889109448
+
+执行日期：20180103115133
+没有查询到相关订单信息order:M201801021127181514863638418
+
+执行日期：20180103115133
+支付成功-M201801021127181514863638418
+
+执行日期：20180103151547
+没有查询到相关订单信息order:M201801021451301514875890316
+
+执行日期：20180103151547
+支付成功-M201801021451301514875890316
+
+执行日期：20180103163104
+没有查询到相关订单信息order:M201801021607181514880438711
+
+执行日期：20180103163104
+支付成功-M201801021607181514880438711
+
+执行日期：20180103173226
+支付成功-M201801021707541514884074356
+
+执行日期：20180103174050
+支付成功-M201801021715521514884552723
+
+执行日期：20180103174422
+验证失败-
+
+执行日期：20180103174940
+支付成功-M201801021724461514885086925
+
+执行日期：20180103175621
+支付成功-M201801021732361514885556663
+
+执行日期：20180103183826
+支付成功-M201801021813571514888037113
+
+执行日期：20180103184001
+支付成功-M201801021815551514888155928
+
+执行日期：20180103185621
+支付成功-M201801021831491514889109448
+
+执行日期：20180103190637
+支付成功-M201801031905511514977551556
+
+执行日期：20180103191048
+支付成功-M201801031905511514977551556
+
+执行日期：20180103192043
+支付成功-M201801031905511514977551556
+
+执行日期：20180103193006
+支付成功-M201801031905511514977551556
+
+执行日期：20180103203003
+支付成功-M201801031905511514977551556
+
+执行日期：20180103223039
+支付成功-M201801031905511514977551556
+
+执行日期：20180104043037
+支付成功-M201801031905511514977551556
+
+执行日期：20180104094636
+支付成功-M20180104094610-0370570
+
+执行日期：20180104095025
+支付成功-M20180104094610-0370570
+
+执行日期：20180104095229
+支付成功-M20180104-095213-0733567
+
+执行日期：20180104095636
+支付成功-M20180104-095213-0733567
+
+执行日期：20180104100015
+支付成功-M20180104094610-0370570
+
+执行日期：20180104100631
+支付成功-M20180104-095213-0733567
+
+执行日期：20180104101018
+支付成功-M20180104094610-0370570
+
+执行日期：20180104101611
+支付成功-M20180104-095213-0733567
+
+执行日期：20180104111014
+支付成功-M20180104094610-0370570
+
+执行日期：20180104111637
+支付成功-M20180104-095213-0733567
+
+执行日期：20180104131008
+支付成功-M20180104094610-0370570
+
+执行日期：20180104131628
+支付成功-M20180104-095213-0733567
+
+执行日期：20180104162926
+支付成功-M20180104-110817-5297322
+
+执行日期：20180104163314
+支付成功-M20180104-110817-5297322
+
+执行日期：20180104164338
+支付成功-M20180104-110817-5297322
+
+执行日期：20180104164718
+支付成功-M20180104-164128-5288306
+
+执行日期：20180104165302
+支付成功-M20180104-110817-5297322
+
+执行日期：20180104165716
+支付成功-M20180104-164128-5288306
+
+执行日期：20180104170712
+支付成功-M20180104-164128-5288306
+

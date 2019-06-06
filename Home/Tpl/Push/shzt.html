@@ -1,0 +1,117 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>专题活动 - {$systemConfig.SITE_INFO.name}</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+		<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+		<link href='__PUBLIC__/push/0627/push0627.css' rel='stylesheet' type='text/css'/>
+    	<link href='__PUBLIC__/push/0627/swiper.min.css' rel='stylesheet' type='text/css'/>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/jquery-1.9.0.min.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/jquery.form.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/js/common.js'></script>
+	    <link rel="stylesheet" type="text/css" href="__PUBLIC__/push/0627/tipDialog.css"/>
+	    <script type="text/javascript" src="__PUBLIC__/push/0627/tipDialog.js"></script>
+	<style>
+		body{padding: 0;margin: 0;}
+		.wrapper{width:100%;adding:0;margin:0;max-width: 1200px;min-width: 320px;margin-top: -22px;}
+		img{width:100%;display: block;}
+		.bt{position:absolute;left:33%;width:33%;z-index: 1;}
+		.btn1{top:30%;}
+		.btn2{top:3%;}
+		.btn3{top:-7%;}
+		.btn4{top:44.5%;}
+		#footer{padding: 10px 0px 20px;margin-top:0;border: none;}
+		#overLayBody{margin-top:22px;}
+		.swiper-slide{height:auto;}
+	</style>
+	</head>
+	<body>
+		<include file="Public:head" />
+		<div class='wrapper'>
+			 <include file="Public:menu" />
+				<div style='clear:both;'></div>
+				<div class='main'>
+					<div class='push1'>
+						<div class='zx'><img src='/Uploads/image/ad/{$adyh.pic}'/>
+							<form id='myform'>
+								<div class='input'>&nbsp;姓名：<input id='username' type='text' name='username'/></div>
+								<div class='input'>&nbsp;电话：<input id='tel_number' type='text' name='tel_number'/></div>
+								<a href='javascript:;'><div class='sbt'>点 击 领 取</div></a>
+							</form>
+						</div>
+					</div>
+					<!--banner板块-->
+					<div class="swiper-container">
+				        <div class="swiper-wrapper" style='height:auto;'>
+				        	<volist name='banner' id='vo'>
+					            <div  class="swiper-slide">
+				                    <a href="{$vo.httpurl}"><img src="/Uploads/image/ad/{$vo.pic}" /></a>
+					            </div>
+				        	</volist>
+				        </div>  
+			            <div class="pagination"></div>
+			    	</div> 
+					<!--广告板块-->
+					<div class='adList'>
+						<ul>
+							<volist name='adlist' id='vo'>
+								<li><a id='z{$vo.id}' href='{$vo.httpurl}'><img src='/Uploads/image/ad/{$vo.pic}'/></a></li>
+							</volist>
+						</ul>
+						<div class='clear'></div>
+					</div>
+					<div class='buttom_5A'>
+						<img src='__PUBLIC__/push/0627/5A.png'/>
+						<div class='ewm'><img class='wechatimg' src='__PUBLIC__/push/0627/ewm.png'/></div>
+					</div>
+				</div>
+		 <include file="Public:footer" />
+		</div>
+		<div class='load'><img src='__PUBLIC__/push/0627/loading.gif'/></div>
+		<script>
+			$(function(){
+				$('#z58').attr('onclick','_MEIQIA._SHOWPANEL()');
+				$('.adList').children(':first').css('margin-left','0');
+				$(document).ajaxStart(function(){
+					$('.load').css('display','block');
+				}).ajaxStop(function(){
+					$('.load').css('display','none');
+				});
+				$('.sbt').click(function(){
+					if($('#username').val() =='' || $('#tel_number').val() ==''){
+						tipDialog('请填写完整信息！','error','',1.5);
+						return false;
+					}
+					$.ajax({
+						type:'post',
+						url:'__SELF__',
+						data:$('#myform').serialize(),
+						dataType:'json',
+						success:function(dat){
+							if(dat.status == 1){
+								tipDialog(dat.info,'ok','',1.5);
+								setTimeout(function(){window.location.reload();},1500);
+							}
+							if(dat.status == 0){
+								tipDialog(dat.info,'error','',1.5);
+							}
+						}
+					})
+				})
+			})
+		</script>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/swiper.jquery.min.js'></script>
+		<script type="text/javascript">
+			window.onload = function() {
+			  var mySwiper = new Swiper('.swiper-container',{
+			    direction:"horizontal", 
+	            loop:true,
+                pagination: '.pagination',
+	            autoplay:4000  
+			  });  
+			}
+		</script>
+	</body>
+</html>

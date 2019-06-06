@@ -1,0 +1,193 @@
+/*会员登录页面*/
+.wrapper{background:#ffffff;}
+.wrapper .m_logo{
+	width:34%;
+	margin-left:auto;
+	margin-right:auto;
+	padding-bottom:15px;
+}
+.m_logo img{
+	width:100%;
+}
+.loginreg{
+	padding-top:20px;
+	padding-bottom: 10px;
+}
+
+.loginreg .inner_li{
+	border:1px solid #dc5511;
+	height:40px;
+	line-height:40px;
+}
+.loginreg .inner_li strong{
+	width:45px;
+	left:10px;
+	top:3px;
+}
+.loginreg .inner_input{
+	height:40px;
+	line-height:40px;
+}
+.loginreg .check_input{
+	display: none;
+}
+.check_g{
+	width:30px;
+	float: left;
+	display: block;
+}
+.check_w{
+	width:30px;
+	float:left;
+	display: none;
+}
+.loginreg .btn_login{
+	background:#dc5511;
+	color:#fffffe;
+}
+.loginthree a.btn_login_sina,.loginthree a.btn_login_qq{
+	background: none;
+}
+.loginthree ul li{
+	width:16%;
+	float:left;
+	padding-top:20px;
+}
+.loginthree ul li img{
+	width:100%;
+}
+.loginthree ul{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+}
+.loginthree a{
+	height:auto;
+	line-height:auto;
+}
+#footer{
+	margin-top:-22px;
+	border-top: 1px solid #e7e2e2;
+}
+.registry{
+	padding-top:30px;
+	padding-bottom: 10px;
+}
+/*会员中心页面*/
+.MCenter_bg{
+	width:100%;
+}
+.memberbox{
+	margin-top:-43px;
+}
+.myportrait{
+	position:absolute;
+	top:14%;
+	left:36%;
+	width:20%;
+	height:auto;
+}
+}
+.M_photo{
+	position:relative;
+}
+.myportrait .photo{
+	width:89.5%;
+	padding-left:5%;
+}
+.myportrait .photo img{
+	width:100%;
+	height:auto;
+	border: 3px solid #f3c75c;
+}
+.myportrait .photo a{
+	display: block;
+}
+.myportrait p{
+	width:100%;
+	text-align: center;
+	color:#ffffff;
+	margin-top:-5px;
+	font-size:24px;
+	line-height:30px;
+}
+.left{float:left;}
+.right{float:right;}
+.clear{clear:both;}
+.M_order{width:100%;margin-top:5px;background:#ffffff;line-height:35px;height:35px;font-size:16px;}
+.M_order .my_order{padding-left:5%;}
+.M_order .m_r{padding-right:5%;font-family:'STSong';}
+.M_order a{text-decoration: none;}
+.M_order a:hover{color:#404040;}
+/*.M_order .my_d span{background:url('../img/member/MCenter_dfk.png') no-repeat;height:45px;width:60px;*/
+.M_order{width:100%;line-height:40px;height:40px;background:#ffffff;margin-top:5px;}
+.my_d{background:#ffffff;border-top:1px solid #e7e2e2;border-bottom: 1px solid #e7e2e2;}
+.my_d li{line-height: 40px;height:40px;}
+.my_d .dfk{padding-left:62px;margin-left:12%;background:url('../img/member/MCenter_dfk.png') no-repeat;background-size:40%;background-position:20%;}
+.my_d .dyz{padding-left:62px;margin-right:18%;background:url('../img/member/MCenter_dyz.png') no-repeat;background-size:40%;background-position:20%;}
+.my_d a:hover{color:#000;}
+.M_list{margin-top:20px;}
+.M_list li{border-bottom:1px solid #e7e2e2;line-height:40px;background:#fff; }
+.M_list a{display: block;background:#fff;}
+.M_list a img{width:100%;}
+
+/*个人资料*/
+.memberbox{width:100%;}
+.memberbox a:hover{color:#000;}
+.memberbox .top{position:relative;width:100%;text-align:center;background:#ffffff;}
+.memberbox .top h1{font-size:24px;padding:15px 0 15px;}
+.memberbox .top label{position:absolute;width:25px;top:12px;left:15px;height:40px;cursor:pointer;background:url('../img/member/x_left.png') no-repeat;background-size:100%;}
+.m_content{margin-top:30px;background: #ffffff;width:100%}
+.m_content a{display: block;margin-left:5%;border-bottom: 1px solid #E7E2E2;}
+.m_content .list{width:100%;letter-spacing:2px;height:50px;line-height:50px;font-size:15px;position:relative;}
+.m_content .list .xq{display: block;position:absolute;top:1px;right:16%;}
+.m_content .list .x_right{width:26px;background:url('../img/member/x_right.png') no-repeat;height:40px;background-size:100%;position:absolute;top:6px;right:6%;}
+.zl_photo{width:50px;position:absolute;top:0px;right:16%;}
+.zl_photo img{width:100%;}
+/*通用设置*/
+.set_content{background: #ffffff;width:100%}
+.set_content a{display: block;padding-left: 20%;}
+.set_content .list{width:100%;letter-spacing:2px;height:60px;line-height:60px;font-size:15px;border-bottom: 1px solid #e7e2e2;position:relative;}
+.set_content .list .yq{width:50px;height:50px;border-radius: 25px;overflow: hidden;background:#d7d7d7;position:absolute;left:5%;top:5px;}
+.set_content .list .yq img{margin-left:-2px;margin-top:-2px;}
+.set_content .list .xq{display: block;position:absolute;top:1px;right:12%;}
+.set_content .list .x_right{width:26px;background:url('../img/member/x_right.png') no-repeat;height:40px;background-size:100%;position:absolute;top:10px;right:5%;}
+.memberbox .bang{line-height: 50px;height:50px;padding-left:5%;font-size:22px;}
+.zl_photo{width:50px;position:absolute;top:0px;right:16%;height:50px;border-radius: 25px;overflow: hidden;}
+.zl_photo img{width:100%;}
+.memberbox .logout{width:90%;height:50px;cursor:pointer;margin-left:auto;margin-right:auto;line-height:50px;font-size:25px;letter-spacing:2px;background:#ffffff;color:#000000;text-align: center;border: 1px solid #e7e2e2;border-radius: 2px;margin-top:40px;}
+/*修改密码*/
+.edit_content{width:90%;margin-left:auto;margin-right:auto;}
+.edit_content form input{margin-top:10px;height:50px;line-height:50px;padding-left:10px;font-size:16px;
+letter-spacing: 2px;border:1px solid #e7e2e2;border-radius: 3px;width:97.5%;}
+.edit_content .sbt{width:100%;margin-top:30px;margin-bottom: 20px;letter-spacing: 2px;font-size:20px;text-align: center;line-height:50px;height:50px;color:white;background:#ec6e23;border-radius: 3px;}
+
+/*找回密码*/
+.relative{position:relative;}
+#getcode{position:absolute;background:#fff;top:11px; width: 110px;font-size:12px;right:5%;line-height: 27px;cursor:pointer;text-align: center;height:30px;color:#ec6e23;border:1px solid #ec6e23;padding:0 10px;}
+.verify{position:absolute;top:20px;right:5%;}
+.verify a{color:#ec6e23;}
+.verify a:hover{color:#ec6e23;}
+/*.a-upload{
+	padding:4px 10px;
+	height:20px;
+	line-height:20px;
+	position:relative;
+	cursor:pointer;
+	color:#000;
+	background: #fafafa;
+	border:1px solid #ddd;
+	border-radius:4px;overflow:hidden;
+	display: inline-block;
+	*display: inline;
+	*zoom:1;
+}
+.z-upload input{
+	position:absolute;
+	font-size:16px;
+	right:0;
+	top:0;
+	opacity: 0;
+	filter:alpha(opacity=0);
+	cursor:pointer;
+}*/

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>添加经典案例信息 - 项目管理 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='项目管理 > 添加经典案例信息';
+        </php>
+        
+        <include file="Common:intoHead" />
+		<script type="text/javascript" src="__PUBLIC__/Js/my97datepicker/wdatepicker.js"></script>
+        <style type="text/css">
+           .t_link a{ padding:5px; background:#CCC; }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">添加经典案例信息</div>
+                    </div>
+                    <form enctype="multipart/form-data">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                          <!--<tr>
+                             <th width="100">当前选中项目：</th>
+                              <td>&nbsp;</td>
+                          </tr> -->
+                          <tr>
+                             <th width="100">列表项目：</th>
+                              <td>
+                              <volist name="list" id="vo">
+                              <input name="info[xihuanid][]" type="checkbox" value="{$vo.id}" />&nbsp;{$vo.title}&nbsp;&nbsp;&nbsp;
+                              </volist>
+                              </td>
+                          </tr>
+                         </table> 
+                         <input type="hidden" name="info[id]" value="{$info.id}" /> 
+                    </form>
+                    <div class="commonBtnArea" >
+                        <button class="btn submit">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <script type="text/javascript">
+            $(function(){
+                $(".submit").click(function(){
+                    commonAjaxSubmit();
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>

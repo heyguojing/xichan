@@ -1,0 +1,116 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>项目中心 - {$systemConfig.SITE_INFO.name}</title> 
+    <meta name="keywords" content="{$systemConfig.SITE_INFO.keywords}" />
+    <meta name="description" content="{$systemConfig.SITE_INFO.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/member.css" rel="stylesheet" type="text/css" />
+    <script src="__PUBLIC__/js/jquery-1.9.0.min.js"></script>
+    <link href="__PUBLIC__/Css/base.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Js/asyncbox/skins/default.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/Js/base.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/functions.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.form.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/asyncbox/asyncbox.js"></script>
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+        
+        <div class="buypaybox">
+           <form action="{:U('Project/payment2')}" method="post"  onSubmit="return CheckForm();" name="yanzheng">
+             <input type="hidden" name="id" value="{$data.id}">
+             <input type="hidden" name="goods_count" id="goods_count" class="txtnum" value="{$data.goodscount}" />
+             <input type="hidden" name="zongjia" id="zongjia" value="{$data.zongjia}" />
+            <div class="buy_postcode">
+            	<ul>
+                	<li class="clearfix">
+                    	<div class="buy_uname">
+                        	<div class="shuruk">
+                                <em></em>
+                                <input type="text" id="mobile" name="mobile" placeholder="请输入手机号码"  class="innerinput grey" />
+                            </div>
+                        </div>
+                        <div class="yzmbox"><a href="javascript:void(0)" id="getcode" name="getcode" class="btnyzm">发送验证码</a></div>
+                    </li>
+                	<li class="clearfix">
+                    	<div class="buy_upass">
+                        	<em></em>
+                           <input type="text" id="yanzheng" name="yanzheng" placeholder="请输入短信中的验证码" class="innerinput grey" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="buy_submitbox">
+            	<input type="submit" id="btncart" name="btncart" value="绑定手机" class="buy_submit" />
+            </div>
+            </form>
+        </div>
+    	</div>
+    </div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script>
+	$(".jian").click(function(){
+		var count=parseInt($("#goods_count").val());
+		if(count>1)
+		{
+			$("#goods_count").val(count-1);
+		}
+		updateprice();
+	})
+	function CheckForm(){
+		if (document.yanzheng.yanzheng.value==""){
+			 alert ("请输入验证码！");
+			 document.yanzheng.yanzheng.focus();
+			 return(false);
+		  }
+		}
+	$("#getcode").click(function(){
+		 if(!isMobile($("input[name='mobile']").val())){
+            popup.alert("手机号码格式错误");
+            return false;
+        }
+		if($(this).hasClass("yanzhengma")){
+		  $.getJSON("__URL__/mobile", { mobile:$("#mobile").val()}, function(json){
+			 if(json.status==0){
+				 alert(json.info);
+				 }
+			 else{
+				 alert(json.info);
+				 $("#getcode").addClass("yanzhengma");
+				 }	 
+		  });
+		}
+		else{
+			alert("你已经发送过验证码了，请耐心等待一下，谢谢！");
+			}
+	  });
+	$(".jia").click(function(){
+		var count=parseInt($("#goods_count").val());
+		$("#goods_count").val(count+1);
+		updateprice();
+	})
+	
+	$('.innerinput').focus(function(){
+		$(this).removeClass("grey");
+	});
+	function updateprice()
+	{
+		var count=parseInt($("#goods_count").val());
+		var danjia=parseFloat($("#danjia").attr("price")).toFixed(2);
+		var zongjia=(danjia*count).toFixed(2);
+		$("#zongjia").val(zongjia)
+		$("#zongjiatxt").html(zongjia+"元");
+	}
+</script>
+</body>
+</html>

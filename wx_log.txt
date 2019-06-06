@@ -1,0 +1,21 @@
+支付数据为array (
+  'appid' => 'wx02c864229ce62dcf',
+  'bank_type' => 'CFT',
+  'cash_fee' => '5',
+  'fee_type' => 'CNY',
+  'is_subscribe' => 'Y',
+  'mch_id' => '10025267',
+  'nonce_str' => 'o8Wihxs8VQmoJYiEo05I1IvYb9hoQQbW',
+  'openid' => 'owKvIjqEmgCrZo0Kc9w2-Vgf5UQs',
+  'out_trade_no' => 'M20180111-150308-4188711',
+  'result_code' => 'SUCCESS',
+  'return_code' => 'SUCCESS',
+  'sign' => '1A5FB1D3AEBDAED255F124F488138F87',
+  'time_end' => '20180113103521',
+  'total_fee' => '5',
+  'trade_type' => 'MWEB',
+  'transaction_id' => '4200000058201801133213554241',
+)
+
+执行日期：20180113162516
+订单为M20180113-162502-1902856支付成功\r\n

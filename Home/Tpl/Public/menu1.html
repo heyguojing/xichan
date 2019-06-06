@@ -1,0 +1,58 @@
+<div id="overLayBody">
+    	<div class="topresearch clearfix">
+        	<div class="searchbox">
+            	<div class="searchtxt">
+                    <div class="searchinner">
+                        <input type="text" id="sea_key" name="sea_key" class="sea_input"  autocomplete="off" value="搜索" onFocus="if(this.value=='搜索'){this.value='';}"  onblur="if(this.value==''){this.value='搜索';}" />
+                    </div>
+                    <input type="button" id="sea_btn" name="sea_btn" class="seachbtn" value="搜索" />
+               </div>
+            </div>
+            <div class="nownav"><a href="__APP__/index.html">首页</a></div>
+        </div>
+    	<!--导航开始-->
+        <ul id="subnav">
+        	<li class="clearfix">
+            	<dl class="clearfix">
+                	<dt><a href="{:U('/project/index')}">项目</a></dt>
+                    <dd class="clearfix">
+                    	<span><a href="{:U('/discount/index')}">优惠</a><em>{$projectcount}</em></span>
+                        <span><a href="{:U('/topics/index')}">专题</a><em>{$topicscount}</em></span>
+                    </dd>
+                </dl>
+            </li>
+        	<li class="clearfix">
+            	<dl class="clearfix">
+                	<dt><a href="{:U('/case/index')}">案例</a></dt>
+                    <dd class="clearfix">
+                    	<span><a href="{:U('/reality/index')}">美人制造</a></span>
+                    </dd>
+                </dl>
+            </li>
+        	<li class="clearfix">
+            	<dl class="clearfix">
+                	<dt><a href="{:U('/brand/index')}">品牌</a></dt>
+                    <dd class="clearfix">
+                    	<span><a href="{:U('/expert/index')}">专家</a></span>
+                    	<span><a href="{:U('/news/index')}">新闻</a></span>
+                    	<span><a href="{:U('/map/index')}">来院地图</a></span>
+                    </dd>
+                </dl>
+            </li>
+        	<li class="clearfix">
+            	<dl class="clearfix">
+                	<dt>互动</dt>
+                    <dd class="navhd clearfix">
+                    	<span class="uu"><a href="http://b.qq.com/webc.htm?new=0&sid={$systemConfig.SITE_INFO.qq}&o={$systemConfig.WEB_ROOT}&q=7', '_blank', 'height=502, width=644,toolbar=no,scrollbars=no,menubar=no,status=no" target="_blank" class="fus" title="在线咨询"><img src="__PUBLIC__/images/navhd_u.jpg" width="100%" /></a></span>
+                    	<span class="uwb"><a href="http://weibo.com/scxichan" target="_blank" title="微博"><img src="__PUBLIC__/images/navhd_sina.jpg" width="100%" /></a></span>
+                    	<span class="uwx"><a href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?to=pengyou&url={:U('/index/index')}" target="_blank" title="微信"><img src="__PUBLIC__/images/navhd_wx.jpg" width="100%" /></a></span>
+                    	<span class="utb"><a href="http://shop109432740.m.taobao.com/" target="_blank" title="淘宝"><img src="__PUBLIC__/images/navhd_taobao.jpg" width="100%" /></a></span>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    	<!--导航结束-->
+        <div class="loginbar clearfix">
+        	{$menureg}
+        </div>
+    </div>

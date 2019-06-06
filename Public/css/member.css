@@ -1,0 +1,100 @@
+#footer{ background:none; border:0;}
+/*.medilase_logo {float: left;display:block;}*/
+
+/*登录注册*/
+.loginreg{ padding:40px 4.7%; font:normal 18px/40px "Arial"; color:#a9a9a9}
+.loginreg li{ margin-bottom:14px; position:relative; letter-spacing:1px;}
+.loginreg input{ float:left; border:0;}
+.loginreg .inner_li{ border:#b2b2b2 1px solid; padding-left:70px; padding-top:5px; padding-bottom:5px; position:relative; height:30px; background:#fff;}
+.loginreg .inner_li strong{ display:block; position: absolute; left:0; top:0; width:70px; text-align:right;}
+.loginreg .inner_input { width:100%; height:30px; line-height:30px; color:#a9a9a9; font-size:16px;}
+.loginreg .check_li{line-height:30px; font-size:14px;}
+.loginreg .check_li label{ float:left; margin-right:25px; line-height:30px;}
+.loginreg .check_input{ float:left; width:20px; height:20px; background:#A40000; color:#fff; margin-top:5px; margin-right:5px;}
+.loginreg .check_li a{ color:#a9a9a9; text-decoration:underline;}
+.loginreg .check_li .forpass{ float:right; color:#A40000; text-decoration:underline}
+.loginreg .btn_login{ display:block; background:#000000; width:100%; height:40px; text-align:center; border:0; font:normal 18px/40px  "Arial"; color:#fcc677; overflow:hidden; cursor:pointer;}
+.loginthree{display:none;position:relative; margin-top:40px; padding-top:30px; border-top:#b2b2b2 1px solid; font-size:16px;}
+.loginthree .p{ position:absolute; left:0; top:-20px; height:40px; line-height:40px; width:100%; text-align:center;}
+.loginthree .p strong{ display:inline-block; padding:0 5px; height:40px; line-height:40px; background:#F2F2F2;}
+.loginthree a{ display:block; display:block; width:100%; height:50px; line-height:50px; text-align:center; color:#fff;-webkit-appearance:none;}
+.loginthree a.btn_login_sina{background:#F9B552;}
+.loginthree a.btn_login_qq{background:#7ECEF3;}
+.loginthree a.btn_login_qq span{ display:inline-block; height:50px; padding-left:40px; background:url(../images/ico_qq.png) left center no-repeat;}
+.loginthree a.btn_login_sina span{ display:inline-block; height:50px; padding-left:40px; background:url(../images/ico_sina.png) left center no-repeat;}
+
+/*会员首页*/
+.memberbox{ padding:20px 0;}
+.memberindex li{padding:10px 4.7%; border-bottom:#B2B2B2 1px solid; font:normal 18px/40px "Arial";}
+.myportrait{ position:relative;padding:0 4%;height:60px;font:normal 24px/60px "Arial";}
+.myportrait img{ width:60px; height:60px;border-radius: 50%;margin-right:16px;}
+.myportrait .nowp{ position:absolute; display:block; right:4%; top:0; height:60px; font-size:16px;}
+.bg_z{background:rgba(0,0,0,0.8);height:100%;display:none;position:absolute;top:0;left:0;right:0;left:0;}
+.bg_z .content{margin-top:63px;color:#000;background:#fff;height:40px;width:100%;z-index: 1;}
+.content .other{position:absolute;height:100%;width:100%;}
+.content .c{border:none;padding-left:20px;font-size:15px;
+	color:#000;background:none;line-height:40px;height:40px;width:75%;}
+.content .sbt{width:55px;font-size:18px;background:none;cursor:pointer;height:40px;border-style:none;}
+/*账户设置*/
+.myaccountbox dt,.myaccountbox dd{padding:10px 4.7%; border-bottom:#B2B2B2 1px solid; font:normal 14px/40px "Arial";}
+.myaccountbox dt{ background:#D2D2D2; font-size:16px;}
+.myaccountbox dd .fr{ float:right;}
+.myaccountbox dd a.fr{ color:#A40000; text-decoration:underline;}
+.myaccountbox dd.portrait{ height:60px; line-height:60px;}
+.myaccountbox dd.portrait img{ float:left; width:60px; height:60px;border-radius: 50%;margin-right:16px;}
+.myaccountbox dd.portrait strong{ float:left;}
+.myaccountbox .noborder{ border:0;}
+.myaccountbox .btn_outlogin{ display:block; background:#000000; width:100%; height:40px; text-align:center; border:0; font:normal 18px/40px  "Arial"; color:#fcc677; overflow:hidden; cursor:pointer;}
+
+
+
+
+/*无需登录购买*/
+.buypaybox{ width:100%; padding-top:22px;}
+.buycart{ background:#fff; margin-bottom:20px;}
+.buycart li{ border-bottom:1px solid #BFBFBF; min-height:60px; padding:0 4%; color:#707070; position:relative; font:normal 18px/60px "Arial";}
+.buycart li .abpos{ display:block; width:100%; text-align:right;height:40px; top:0; line-height:40px;}
+/*.buycart li .abpos{ position:absolute; right:4%; height:60px; top:0; line-height:60px;}*/
+.buycart li .color_red{ color:#DC0000;}
+.buycart li.nobg{ background:#f2f2f2;}
+
+
+.goods_number{}
+.goods_number .jia,.goods_number .jian{ float:left; display:block; border:0; width:30px; height:30px; overflow:hidden; font:bold 18px/30px Verdana; color:#fff; cursor:pointer; background-size:100% 100%; background-repeat:no-repeat; text-align:center; text-indent:-1000px;}
+.goods_number .jia{ background-image:url(../images/member/buy_jia.jpg);}
+.goods_number .jian{ background-image:url(../images/member/buy_jian.jpg);}
+.goods_number .txtnum{ float:left; width:60px; height:28px; line-height:28px; margin:0 10px;border:1px solid #BFBFBF;border-radius:6px; font:normal 20px/28px Verdana; color:#B2B2B2; text-align:center;}
+.buycart li  .goods_number{ margin-top:15px;}
+.buy_postcode{ padding:0 4%;}
+.buy_postcode li{ margin-bottom:15px; height:60px; position:relative;}
+.buy_postcode li .buy_uname{ float:left; width:68.8%;position:relative; height:26px; padding:16px 0; position:relative;border:1px solid #BFBFBF; background:#fff;}
+.buy_postcode li .yzmbox{position:absolute; top:0; right:0; z-index:1; width:30.3%; height:58px;border:1px solid #BFBFBF; font: normal 18px/58px "Arial"; text-align:center; background:#F39B77;}
+.buy_postcode li .btnyzm{ display:block; width:100%; height:58px; border:0; cursor:pointer;font: normal 18px/58px "Arial"; text-align:center; background:#F39B77; color:#fff;}
+.buy_postcode li .shuruk{ padding-left:40px;}
+.buy_postcode li .buy_upass{osition:relative; height:26px; padding:16px 0 16px 40px; position:relative;border:1px solid #BFBFBF; background:#fff;}
+.buy_postcode li em{ position:absolute; left:10px; top:16px; z-index:2; display:block; width:25px; height:25px; background-size:100% 100%; background-repeat:no-repeat; }
+.buy_postcode li .innerinput{ width:100%; height:26px; background:#fff; border:0; font:normal 16px/26px "Arial"; color:#333;}
+
+.buy_postcode li .buy_uname em{ background-image:url(../images/member/buy_mobile.jpg);}
+.buy_postcode li .buy_upass em{ background-image:url(../images/member/buy_pass.jpg);}
+.buy_postcode li .grey{ color:#c2c2c2;}
+
+.buy_submitbox{ padding:0 4%; margin-top:15px;}
+.buy_submit{ display:block; width:100%; height:50px; font:normal 20px/50px "Arial"; color:#fff;-webkit-appearance:none; background:#ED6942; text-align:center; border:0; text-align:center; cursor:pointer;}
+.buy_submitbox  .haveacount{ color:#9B9B9B; text-align:right; font:normal 16px/50px "Arial";}
+.buy_submitbox  .haveacount a{ color:#B70005;}
+
+.buypaybox .color_blank{ color:#333;}
+
+/*付款*/
+.buy_orderlist{ padding: 0 4%; background:#fff;  font:normal 18px/60px "Arial"; margin-bottom:20px;}
+
+.buy_paylist{ background:#fff; margin-bottom:20px;border-top:1px solid #BFBFBF;}
+.buy_paylist li{ border-bottom:1px solid #BFBFBF;padding:0 4%;position:relative; font:normal 18px/60px "Arial";}
+.buy_paylist .paytype{ padding:15px 40px 15px 90px; min-height:45px; position:relative; font: normal 14px/20px "Arial";color:#707070;}
+.buy_paylist .paytype h3{ font:normal 16px/25px "Arial"; color:#333;}
+.buy_paylist .paytype .payimg{ position:absolute; top:15px; left:0; z-index:1; width:75px; height:45px;}
+.buy_paylist .paytype .paysel{ position:absolute; right:0; top:20px; display:block; width:28px; height:28px; cursor:pointer; background-size:100% 100%; background-repeat:no-repeat; background-image:url(../images/member/pay_bg.jpg); }
+.buy_paylist .paytype .paysel.selected{ background-image:url(../images/member/pay_sel.jpg);}
+.buy_postcode li.resetmobile{ font:normal 18px/60px "Arial"; margin-bottom:0;}
+

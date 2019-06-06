@@ -1,0 +1,135 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>悦自己,越美丽-热门优惠活动- {$systemConfig.SITE_INFO.name}</title>
+		<meta name="description" content="西婵九月,悦自己,越美丽-九月优惠活动" />
+		<meta name="keywords" content="西婵九月,悦自己,越美丽-九月优惠活动,瘦脸针,祛痣,脱毛,洁牙,更多优惠项目尽在西婵" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+		<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+		<link href='__PUBLIC__/push/special907/907.css' rel='stylesheet' type='text/css'/>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/jquery-1.9.0.min.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/js/common.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/jquery-1.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/scrollReveal.js'></script>
+	<style>
+		
+		/*.loading{display:block;position:fixed;top:0;left:0;height:100%;width:100%;background:rgb(255,255,255);z-index: 10;text-align: center;padding-top:40%;}*/
+	</style>
+	</head>
+	<body>
+		<!--<div class='loading'><img src='__PUBLIC__/push/img/load.jpg'/><br>&nbsp;加载中...</div>-->
+		<include file="Public:head" />
+		<div class='wrapper' style='max-width:750px;margin-left:auto;margin-right:auto;'>
+			 <include file="Public:menu" />
+				<div style='clear:both;'></div>
+				<div class='main'>
+					<div class='index1 index'>
+						<img src='__PUBLIC__/push/special907/index1_01.png'/>
+						<img src='__PUBLIC__/push/special907/index1_02.png'/>
+						<img src='__PUBLIC__/push/special907/index1_03.png'/>
+						<div class='movie' data-scroll-reveal="enter left after .2s"><a href='#ct1'><img src='__PUBLIC__/push/special907/index1_movie.png'/></a></div>
+						<div class='buy' data-scroll-reveal="enter right after .2s"><a href='#ct2'><img src='__PUBLIC__/push/special907/index1_buy.png'/></a></div>
+					</div>	
+					<div class='index2 index'>
+						<img  src='__PUBLIC__/push/special907/index2_01.png'/>
+						<div data-scroll-reveal="enter left after .2s" class='meituan'><a target="_blank" href='http://i.meituan.com/poi/83109325?ct_poi=033264581147056642537372019782121841605_v906047134151196466__0_e3410406005951418784_a%25e8%25a5%25bf%25e5%25a9%25b5%25e6%2595%25b4%25e5%25bd%25a2'><img src='__PUBLIC__/push/special907/index2_mt.png'/></a></div>
+						<div data-scroll-reveal="enter top after .2s" class='dianpin'><a target="_blank"  href='http://m.dianping.com/appshare/shop/43586347'><img src='__PUBLIC__/push/special907/index2_dzdp.png'/></a></div>
+						<div data-scroll-reveal="enter right after .2s" class='nuomi'><a target="_blank" href='https://m.nuomi.com/component/merchant/home/index.html?merchantId=1841206'><img src='__PUBLIC__/push/special907/index2_bdnm.png'/></a></div>
+					</div>
+					<div class='index3 index'>
+							<ul>
+								<li data-scroll-reveal="enter top after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index3_quzhi.png'/></a></li>
+								<li data-scroll-reveal="enter left after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index3_jieya.png'/></a></li>
+							</ul>
+							<ul>
+								<li data-scroll-reveal="enter bottom after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index3_soulianzhen.png'/></a></li>
+								<li data-scroll-reveal="enter left after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index3_tuomao.png'/></a></li>
+							</ul>
+							<div style='clear:both;'></div>
+					</div>
+					<div class='index4 index' id='ct1'>
+						<img src='__PUBLIC__/push/special907/index4_change.png'/>
+					</div>
+					<div class='index5 index' id='ct2'>
+							<ul>
+								<li data-scroll-reveal="enter top after .2s">
+									<a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index5_99.png'/></a>
+								</li>
+								<li data-scroll-reveal="enter top after .2s">
+									<a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index5_199.png'/></a>
+								</li>
+							</ul>
+							<ul>
+								<li data-scroll-reveal="enter bottom after .2s">
+									<a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index5_299.png'/></a>
+								</li>
+								<li data-scroll-reveal="enter bottom after .2s">
+									<a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index5_399.png'/></a>
+								</li>
+							</ul>
+							<div style='clear:both;'></div>
+					</div>
+					<div class='index5_b index'>
+						<img src='__PUBLIC__/push/special907/index5_b.png'/>
+						<div class='botton' data-scroll-reveal="enter left">
+							<a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index5_botton.png'/></a>
+						</div>
+					</div>
+					
+					<div class='index6 index'>
+						<ul>
+							<li data-scroll-reveal="enter top after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index6_quanshen.png'/></a></li>
+							<li data-scroll-reveal="enter top after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index6_queban.png'/></a></li>
+						</ul>
+						<ul>
+							<li data-scroll-reveal="enter left after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index6_yanmian.png'/></a></li>
+							<li data-scroll-reveal="enter left after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index6_yachi.png'/></a></li>
+						</ul>
+						<ul>
+							<li data-scroll-reveal="enter bottom after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index6_queyin.png'/></a></li>
+							<li data-scroll-reveal="enter bottom after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index6_maokong.png'/></a></li>
+						</ul>
+						<div style='clear:both;'></div>
+					</div>
+					<div class='index6_b index'>
+						<img src='__PUBLIC__/push/special907/index6_b.png'/>
+						<div  class='botton animation1'>
+							<a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index6_botton.png'/></a>
+						</div>
+					</div>
+					<div class='index6_c index'>
+						<img src='__PUBLIC__/push/special907/index6_c.png'/>
+					</div>
+					<div class='index7 index'>
+						<ul>
+							<li data-scroll-reveal="enter left after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index6_8800.png'/></a></li>
+							<li data-scroll-reveal="enter top after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index6_5600.png'/></a></li>
+							<li data-scroll-reveal="enter bottom after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index6_16600c.png'/></a></li>
+						</ul>
+						<ul>
+							<li data-scroll-reveal="enter left after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index6_16600.png'/></a></li>
+							<li data-scroll-reveal="enter bottom after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index6_1800.png'/></a></li>
+							<li data-scroll-reveal="enter left after .2s"><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special907/index6_1200.png'/></a></li>
+						</ul>
+						<div style='clear:both;'></div>
+					</div>
+					<div class='index8 index'>
+						<img src='__PUBLIC__/push/special907/index8_01.png'/>
+						<img src='__PUBLIC__/push/special907/index8_02.png'/>
+					</div>
+					<div class='index9 index'>
+						<img src='__PUBLIC__/push/special907/index9_01.png'/>
+						<img src='__PUBLIC__/push/special907/index9_02.png'/>
+					</div>
+				</div>
+		 <include file="Public:footer" />
+	</div>
+	</body>
+	<script>
+		(function(){
+			window.scrollReveal = new scrollReveal({reset: true});
+		})();
+	</script>
+</html>

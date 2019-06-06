@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>会员注册 - {$systemConfig.SITE_INFO.name}</title> 
+    <meta name="keywords" content="{$systemConfig.SITE_INFO.keywords}" />
+    <meta name="description" content="{$systemConfig.SITE_INFO.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/member.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/member_login.css" rel="stylesheet" type="text/css" />
+    <script src="__PUBLIC__/js/jquery-1.9.0.min.js"></script>
+    <link href="__PUBLIC__/Css/base.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/layout.css" rel="stylesheet" type="text/css" />
+    <script type='text/javascript' src='__PUBLIC__/layer/layer.js'></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.form.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/functions.js"></script>
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+        <h1 style='text-align: center;font-size:24px;padding-bottom: 10px;letter-spacing:2px;'>会员注册</h1>
+    	<div class="loginreg">
+        	<ul>
+              <form id="form1" action="" method="post">
+            	<li class="clearfix">
+                	<div class="inner_li">
+                    	<strong><img src='__PUBLIC__/img/member/member_email.png'/></strong>
+                        <input type="text" id="email" placeholder='邮箱地址' name="email" class="inner_input" value="" />
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="inner_li">
+                        <strong><img src='__PUBLIC__/img/member/member_pwd.png'/></strong>
+                        <input type="password" id="pwd" placeholder='密码至少包含数字和字母' name="pwd" class="inner_input" value="" />
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <div class="inner_li">
+                        <strong><img src='__PUBLIC__/img/member/member_pwd.png'/></strong>
+                        <input type="password" id="pwd1"  placeholder='确认密码' class="inner_input" value="" />
+                    </div>
+                </li>
+                <li class="clearfix">
+                	<div class="inner_li">
+                        <strong><img src='__PUBLIC__/img/member/member_user.png'/></strong>
+                        <input type="text" id="nickname" name="nickname" placeholder='昵称' class="inner_input" value="" />
+                    </div>
+                </li>
+                <li class="clearfix">
+                	<div class="inner_li">
+                        <strong><img src='__PUBLIC__/img/member/member_tel.png'/></strong>
+                        <input type="text" id="mobile" name="mobile" placeholder='电话' class="inner_input" value="" />
+                    </div>
+                </li>
+                </form>
+                <li class="clearfix registry">
+                	<button id="btnlogin" name="btnogin" class="btn_login submit">注册</button>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+        $(function(){
+            $(".submit").click(function(){
+				if(!isEmail($("input[name='email']").val())){
+                    layerAlert('邮箱格式错误');
+                    return false;
+				}
+				if($("#pwd").val()==''){
+                    layerAlert('请填写密码');
+                    return false;
+                }
+                if($("#pwd").val() !== $('#pwd1').val()){
+                    layerAlert('两次密码输入不一致');
+                    return false;
+                }
+                if($("#nickname").val()==''){
+                    layerAlert('请填写用户名');
+                    return false;
+                }
+               if(!isMobile($("input[name='mobile']").val())){
+                    layerAlert('手机号码格式错误');
+                    return false;
+				}
+                commonAjaxSbt();
+            });
+        });
+    </script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

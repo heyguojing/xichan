@@ -1,0 +1,48 @@
+img{
+	width:100%;
+}
+.relative{
+	position:relative;
+}
+.four ul li{
+	width:92%;
+	margin-top:40px;
+	margin-left:auto;
+	position:relative;
+	margin-right:auto;
+}
+
+.four ul li .img{
+	width:41.3%;
+}
+.four ul li .wz{
+	width:45%;
+	position:absolute;
+	top:14%;
+	left:49%;
+}
+.four ul li:nth-child(even) .img{
+	margin-left:58%;
+}
+.four ul li:nth-child(even) .wz{
+	left:5%;
+}
+.right{
+	float:right;
+}
+.clear{
+	clear:both;
+}
+.four_b{
+	width:92%;
+	margin-left:4%;
+	margin-top:10px;
+}
+.four_b ul li{
+	display: inline-block;
+	width:48.5%;
+	margin-top:15px;
+}
+.four_b ul li:nth-child(even){
+	margin-left:2%;
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+   <title>我的订单-用户管理 - {$systemConfig.SITE_INFO.name}</title> 
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/order.css" rel="stylesheet" type="text/css" />
+    <script src="__PUBLIC__/js/jquery-1.9.0.min.js"></script>
+    <link href="__PUBLIC__/Css/base.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/layout.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/Js/base.js"></script>
+    <script type='text/javascript' src='__PUBLIC__/layer/layer.js'></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.form.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/functions.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.js"></script>
+    <style>.wrapper{margin-top:-15px !important;}</style>
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+   <include file="Public:menu" />
+    <div class="wrapper bg0">
+    	<div class="shopbox">
+             <div class='js relative'>
+                <h1 class='relative'><span class='js_x_left'><a href='javascript:history.back(-1)' style='height:30px;width:20px;display: block;'></a></span>我的订单<span class='search_ico'></span></h1>
+                <div class='search'>
+                <form action='' method='post'>
+                    <input type='text' name='keywords' id='keywords' value='' placeholder='请输入订单号'/>
+                    <span id='search'></span>
+                </form>
+                </div>
+            </div>
+            <div class='cate'>
+                <ul>
+                    <li class='all current'>全部</li>
+                    <li class='wating_fukuan'>待付款</li>
+                    <li class='wating_shiyong'>待使用</li>
+                    <div class='clear'></div>
+                </ul>
+            </div> 
+             <div class='shop_content pay_con'>
+                <div class='shop_title'>
+                    <ul>
+                        <li class='s_ioc pleft0'><img src='__PUBLIC__/img/shop/shop_ioc.png'/></li>
+                        <li class='s_xc'><a href='javascript:;'>西婵整形美容医院 ></a></li>
+                        <div class='clear'></div>
+                    </ul>
+                </div>
+                <!-- 所有订单 -->
+                <div class='car_list dd_list order_all'>
+                    <volist name='list' id='vo'>
+                        <div class='list relative'>
+                            <div class='order_num1'>订单号：{$vo.order_num}</div>
+                        <volist name="vo['goods']" id='v'>
+                            <div class='left pro_img'><img src="<if condition='$v.img neq null'>/Uploads/image/goods/{$v.img}<else/>__PUBLIC__/img/shop/pro_img.png</if>"/></div>
+                            <div class='left cont width65'>
+                                <ul> 
+                                    <li class='pro_title'>{$v.goods_name}</li>
+                                    <li class='pro_des'>{$v.description}</li>
+                                    <li class='price b0'>
+                                        <div class='left pri_num'>￥ {$v.price}</div>
+                                        <div class='right'>x {$v.num}</div>
+                                        <div class='clear'></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class='clear'></div>
+                         <div style='border-bottom: 1px solid #e7e7e7;padding-top:10px;height:1px;width:100%;width:92%;margin-left:auto;margin-right:auto;'></div>
+                        </volist>
+                        <div class='pro_xinxi'>
+                            <div class='total'><p>共计{$vo.total_num}件商品  合计：￥{$vo.price}</p></div>
+                            <div class='tool'>
+                                <ul>
+                                    <li class='status'><if condition='$vo.status eq 0'><font style='color:#cfcfcf'>已取消</font><elseif condition='$vo.status eq 1'/><font style='color:#1d1d1d'>已完成</font><elseif condition='$vo.status eq 2'/>待付款<elseif condition='$vo.status eq 3'/>待使用</if></li>
+                                    <if condition='$vo.status eq 3'><li class='tuikuan'><a href=''>退款</a>
+                                    </a></li></if>
+                                    <li class='rest'><if condition='$vo.status eq 2'><a href='javascript:;' class='goSettlement'>去付款</a><input type='hidden' class='order_num' name='order_num' value='{$vo.order_num}'/><else /><a href='javascript:;'>再来一单</a></if></li>
+                                    <div class='clear'></div>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </volist>
+                </div>
+                <!-- 待支付订单 -->
+                <div class='car_list dd_list wating_price'>
+                    <volist name='list' id='vo'>
+                        <if condition='$vo.status eq 2'>
+                            <div class='list relative'>
+                              <div class='order_num1'>订单号：{$vo.order_num}</div>
+                            <volist name="vo['goods']" id='v'>
+                                <div class='left pro_img'><img src="<if condition='$v.img neq null'>/Uploads/image/goods/{$v.img}<else/>__PUBLIC__/img/shop/pro_img.png</if>"/></div>
+                                <div class='left cont width65'>
+                                    <ul>
+                                        <li class='pro_title'>{$v.goods_name}</li>
+                                        <li class='pro_des'>{$v.description}</li>
+                                        <li class='price b0'>
+                                            <div class='left pri_num'>￥ {$v.price}</div>
+                                            <div class='right'>x {$v.num}</div>
+                                            <div class='clear'></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class='clear'></div>
+                             <div style='border-bottom: 1px solid #e7e7e7;padding-top:10px;height:1px;width:100%;width:92%;margin-left:auto;margin-right:auto;'></div>
+                            </volist>
+                                <div class='pro_xinxi'>
+                                    <div class='total'><p>共计{$vo.total_num}件商品  合计：￥{$vo.price}</p></div>
+                                    <div class='tool'>
+                                        <ul>
+                                            <li class='status'><if condition='$vo.status eq 0'>已取消<elseif condition='$vo.status eq 1'/>已完成<elseif condition='$vo.status eq 2'/>待付款<elseif condition='$vo.status eq 3'/>待使用</if></li>
+                                           <!--  <li class='tuikuan'><if condition='$vo.status eq 2'><a href='javascript:;' class='goSettlement'>去付款</a><input type='hidden' name='order_num' class='order_num' value='{$vo.order_num}'/></if></li> -->
+                                   			<li class='rest'><if condition='$vo.status eq 2'><a href='javascript:;' class='goSettlement'>去付款</a><input type='hidden' class='order_num' name='order_num' value='{$vo.order_num}'/></if></li>
+                                            <div class='clear'></div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </if>
+                    </volist>
+                </div>
+                <!-- 待使用订单 -->
+                <div class='car_list dd_list wating_use'>
+                    <volist name='list' id='vo'>
+                        <if condition='$vo.status eq 3'>
+                        <div class='list relative'>
+                             <div class='order_num1'>订单号：{$vo.order_num}</div>
+                        <volist name="vo['goods']" id='v'>
+                            <div class='left pro_img'><img src="<if condition='$v.img neq null'>/Uploads/image/goods/{$v.img}<else/>__PUBLIC__/img/shop/pro_img.png</if>"/></div>
+                            <div class='left cont width65'>
+                                <ul>
+                                    <li class='pro_title'>{$v.goods_name}</li>
+                                    <li class='pro_des'>{$v.description}</li>
+                                    <li class='price b0'>
+                                        <div class='left pri_num'>￥ {$v.price}</div>
+                                        <div class='right'>x {$v.num}</div>
+                                        <div class='clear'></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class='clear'></div>
+                         <div style='border-bottom: 1px solid #e7e7e7;padding-top:10px;height:1px;width:100%;width:92%;margin-left:auto;margin-right:auto;'></div>
+                        </volist>
+                            <div class='pro_xinxi'>
+                                <div class='total'><p>共计{$vo.total_num}件商品  合计：￥{$vo.price}</p></div>
+                                <div class='tool'>
+                                    <ul>
+                                        <li class='status'><if condition='$vo.status eq 0'>已取消<elseif condition='$vo.status eq 1'/>已完成<elseif condition='$vo.status eq 2'/>待付款<elseif condition='$vo.status eq 3'/>待使用</if></li>
+                                        <li class='tuikuan'><a href='javascript:;'>退款</a></li>
+                                        <li class='rest'><a href='javascript:;'>再来一单</a></li>
+                                        <div class='clear'></div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </if>
+                    </volist>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script>
+    $(function(){
+        $(".search_ico").click(function(){
+            if($('.search').css('display') == 'none'){
+                $('.search').css('display','block');
+            }
+        })
+        $('#search').click(function(){
+            if($('#keywords').val() == ''){
+                layerAlert('请输入订单号!');
+                return false;
+            }
+            $('form').submit();
+        })
+
+        $('.cate .all').click(function(){
+            $(this).parent().children('li').removeClass('current');
+            $(this).addClass('current');
+            if($.trim($('.order_all').html()) == '' || $.trim($('.order_all').html()).length ==0){
+                $('.shop_title').hide();
+            }else{
+                $('.shop_title').show();
+            }
+            $('.order_all').show();
+            $('.wating_price').hide();
+            $('.wating_use').hide();
+        })
+        $('.cate .wating_fukuan').click(function(){
+            $(this).parent().children('li').removeClass('current');
+            $(this).addClass('current');
+            $('.wating_price').show();
+            if($.trim($('.wating_price').html()) == '' || $.trim($('.wating_price').html()).length ==0){
+                $('.shop_title').hide();
+            }else{
+                $('.shop_title').show();
+            }
+            $('.order_all').hide();
+            $('.wating_use').hide();
+        })
+        $('.cate .wating_shiyong').click(function(){
+            $(this).parent().children('li').removeClass('current');
+            $(this).addClass('current');
+            if($.trim($('.wating_use').html()) == '' || $.trim($('.wating_use').html()).length ==0){
+                $('.shop_title').hide();
+            }else{
+                $('.shop_title').show();
+            }
+            $('.wating_use').show();
+            $('.wating_price').hide();
+            $('.order_all').hide();
+        })
+        $('.goSettlement').click(function(){
+            var obj = $(this).siblings('.order_num').val();
+            $.ajax({
+                url:'__URL__/resettlement',
+                type:'post',
+                dataType:'json',
+                data:'order_num='+obj,
+                success:function(data){
+                    if(data.status==1){
+                        layer.open({
+                            title:'温馨提示',
+                            icon:1,
+                            offset:'170px',
+                            content:data.info,
+                            time:2000,
+                        });
+                        setTimeout(function(){
+                            top.window.location.href = data.url;
+                        },1000);
+                    }else{
+                        layer.open({
+                            title:'温馨提示',
+                            icon:2,
+                            offset:'170px',
+                            content:data.info,
+                            time:2000,
+                        });
+                    }
+                  
+                }
+            })
+        })
+
+    })
+</script>
+</body>
+</html>

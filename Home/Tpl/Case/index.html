@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>案例中心 - {$systemConfig.SITE_INFO.name}</title>   
+    <meta name="keywords" content="{$systemConfig.SITE_INFO.keywords}" />
+    <meta name="description" content="{$systemConfig.SITE_INFO.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="header">
+    <div class="mTopBar clearfix">
+        <div class="medilase_logo"><a href="/"><img src="__PUBLIC__/images/logo.png" width="100%" class="chromeHeight" /></a></div>
+        <div class="medilase_panelBtn" state="open">
+            <img src="__PUBLIC__/images/iconMenu.png" width="100%" class="chromeHeight" />
+            <a href="javascript:;" class="openMenu"></a>
+        </div>
+        <div class="clr"></div>
+        <div class="back"><a href="javascript:history.go(-1);"><img src="__PUBLIC__/images/back.png" alt="返回" class="chromeHeight"  /></a></div>
+        <div class="shaixuan"><img src="__PUBLIC__/images/top_sx.png" alt="shaixuan" id="CaseSelect" /></div>
+    </div>
+</div>
+<div class="mtopBar_line"><img src="__PUBLIC__/images/mTopBar_line.jpg" width="100%"></div>
+<div class="caseclass">
+	<ul>
+    	<li class="all"><a href="{:U('/case/index')}">全部</a></li>
+    	<li><a href="{:U('/casecat/0')}">热门</a></li>
+    	<volist name="category" id="cat">
+          <li{$cat.css}><a href="{:U('/casecat/'.$cat['cid'].'')}" >{$cat.name}</a></li>
+         </volist>
+
+    </ul>
+</div>
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+    	<div class="casespage">
+        	<div class="caseslist">
+                <ul class="infinite_scroll">
+                    <volist name="list" id="vo">
+                    <li class="masonry_brick">
+                        <a  href="{:U('../?caseinfo='.$vo['id'].'')}">
+                        <img src="__pictureimg__{$vo.pic}">
+                        </a>
+                        <div class="txt">
+                            <p>{$vo.projecttitle}</p>
+                        </div>
+                    </li>
+                    </volist>
+                </ul> 
+            </div>
+            <if condition="$pa eq 1"> 
+        	<input type="hidden" id="infinite_count" value="{$totalPages}" />
+            <div id="more">{$page}</div>
+            <div id="page">
+              </if>  
+            </div>
+    	</div>
+    </div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.masonry.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.infinitescroll.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/casepage.js"></script>
+</body>
+</html>

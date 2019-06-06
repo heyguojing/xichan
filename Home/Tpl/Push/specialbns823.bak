@@ -1,0 +1,118 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>玻尿酸-塑型 除皱 补水- {$systemConfig.SITE_INFO.name}</title>
+		<meta name="description" content="西婵整形，全球四大高品质玻尿酸中国首发机构 " />
+		<meta name="keywords" content="玻尿酸,塑型,除皱,补水,西婵整形，全球四大高品质玻尿酸中国首发机构 " />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+		<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+		<link href='__PUBLIC__/push/0627/push0627.css' rel='stylesheet' type='text/css'/>
+    	<link href='__PUBLIC__/push/0627/swiper.min.css' rel='stylesheet' type='text/css'/>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/jquery-1.9.0.min.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/jquery.form.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/js/common.js'></script>
+	<style>
+		.main{margin-top:-23px;position:relative;}
+		.main img{width:100%;}
+		#footer{margin-top:-23px;}
+		.button{position:absolute;top:45.5%;}
+		.asw{left:29%;width:41.5%;}
+		.arrow{width:4.4%;top:45.8%;}
+		.left_arrow{left:20%;}
+		.right_arrow{right:20%;}
+		.animation1{
+			animation:mymove 1s linear 0s infinite;
+			-webkit-animation:mymove 1s  linear 0s infinite  ; /*Safari and Chrome*/
+			-ms-animation:mymove 1s  linear 0s infinite  ;
+			-moz-animation:mymove 1s  linear 0s infinite  ;
+		}
+		.animation2{
+			animation:mymove1 1s linear 0s infinite;
+			-webkit-animation:mymove1 1s  linear 0s infinite  ; /*Safari and Chrome*/
+			-ms-animation:mymove1 1s  linear 0s infinite  ;
+			-moz-animation:mymove1 1s  linear 0s infinite  ;
+		}
+		@keyframes mymove1{
+			75% {transform: translatex(-2px);}
+			100%,50%,0% {transform: translatex(0);}
+			25% {transform: translatex(2px);}
+		}
+		@keyframes mymove{
+			25% {transform: translatex(-2px);}
+			0%,50%,100% {transform: translatex(0);}
+			75% {transform: translatex(2px);}
+		}
+		.wz_right{position:absolute;right:3%;width:49%;}
+		.weidiao{top:22%;}
+		.qiangxiao{top:26%;}
+		.meirong{top:30%;}
+		.wz{position:absolute;top:40.2%;width:26.6%;}
+		.qyd{left:3.5%;}
+		.bjrl{left:36%;}
+		.rl2{right:5%;}
+		.loading{display:block;position:fixed;top:0;left:0;height:100%;width:100%;background:rgb(255,255,255);z-index: 10;text-align: center;padding-top:40%;}
+	</style>
+	</head>
+	<body>
+		<div class='loading'><img src='__PUBLIC__/push/img/load.jpg'/><br>&nbsp;加载中...</div>
+		<include file="Public:head" />
+		<div class='wrapper' style='max-width:1200px;'>
+			 <include file="Public:menu" />
+				<div style='clear:both;'></div>
+				<div class='main'>
+					<img src='__PUBLIC__/push/special823/bns_01.png'/>
+					<img src='__PUBLIC__/push/special823/bns_02.png'/>
+					<img src='__PUBLIC__/push/special823/bns_03.png'/>
+					<div data-scroll-reveal="enter left" class='wz_right weidiao' >
+						<img src='__PUBLIC__/push/special823/weidiaosx.png'/>
+					</div>
+					<div data-scroll-reveal="enter left" class='wz_right qiangxiao' >
+						<img src='__PUBLIC__/push/special823/qiangxiaoqz.png'/>
+					</div>
+					<div data-scroll-reveal="enter left" class='wz_right meirong' >
+						<img src='__PUBLIC__/push/special823/meirongfuhu.png'/>
+					</div>
+					<img src='__PUBLIC__/push/special823/bns_04.png'/>
+					<img src='__PUBLIC__/push/special823/bns_05.png'/>
+					<div class='button left_arrow arrow' >
+						<img class='animation1' src='__PUBLIC__/push/special823/left_arrow.png' />
+					</div>
+					<div class='button asw'>
+						<a href='javascript:;'onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special823/button.png'/></a>
+					</div>					
+					<div class='button right_arrow arrow'>
+						<img  class='animation2' src='__PUBLIC__/push/special823/right_arrow.png'/>
+					</div>
+					<div class='wz qyd'  data-scroll-reveal="enter left" >
+						<img src='__PUBLIC__/push/special823/qiaoyadeng.png'/>
+					</div>
+					<div class='wz bjrl'  data-scroll-reveal="enter top">
+						<img src='__PUBLIC__/push/special823/bojinruilan.png'/>
+					</div>
+					<div class='wz rl2' data-scroll-reveal="enter bottom">
+						<img src='__PUBLIC__/push/special823/ruilan2.png' />
+					</div>
+					<img src='__PUBLIC__/push/special823/bns_06.png'/>
+					<img src='__PUBLIC__/push/special823/bns_07.png'/>
+					<img src='__PUBLIC__/push/special823/bns_08.png'/>
+					<img src='__PUBLIC__/push/special823/bns_09.png'/>
+					<img src='__PUBLIC__/push/special823/bns_10.png'/>
+					<img src='__PUBLIC__/push/special823/bns_11.png'/>
+				</div>
+		 <include file="Public:footer" />
+	</div>
+	<script type='text/javascript' src='__PUBLIC__/push/js/scrollReveal.js'></script>
+	<script type='text/javascript'>
+		(function(){
+			window.scrollReveal = new scrollReveal({ reset: true,opacity: 0,});
+		})();
+	</script>
+	</body>
+	<script type='text/javascript'>
+	  		window.onload = function(){
+	  			$(".loading").css('display','none');
+	  		}
+	  	</script>
+</html>

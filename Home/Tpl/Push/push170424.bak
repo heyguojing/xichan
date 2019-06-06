@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>脱毛促销专题</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+		<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+		<script type='text/javascript' src='__PUBLIC__/push/js/jquery.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/scrollReveal.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/js/common.js'></script>
+	<style>
+		body{padding: 0;margin: 0;}
+		.wrapper{width:100%;adding:0;margin:0;max-width: 1200px;min-width: 320px;margin-top: -22px;}
+		img{width:100%;display: block;}
+		.bt{position:absolute;left:33%;width:33%;z-index: 1;}
+		.btn1{top:30%;}
+		.btn2{top:3%;}
+		.btn3{top:-7%;}
+		.btn4{top:44.5%;}
+		#footer{margin-top: -24px;}
+		#overLayBody{margin-top:22px;}
+	</style>
+	</head>
+	<body>
+		<include file="Public:head" />
+		<div class='wrapper'>
+			 <include file="Public:menu" />
+				<div style='clear:both;'></div>
+				<div>
+					<div style='position:relative'>
+						<img src='__PUBLIC__/push/img/4_01.png'/>
+						<img src='__PUBLIC__/push/img/4_02.png'/>
+						<img src='__PUBLIC__/push/img/4_03.png'/>
+							<a href='https://static.meiqia.com/dist/standalone.html?eid=9041'><img data-scroll-reveal="enter top" class='btn1 bt' src='__PUBLIC__/push/img/button.png'/></a>
+						<img src='__PUBLIC__/push/img/4_04.png'/>
+						<img src='__PUBLIC__/push/img/4_05.png'/>
+					</div>
+					
+					<div style="position: relative;">
+						<img src='__PUBLIC__/push/img/4_06.png'/>
+						<a href='https://static.meiqia.com/dist/standalone.html?eid=9041'><img data-scroll-reveal="enter bottom" class='btn2 bt' src='__PUBLIC__/push/img/button.png'/></a>
+						<img src='__PUBLIC__/push/img/4_07.png'/>
+						<img src='__PUBLIC__/push/img/4_08.png'/>
+						<img src='__PUBLIC__/push/img/4_09.png'/>
+						<img src='__PUBLIC__/push/img/4_10.png'/>
+						<img src='__PUBLIC__/push/img/4_11.png'/>
+					</div>
+					<div style="position: relative;">
+						<img src='__PUBLIC__/push/img/4_12.png'/>
+						<a href='https://static.meiqia.com/dist/standalone.html?eid=9041'><img data-scroll-reveal="enter top" class='btn3 bt' src='__PUBLIC__/push/img/button.png'/></a>
+					</div>
+					<div style="position: relative;">
+						<img src='__PUBLIC__/push/img/4_13.png'/>
+						<a href='https://static.meiqia.com/dist/standalone.html?eid=9041'><img data-scroll-reveal="enter bottom" class='btn4 bt' src='__PUBLIC__/push/img/button.png'/></a>
+						<img src='__PUBLIC__/push/img/4_14.png'/>
+					</div>		
+				</div>			
+			</div>
+		 <include file="Public:footer" />
+		</div>		
+		<script>
+			(function(){
+				window.scrollReveal = new scrollReveal({ reset: true,opacity: 0,});
+			})();
+			</script>
+	</body>
+</html>

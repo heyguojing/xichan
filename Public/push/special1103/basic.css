@@ -1,0 +1,79 @@
+.main{margin-top:-23px;}
+.main img{width:100%;}
+.main .index{position:relative;background:#ffffff;}
+.index .head_t{position:absolute;top:24%;right:7%;width:57.1%;}
+.index .head_d{position:absolute;top:54%;right:13%;width:38.6%;}
+.i2 .seven_two{margin-left:auto;margin-right:auto;padding-top:10px;padding-bottom:25px;}
+.i2 .seven_two a img{padding-top:12px;width:45.4%;padding-left:3%;}
+.i3 .i3_01{position:relative;width:94%;margin-left:auto;margin-right:auto;padding-top:5px;}
+.i3 .i3_01 ul li{float:left;width:48.2%;padding-top:20px;}
+.i3 .right{float:right !important;}
+.i3 .i3_big{position:relative;padding-top:20px;padding-bottom: 25px;}
+.i3 .i3_big .st111_07_1{position:absolute;top:18%;right:10%;width: 40.2%;}
+.i3 .i3_big .st111_07_2{position:absolute;bottom:21%;right:5%;width: 17.6%;}
+.main .i4{padding-top:8px;padding-bottom:25px;}
+.i4_01 ul li{width:44.6%;padding-left:3.5%;float:left;padding-top:20px;}
+.index .i5{width:42.1%;position:absolute;top:76%;left:30.5%;}
+#footer{margin-top:-19px;}
+.animation1{
+animation:mymove 1s linear 0s infinite;
+-webkit-animation:mymove 1s  linear 0s infinite  ; /*Safari and Chrome*/
+-ms-animation:mymove 1s  linear 0s infinite  ;
+-moz-animation:mymove 1s  linear 0s infinite  ;
+}
+@keyframes mymove
+{
+25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+@-moz-keyframes mymove
+{
+25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+@-ms-keyframes mymove
+{
+ 25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+@-webkit-keyframes mymove
+{
+25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+
+
+.animation2{
+animation:mymove1 1s linear 0s infinite;
+-webkit-animation:mymove1 1s  linear 0s infinite  ; /*Safari and Chrome*/
+-ms-animation:mymove1 1s  linear 0s infinite  ;
+-moz-animation:mymove1 1s  linear 0s infinite  ;
+}
+@keyframes mymove1
+{
+25% {transform: translatex(-2px);}
+0%,50%, 100% {transform: translatex(0);}
+75% {transform: translatex(2px);}
+}
+@-moz-keyframes mymove1
+{
+ 25% {transform: translatex(-2px);}
+ 0%, 50%, 100% {transform: translatex(0);}
+ 75% {transform: translatex(2px);}
+}
+@-ms-keyframes mymove1
+{
+ 25% {transform: translatex(-2px);}
+ 0%, 50%, 100% {transform: translatex(0);}
+ 75% {transform: translatex(2px);}
+}
+@-webkit-keyframes mymove1
+{
+ 25% {transform: translatex(-2px);}
+ 0%, 50%, 100% {transform: translatex(0);}
+ 75% {transform: translatex(2px);}
+}

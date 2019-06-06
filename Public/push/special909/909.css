@@ -1,0 +1,9 @@
+.main{width:100%;max-width: 750px;margin-top:-23px;}
+.main .index{position:relative;}
+img{width:100%;}
+.index1 .wenzi{width:66.5%;position:absolute;top:17%;left:6%;}
+.index2 {background: #efd8b8;padding-top:5px;padding-bottom: 14px;}
+.index2 ul {display: block;}
+.index2 ul li{width:46.6%;float:left;padding-left:2.2%;padding-top:10px;}
+.index3 .ewm{position:absolute;top:16.6%;left:11%;width:15.8%;}
+#footer{margin-top:-24px;}

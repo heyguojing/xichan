@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>首页信息管理 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='首页信息管理 > 信息列表';
+        </php>
+        <include file="Common:intoHead" />
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">首页信息管理</div>
+                    </div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                            <form action="" method="post" id="quickForm">
+                            <input type="hidden" name="act" value="add" /> 
+                            <tr>
+                                <td>类别：
+                                <select name="data[cid]" class="cid">
+                                  <volist name="list" id="vo1">
+                                    <option value="{$vo1.cid}">{$vo1.name}</option>
+                                  </volist>
+                                </select>
+                                显示标题：<input name="data[title]" type="text" size="20" />
+                                链接地址：<input type="text" name="data[httpurl]"  size="40"/> 
+                                性质：<select name="data[shuxing]">
+                                   <option value="0" selected="selected">无</option>
+                                   <option value="1">优惠</option>
+                                   <option value="2">折扣</option>
+                                   <option value="3">团购</option>
+                                </select>
+                                &nbsp; &nbsp;<button class="btn quickSubmit">确定添加</button></td>
+                                
+                                </tr>
+                           </form>
+                     </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                      <thead>
+                       <tr>
+                                <td>显示标题：</td>
+                                <td>链接地址</td>
+                                <td>类别</td>
+                                <td>性质</td>
+                                <td>操作属性</td>
+                                <td>操作</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                  <volist name="list" id="vo">
+                            <tr>
+                                <td height="26" colspan="6" bgcolor="#EBEBEB">{$vo.name}</td>
+                            </tr>
+                            <volist name="vo['indexbox']" id="tree">
+                            <tr cid="{$tree.id}"><input type="hidden" name="id" value="{$tree.id}"/>
+                                <td><input type="text" name="title" value="{$tree.title}" /></td>
+                                <td align="left"><input name="httpurl" type="text" value="{$tree.httpurl}" size="40" /></td>
+                                <td> 
+                                <select name="cid" class="cid">
+                                    <volist name="list" id="vo1">
+                                        <if condition="$vo1['cid'] eq $tree['cid']">
+                                            <option value="{$vo1.cid}" selected="selected" readonly>{$vo1.name}</option>
+                                            <else/>
+                                            <option value="{$vo1.cid}">{$vo1.name}</option>
+                                        </if>
+                                    </volist>
+                                </select></td>
+                                <td><select name="shuxing">
+                                   <option value="0" <if condition="$tree['shuxing'] eq 0"> selected="selected"</if>>无</option>
+                                   <option value="1" <if condition="$tree['shuxing'] eq 1"> selected="selected"</if>>优惠</option>
+                                   <option value="2" <if condition="$tree['shuxing'] eq 2"> selected="selected"</if>>折扣</option>
+                                   <option value="3" <if condition="$tree['shuxing'] eq 3"> selected="selected"</if>>团购</option>
+                                </select></td>
+                                <td> 
+                                <select name="act" class="act">
+                                    <option selected="selected" value="edit">修改该分类</option>
+                                    <option value="del">删除该分类</option>
+                                </select></td>
+                                <td><button class="btn opCat">确定</button></td>
+                            </tr>
+                            </volist>
+                          </volist>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <form action="" method="post" id="opForm">
+            <input id="id" type="hidden" name="data[id]" />
+            <input id="cid" type="hidden" name="data[cid]" />
+            <input id="act" type="hidden" name="act" />
+            <input id="shuxing" type="hidden" name="data[shuxing]" />
+            <input id="title" type="hidden" name="data[title]" />
+            <input id="httpurl" type="hidden" name="data[httpurl]" />
+        </form>
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <script type="text/javascript">
+            $(function(){
+                $(".opCat").click(function(){
+                    var obj=$(this).parents("tr");
+					$("#id").val(obj.find("input[name='id']").val());
+                    $("#cid").val(obj.find("select[name='cid']").val());
+                    $("#act").val(obj.find("select[name='act']").val());
+                    $("#shuxing").val(obj.find("select[name='shuxing']").val());
+                    $("#title").val(obj.find("input[name='title']").val());
+					$("#httpurl").val(obj.find("input[name='httpurl']").val());
+                    if($("#act").val()=="del"){
+                        popup.confirm('你真的打算删除该分类吗?','温馨提示',function(action){
+                            if(action == 'ok'){
+                                commonAjaxSubmit("","#opForm");
+                            }
+                        });
+                        return false;
+                    }
+                    commonAjaxSubmit("","#opForm");
+                });
+                $(".quickSubmit").click(function(){
+                    if($("#newName").val()==''){
+                        popup.alert("分类名称不能为空滴！");
+                        return false;
+                    }
+                    commonAjaxSubmit("","#quickForm");
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>

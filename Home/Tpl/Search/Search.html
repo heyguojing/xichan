@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>搜索</title>   
+    <meta name="keywords" content="{$info.keywords}" />
+    <meta name="description" content="{$info.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+    	<div class="searchpage">
+        	<div class="searchtit">与"<strong>双眼皮</strong>"相关的文章有78篇</div>
+            <div  id="masonrybox" class="masonry">
+                <div class="newslist masonry-brick">
+                    <a  href="projects_show.html"><img src="__PUBLIC__/images/index/ad1280x522.jpg" class="aimg"></a>
+                    <div class="txt">
+                        <h3>关键字   关键字  关键字</h3>
+                        <h1><a  href="projects_show.html">西禅整形荣获质量诚信企业</a></h1>
+                    </div>
+                    <div class="newshare clearfix">
+                        <p class="tshar">
+                            <a link="{$vo['id']}" href="javascript:void(0)" class="zhan"><span class="zan">{$vo.views}</span></a><!--点赞之前不要hover，点赞后才加hover-->
+                             <a link="{$vo['id']}" href="javascript:void(0)" class="kfjs"><span class="read kefuback{$vo['id']}">{$vo.reshow}</span></a>
+                            <!--<span class="share">{$vo.fenxiang}</span>-->
+                        </p>
+                        <div class="cname">
+                        	<em class="bg_lred"><a href="projects.html">眼部</a></em>
+                        </div>
+                    </div>
+                </div>
+                <div class="newslist masonry-brick">
+                    <a  href="projects_show.html"><img src="__PUBLIC__/images/index/ad1280x522.jpg" class="aimg"></a>
+                    <div class="txt">
+                        <h3>关键字   关键字  关键字</h3>
+                        <h1><a  href="projects_show.html">西禅整形荣获质量诚信企业</a></h1>
+                    </div>
+                    <div class="newshare clearfix">
+                        <p class="tshar">
+                            <a link="{$vo['id']}" href="javascript:void(0)" class="zhan"><span class="zan">{$vo.views}</span></a><!--点赞之前不要hover，点赞后才加hover-->
+                             <a link="{$vo['id']}" href="javascript:void(0)" class="kfjs"><span class="read kefuback{$vo['id']}">{$vo.reshow}</span></a>
+                            <!--<span class="share">{$vo.fenxiang}</span>-->
+                        </p>
+                        <div class="cname">
+                        	<em class="bg_lred"><a href="projects.html">眼部</a></em>
+                        </div>
+                    </div>
+                </div>
+                <div class="newslist masonry-brick">
+                    <a  href="projects_show.html"><img src="__PUBLIC__/images/index/ad1280x522.jpg" class="aimg"></a>
+                    <div class="txt">
+                        <h3>关键字   关键字  关键字</h3>
+                        <h1><a  href="projects_show.html">西禅整形荣获质量诚信企业</a></h1>
+                    </div>
+                    <div class="newshare clearfix">
+                        <p class="tshar">
+                            <a link="{$vo['id']}" href="javascript:void(0)" class="zhan"><span class="zan">{$vo.views}</span></a><!--点赞之前不要hover，点赞后才加hover-->
+                            <span class="read">6</span>
+                            <span class="share">7</span>
+                        </p>
+                        <div class="cname">
+                        	<em class="bg_lred"><a href="projects.html">眼部</a></em>
+                        </div>
+                    </div>
+                </div>
+                <div class="newslist masonry-brick">
+                    <a  href="projects_show.html"><img src="__PUBLIC__/images/index/ad1280x522.jpg" class="aimg"></a>
+                    <div class="txt">
+                        <h3>关键字   关键字  关键字</h3>
+                        <h1><a  href="projects_show.html">西禅整形荣获质量诚信企业</a></h1>
+                    </div>
+                    <div class="newshare clearfix">
+                        <p class="tshar">
+                            <a link="{$vo['id']}" href="javascript:void(0)" class="zhan"><span class="zan">{$vo.views}</span></a><!--点赞之前不要hover，点赞后才加hover-->
+                            <span class="read">6</span>
+                            <span class="share">7</span>
+                        </p>
+                        <div class="cname">
+                        	<em class="bg_lred"><a href="projects.html">眼部</a></em>
+                        </div>
+                    </div>
+                </div>
+            </div>    	
+            <div id="page_loading"><img src="images/load.png"></div>
+            <div id="next_page" style="display:none">{$page}</div>
+            </div>
+    	</div>
+    </div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/pagerefetch.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".kfjs").click(function(){
+			var delLink=$(this).attr("link");
+			$.getJSON("{:U('Index/kefu')}",{id:delLink,sqlname:'brand'}, function(json){
+				if(json.status == 1){
+				$(".kefuback"+delLink).html(json.info); 
+				   window.location.href = "https://static.meiqia.com/dist/standalone.html?eid=9041";
+				}
+			})
+		});
+		$(".zhan").click(function(){
+			var delLink=$(this).attr("link");
+			//alert(delLink);
+		   $.getJSON("{:U('newszhan/"+delLink+"')}", function(json){
+				if(json.status == 1){
+				$(".zhan").html('<span class="zan hover">'+json.info+'</span>') 
+				}
+			});
+		});
+	});
+</script>
+</body>
+</html>

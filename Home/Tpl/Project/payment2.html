@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>项目中心 - {$systemConfig.SITE_INFO.name}</title> 
+    <meta name="keywords" content="{$systemConfig.SITE_INFO.keywords}" />
+    <meta name="description" content="{$systemConfig.SITE_INFO.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/member.css" rel="stylesheet" type="text/css" />
+    <script src="__PUBLIC__/js/jquery-1.9.0.min.js"></script>
+    <link href="__PUBLIC__/Css/base.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Js/asyncbox/skins/default.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/Js/base.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/functions.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.form.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/asyncbox/asyncbox.js"></script>
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+        <div class="buypaybox">
+           <form action="{:U('Project/payment3')}" method="post">
+            <input type="hidden" name="id" value="{$info.id}" id="id">
+        	<div class="buycart">
+            	<ul>
+                	<li>
+                    	{$info.title}
+                        <span class="abpos" id="danjia" price="{$info.tuangoujia}">{$info.tuangouname}</span>
+                    </li>
+                	<li>
+                    	数量
+                        <span class="abpos goods_number">
+                        	{$data.goods_count}
+                            <input type="hidden" name="goods_count" id="goods_count" class="txtnum" value="{$data.goods_count}" />
+                        </span>
+                    </li>
+                	<li>
+                    	小计：
+                        <span class="abpos color_red" id="zongjiatxt">{$data.zongjia}元</span>
+                       	<input type="hidden" name="zongjia" id="zongjia" value="{$data.zongjia}" />
+                    </li>
+                </ul>
+            </div>
+            <div class="buycart">
+            	<ul>
+                	<li>
+                    	代金券：
+                        <span class="abpos">使用代金券 > </span>
+                    </li>
+                	<li>
+                    	订单总价：
+                        <span class="abpos color_red">{$data.zongjia}元</span>
+                    </li>
+                </ul>
+            </div>            
+            <div class="buycart">
+            	<ul>
+                	<li class="nobg color_blank">
+                    	<b>您绑定的手机号</b>
+                    </li>
+                	<li class="color_blank">
+                    	{$data.tel}
+                        <a class="abpos color_blank" href="__URL__/abpos?id={$info.id}&goodscount={$data.goods_count}&zongjia={$data.zongjia}" id="abpos">绑定新号码 > </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="buy_submitbox">
+                <input type="hidden" name="mobile" value="{$data.mobile}">
+            	<input type="submit" id="btncart" name="btncart" value="提交订单" class="buy_submit" />
+            </div>
+            </form>
+        </div>
+    	</div>
+    </div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script>
+	/*$(".jian").click(function(){
+		var count=parseInt($("#goods_count").val());
+		if(count>1)
+		{
+			$("#goods_count").val(count-1);
+		}
+		updateprice();
+	})*/
+	
+	$("#getcode").click(function(){
+		  $.getJSON("__URL__/mobile", { mobile:$("#mobile").val()}, function(json){
+			 alert(json.info);
+		  });
+	  });
+	/*$(".jia").click(function(){
+		var count=parseInt($("#goods_count").val());
+		$("#goods_count").val(count+1);
+		updateprice();
+	})*/
+	
+	$('.innerinput').focus(function(){
+		$(this).removeClass("grey");
+	});
+	function updateprice()
+	{
+		var count=parseInt($("#goods_count").val());
+		var danjia=parseFloat($("#danjia").attr("price")).toFixed(2);
+		var zongjia=(danjia*count).toFixed(2);
+		$("#zongjia").val(zongjia)
+		$("#zongjiatxt").html(zongjia+"元");
+	}
+</script>
+</body>
+</html>

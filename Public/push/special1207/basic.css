@@ -1,0 +1,81 @@
+.hfixed{z-index:2147483647 !important;}
+.fixedbottom{z-index:2147483647 !important;}
+.main{margin-top:-23px;width:100%;}
+.main img{width:100%;}
+.main .index{position:relative;}
+.index .m2{position:absolute;top:34%;left:0;width:100%;}
+.m2 ul li{float:left;width:26.6%;padding-left:5%;}
+.main4{background:#e34a08;padding-top:20px;padding-bottom: 30px;}
+.main4 ul li{width:40.2%;float:left;padding-top:10px;padding-left:6.5%;}
+.m_04{position:absolute;bottom:6%;left:13%;width:82%;height:33%;}
+.m04_1{width:96%;position:absolute;top:22%;left:1%;}
+.m05_1{width:96%;position:absolute;top:45%;left:1%;z-index:111;}
+.m07_1{width:96%;position:absolute;top:-23%;left:1%;}
+.m_04 a{display: block;height:100%;width:100%;}
+.m_06{position:absolute;top:-5%;left:13%;width:83%;height:44%;z-index:1111;}
+.m_06 a{display: block;height:100%;width:100%;}
+.m_07{position:absolute;bottom:16%;left:13%;width:83%;height:48%;}
+.m_07 a{display: block;height:100%;width:100%;}
+#footer{margin-top:-23px;}
+.animation1{
+animation:mymove 1s linear 0s infinite;
+-webkit-animation:mymove 1s  linear 0s infinite  ; /*Safari and Chrome*/
+-ms-animation:mymove 1s  linear 0s infinite  ;
+-moz-animation:mymove 1s  linear 0s infinite  ;
+}
+@keyframes mymove
+{
+25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+@-moz-keyframes mymove
+{
+25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+@-ms-keyframes mymove
+{
+ 25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+@-webkit-keyframes mymove
+{
+25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+
+
+.animation2{
+animation:mymove1 1s linear 0s infinite;
+-webkit-animation:mymove1 1s  linear 0s infinite  ; /*Safari and Chrome*/
+-ms-animation:mymove1 1s  linear 0s infinite  ;
+-moz-animation:mymove1 1s  linear 0s infinite  ;
+}
+@keyframes mymove1
+{
+25% {transform: translatex(-2px);}
+0%,50%, 100% {transform: translatex(0);}
+75% {transform: translatex(2px);}
+}
+@-moz-keyframes mymove1
+{
+ 25% {transform: translatex(-2px);}
+ 0%, 50%, 100% {transform: translatex(0);}
+ 75% {transform: translatex(2px);}
+}
+@-ms-keyframes mymove1
+{
+ 25% {transform: translatex(-2px);}
+ 0%, 50%, 100% {transform: translatex(0);}
+ 75% {transform: translatex(2px);}
+}
+@-webkit-keyframes mymove1
+{
+ 25% {transform: translatex(-2px);}
+ 0%, 50%, 100% {transform: translatex(0);}
+ 75% {transform: translatex(2px);}
+}

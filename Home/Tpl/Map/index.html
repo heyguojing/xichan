@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>来源地图 - {$systemConfig.SITE_INFO.name}</title> 
+    <meta name="keywords" content="{$systemConfig.SITE_INFO.keywords}" />
+    <meta name="description" content="{$systemConfig.SITE_INFO.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+    	<div class="mapbox">
+            <volist name="list" id="vo">
+        	<div class="maplist">
+            	<div class="maptit" state="0">{$vo.title}</div>
+                <div class="mapcontent">
+                	 {$vo.content}                  
+                </div>
+            </div>
+        	</volist>           
+        </div>
+    </div>
+</div>
+<include file="Public:footer" />
+<!--分享到-->
+<div class="sharediv">
+	<div class="shareul">
+        <ul id="shareli" class="clearfix">
+            <li><a href=""><img src="__PUBLIC__/images/share/weixin.jpg" alt="微信好友" /></a></li>
+            <li><a href=""><img src="__PUBLIC__/images/share/pyq.jpg" alt="朋友圈" /></a></li>
+            <li><a href=""><img src="__PUBLIC__/images/share/sina.jpg" alt="新浪微博" /></a></li>
+            <li><a href=""><img src="__PUBLIC__/images/share/qq.jpg" alt="QQ" /></a></li>
+            <li><a href=""><img src="__PUBLIC__/images/share/qqweibo.jpg" alt="腾讯微博" /></a></li>
+            <li><a href=""><img src="__PUBLIC__/images/share/qqkj.jpg" alt="QQ空间" /></a></li>
+            <li><a href=""><img src="__PUBLIC__/images/share/email.jpg" alt="邮件分享" /></a></li>
+            <li><a href=""><img src="__PUBLIC__/images/share/sc.jpg" alt="收藏文章" /></a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/pagerefetch.js"></script>
+<script type="text/javascript">
+$(function(){	
+	$(".maplist").first().find(".mapcontent").show();
+})
+$(".maptit").click(function () {
+    if ($(this).attr("state") == "0") {
+        $(this).attr("state", "1");
+        $(".mapcontent").hide();
+        $(this).siblings().show();
+    }
+    else {
+        $(this).attr("state", "0");
+        $(this).siblings().hide();
+    }
+})
+</script>
+</body>
+</html>

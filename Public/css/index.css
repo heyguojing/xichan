@@ -1,0 +1,58 @@
+body{ background:#E7E7E7;}
+.bannerbox{position:relative;display: block; width:100%; height:476px; margin-bottom:6px; font-size:0; line-height:0;}
+.swiper-container {width: 100%; overflow: hidden;}
+.ptBg{position:absolute; width:100%; height:2.6%;z-index:10;left:0;bottom:3.2%; text-align:center; font-weight:bold;}
+.pagination {position: absolute;z-index: 20;left:0;bottom:10px;width:100%;height:100%;}
+.swiper-pagination-switch {display: inline-block;width:8px; height:8px; line-height:8px; overflow:hidden;margin:0 5px;cursor:pointer; text-align:center;font-family:Tahoma;background:#FFF;color:#FFF;-webkit-border-radius:50%;border-radius:50%; border:none;box-shadow: 0 0 0 0 #A40000; overflow:hidden;}
+.swiper-visible-switch {background:#FFF;}
+.swiper-active-switch {background:#A40000;}
+.swiper-slide img{ width:100%; height:auto;}
+
+
+.index_three{ margin-bottom:6px; font-size:0; line-height:0;}
+.index_three li{ float:left;width:32.9%; margin-right:0.65%;}
+.index_three li.nomr{ margin-right:0;}
+
+.index_ad{ margin-bottom:6px; font-size:0; line-height:0;}
+.indexbox{ margin-bottom:6px;}
+.index_box_tit{ padding:0 3.5%; width:93%; display:block; font:normal 18px/40px "Arial"; border-bottom:1px solid #B2B2B2; margin-bottom:15px}
+.index_box_tit span{ text-transform: uppercase; color:#5b5b5b; margin-left:10px; font-size:14px;}
+.index_box_ul{padding:0 3.5%; width:93%;}
+.index_box_ul li{ float:left; position:relative; width:32%; text-align:center; height:45px; font:normal 14px/45px "Arial"; overflow:hidden; background:#fff; margin-right:1.3%; margin-bottom:5px; overflow:hidden;}
+.index_box_ul li span{ display:block; z-index:1; position:absolute; /*right:4.5%; top:5%; */right:4%; top:4%;/* right:15px; top:6px;*/width:18px; height:18px; line-height:18px;-webkit-border-radius:50%;border-radius:50%; border:none;box-shadow: 0 0 0 0 #A40000;text-align:center; color:#ffffff; font-size:12px; overflow:hidden;}
+.index_box_ul li span.hot{ background:#A40000;}
+.index_box_ul li span.hui{ background:#0168B7;}
+.index_box_ul li.more{ background:#1B1B1B; color:#C3A65E;}
+.index_box_ul li.more a{color:#C3A65E;}
+.index_newsbox{padding:0 3.5%; margin-bottom:20px;}
+.newslist{ margin-bottom:16px; background:#fff; position:relative;}
+.newslist .aimg{ width:100%;}
+.newslist .txt{ padding:0 4%;}
+.newslist  h3{ color:#8D8D8D; font:normal 14px/20px "Arial"; padding:7px 0; margin-bottom:3px;}
+.newslist  h1{ font:normal 18px/20px "Arial"; margin-bottom:15px;}
+.newslist .newshare{ padding-left:4% ;}
+.newslist .tshar{ float:left; display:block; width:50%;}
+.newslist .cname{ float:right;/*display:block;width:21%; min-width:80px;*/ height:40px; overflow:hidden;/* background:#00B8EE;*/ color:#fff; font:normal 14px/40px "Arial"; text-align:center;}
+.newslist .cname em{ float:left; display:inline-block; padding:0 10px; height:40px; overflow:hidden;/* background:#00B8EE; */color:#fff; font:normal 14px/40px "Arial"; text-align:center;}
+.newslist .cname a{ color:#fff; width:100%; height:40px; display:block;}
+
+.newslist .tshar span{ display:inline-block; padding-left:20px; height:20px; line-height:20px; margin-top:3px; font: normal 14px/20px Verdana; color:#A0A0A0; margin-right:5px;margin-bottom:5px;cursor:pointer; background-size:contain;background-repeat:no-repeat;
+background-size:18px 20px;-moz-background-size:18px 20px;-moz-background-size:18px 20px;-o-background-size:18px 20px;}
+.newslist .tshar span.zan{ background-image:url(../images/ico_share_op_zan.jpg); }
+.newslist .tshar span.hover{ color:#A40000}
+.newslist .tshar span.zan.hover{ background-image:url(../images/ico_share_op_zan_hover.jpg); }
+.newslist .tshar span.read{ background-image:url(../images/ico_share_op_u.jpg); }
+.newslist .tshar span.read.hover{ background-image:url(../images/ico_share_op_u_hover.jpg); }
+.newslist .tshar span.share{ background-image:url(../images/ico_share_op_share.jpg);}
+.newslist .tshar span.share.hover{ background-image:url(../images/ico_share_op_share_hover.jpg);}
+
+@media all and (orientation : landscape) {/*　　这是匹配横屏的状态，横屏时的css代码　　*/
+body { 
+background-color:#E7E7E7; 
+} 
+
+@media all and (orientation : portrait){/*　　这是匹配竖屏的状态，竖屏时的css代码　　*/
+body { 
+background-color:#E7E7E7;
+} 
+} 

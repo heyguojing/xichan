@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>站点配置 - 系统设置 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+    <php>$addCss="";</php>
+    <php>$addJs="";</php>
+    <include file="Common:intoHead" />
+</head>
+<body>
+    <div class="wrap"> <include file="Common:head" />
+        <div class="mainBody"> <include file="Common:left" />
+            <div id="Right">
+                <div class="contentArea">
+                    <div class="Item hr">
+                        <div class="current">站点配置</div>
+                    </div>
+                    <form action="" method="post">
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                            <tr>
+                                <th width="120">站点名称：</th>
+                                <td><input name="name" type="text" class="input" size="40" value="{$site.SITE_INFO.name}" /></td>
+                            </tr>
+							<tr>
+                                <th width="120">站点LOGO：</th>
+                                <td><input type="file" class="input" name='upload'> 请使用gif格式的图片 350*80</td>
+                            </tr>
+                            <tr>
+                                <th width="120">网站版本：</th>
+                                <td><input name="version" type="text" class="input" size="40" value="{$site.SITE_INFO.version}" /></td>
+                            </tr>
+                            <tr>
+                                <th>ICP备案：</th>
+                                <td><input class="input" name="icp" type="text" size="40" value="{$site.SITE_INFO.icp}" /></td>
+                            </tr>
+                            <tr>
+                                <th>客服邮箱：</th>
+                                <td><input class="input" name="service" type="text" size="40" value="{$site.SITE_INFO.service}" /></td>
+                            </tr>
+                            <tr>
+                                <th>客服电话：</th>
+                                <td><input class="input" name="tel" type="text" size="40" value="{$site.SITE_INFO.tel}" /></td>
+                            </tr>
+							<tr>
+                                <th>客服QQ：</th>
+                                <td><input class="input" name="qq" type="text" size="40" value="{$site.SITE_INFO.qq}" /></td>
+                            </tr>
+                            <tr>
+                                <th>传真号码：</th>
+                                <td><input class="input" name="fax" type="text" size="40" value="{$site.SITE_INFO.fax}" /></td>
+                            </tr>
+                            <tr>
+                                <th>公司地址：</th>
+                                <td><input class="input" name="address" type="text" size="40" value="{$site.SITE_INFO.address}" /></td>
+                            </tr>
+                            <tr>
+                                <th>邮政编码：</th>
+                                <td><input class="input" name="postcode" type="text" size="40" value="{$site.SITE_INFO.postcode}" /></td>
+                            </tr>
+                            <tr>
+                                <th>网站关键字：</th>
+                                <td><input class="input" name="keyword" type="text" size="40" value="{$site.SITE_INFO.keyword}" /></td>
+                            </tr>
+                            <tr>
+                                <th>网站简介：</th>
+                                <td><textarea name="description" cols="100" rows="2">{$site.SITE_INFO.description}</textarea></td>
+                            </tr>
+							<tr>
+                                <th>底部版权：</th>
+                                <td><textarea name="copyright" cols="100" rows="2">{$site.SITE_INFO.copyright}</textarea></td>
+                            </tr>
+							<tr>
+                                <th>统计代码：</th>
+                                <td><textarea name="tongji" cols="100" rows="2">{$site.SITE_INFO.tongji}</textarea></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <div class="commonBtnArea" >
+                        <button class="btn submit">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+<include file="Common:foot" />
+<script type="text/javascript">
+    $(".submit").click(function(){
+        commonAjaxSubmit();
+    });
+</script>
+</body>
+</html>

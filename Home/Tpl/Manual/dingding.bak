@@ -1,0 +1,1005 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="initial-scale=1.0,width=device-width" name="viewport">
+<title>钉钉审批流程操作手册</title>
+<style type="text/css">
+<!--
+p.TOC1 {
+margin-top:24.0pt;
+margin-right:0cm;
+margin-bottom:.0001pt;
+margin-left:0cm;
+line-height:115%;
+font-size:14.0pt;
+font-family:"Cambria","serif";
+color:#365F91;
+font-weight:bold;
+}
+p.MsoToc1 {
+margin:0cm;
+margin-bottom:.0001pt;
+text-align:justify;
+text-justify:inter-ideograph;
+font-size:10.5pt;
+font-family:"Calibri","sans-serif";
+}
+p.MsoToc2 {
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:5.0pt;
+	margin-left:11.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"华文楷体";
+	text-align: left;
+}
+p.MsoNormal {
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:left;
+	text-justify:inter-ideograph;
+	font-family:"华文楷体";
+}
+p.MsoListParagraph {
+margin:0cm;
+margin-bottom:.0001pt;
+text-align:justify;
+text-justify:inter-ideograph;
+text-indent:21.0pt;
+font-size:10.5pt;
+font-family:"Calibri","sans-serif";
+}
+.disange {
+	font-family: "华文楷体";
+}
+.disange {
+	color: #F00;
+	font-weight: bold;
+}
+.diwuge {
+	color: #F00;
+	font-family: "华文楷体";
+	font-weight: bold;
+}
+body p {
+	font-family: "华文楷体";
+	text-align: left;
+}
+body h2 {
+	font-size: 12pt;
+}
+body {
+	font-family: "华文楷体";
+}
+-->
+</style>
+</head>
+
+<body>
+<p class="TOC1" align="center" style="text-align:center;"><span style="line-height:115%; font-family:华文楷体; font-size:22.0pt; ">目录</span><span style="line-height:115%; font-family:华文楷体; font-size:12.0pt; "> </span><span style="line-height:115%; font-family:华文楷体; font-size:12.0pt; color:windowtext; font-weight:normal; "> </span></p>
+<p class="MsoToc1"><a href="#_Toc476055411"><span style="font-family:华文楷体; font-size: 14pt;">一、考勤类审批流程</span></a></p>
+<p class="MsoToc1">&nbsp;</p>
+<p class="MsoToc2"><a href="#_Toc476055412"><span style="font-family:华文楷体; ">1</span><span style="font-family:华文楷体; ">、考勤补签审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055415"><span style="font-family:华文楷体; ">2、事假病假</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055417"><span style="font-family:华文楷体; ">3、连休</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055418"><span style="font-family:&quot;华文楷体&quot;;">4</span><span style="font-family:华文楷体; ">、补休</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055419"><span style="font-family:&quot;华文楷体&quot;;">5</span><span style="font-family:华文楷体; ">、存休</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055420"><span style="font-family:华文楷体; ">6、出差、公务外出</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055421"><span style="font-family:华文楷体; ">7、年假</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055422"><span style="font-family:华文楷体; ">8、法定假</span></a></p>
+<p class="MsoToc2">&nbsp;</p>
+<p class="MsoToc1"><a href="#_Toc476055430"><span style="font-family:华文楷体; font-size: 14pt;">二、行政人事类审批流程</span></a></p>
+<p class="MsoToc1">&nbsp;</p>
+<p class="MsoToc2"><a href="#_Toc476055431"><span style="font-family:华文楷体; ">1</span><span style="font-family:华文楷体; ">、招聘需求审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055432"><span style="font-family:华文楷体; ">2</span><span style="font-family:华文楷体; ">、调薪申请审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055434"><span style="font-family:&quot;华文楷体&quot;;">3</span><span style="font-family:华文楷体; ">、转正申请审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055435"><span style="font-family:&quot;华文楷体&quot;;">4</span><span style="font-family:华文楷体; ">、咨询师项目提成申请审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055436"><span style="font-family:&quot;华文楷体&quot;;">5</span><span style="font-family:华文楷体; ">、工作调动审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055437"><span style="font-family:&quot;华文楷体&quot;;">6</span><span style="font-family:华文楷体; ">、晋升申请审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055438"><span style="font-family:&quot;华文楷体&quot;;">7</span><span style="font-family:华文楷体; ">、办公用品申请审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055439"><span style="font-family:&quot;华文楷体&quot;;">8</span><span style="font-family:华文楷体; ">、名片/工牌制作审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055440"><span style="font-family:&quot;华文楷体&quot;;">9</span><span style="font-family:华文楷体; ">、机票预订（适用于除韩国事业部专家外）、机票预订（韩国）（只适用于韩国事业部的专家）审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055441"><span style="font-family:华文楷体; ">10、奖金、补贴、福利申请审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055442"><span style="font-family:华文楷体; ">11、入职审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055443"><span style="font-family:华文楷体; ">12、转岗审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055444"><span style="font-family:华文楷体; ">13、人事特殊流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055445"><span style="font-family:华文楷体; ">14、会议室使用流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055446"><span style="font-family:华文楷体; ">15、酒店申请审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055447"><span style="font-family:华文楷体; ">16、合同/协议审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055448"><span style="font-family:华文楷体; ">17、用印审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055449"><span style="font-family:华文楷体; ">18、资质借用/领取审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055450"><span style="font-family:&quot;华文楷体&quot;;">19</span><span style="font-family:华文楷体; ">、排班表审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055451"><span style="font-family:华文楷体; ">20、录用审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055452"><span style="font-family:华文楷体; ">21、带教培训流程审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055453"><span style="font-family:华文楷体; ">22、外部培训申请审批流程</span></a></p>
+<p class="MsoToc2">&nbsp;</p>
+<p class="MsoToc1"><a href="#_Toc476055454"><span style="font-family:华文楷体; font-size: 14pt;">三、财务类审批流程</span></a></p>
+<p class="MsoToc1">&nbsp;</p>
+<p class="MsoToc2"><a href="#_Toc476055455"><span style="font-family:华文楷体; ">1</span><span style="font-family:华文楷体; ">、请款借支审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055456"><span style="font-family:华文楷体; ">2</span><span style="font-family:华文楷体; ">、费用审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055457"><span style="font-family:华文楷体; ">3</span><span style="font-family:华文楷体; ">、内部结算单审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055458"><span style="font-family:华文楷体; ">4</span><span style="font-family:华文楷体; ">、资产调拨审批流程</span></a></p>
+<p class="MsoToc2">&nbsp;</p>
+<p class="MsoToc1"><a href="#_Toc476055459"><span style="font-family:华文楷体; font-size: 14pt;">四、业务类审批流程</span></a></p>
+<p class="MsoToc1">&nbsp;</p>
+<p class="MsoToc2"><a href="#_Toc476055460"><span style="font-family:华文楷体; ">1</span><span style="font-family:华文楷体; ">、禁访审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055461"><span style="font-family:华文楷体; ">2</span><span style="font-family:华文楷体; ">、中介费申请审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055462"><span style="font-family:华文楷体; ">3</span><span style="font-family:华文楷体; ">、分院上送顾客审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055463"><span style="font-family:华文楷体; ">4</span><span style="font-family:华文楷体; ">、领货、领药审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055464"><span style="font-family:华文楷体; ">5</span><span style="font-family:华文楷体; ">、系统异常调整审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055465"><span style="font-family:华文楷体; ">6</span><span style="font-family:华文楷体; ">、新增项目/</span><span style="font-family:华文楷体; ">产品价格审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055466"><span style="font-family:华文楷体; ">7</span><span style="font-family:华文楷体; ">、治疗头申请审批流程</span></a></p>
+<p class="MsoToc2"><a href="#tuifei"><span style="font-family:&quot;华文楷体&quot;;">8</span><span style="font-family:华文楷体; ">、退费审批流程</span></a></p>
+<p class="MsoToc2"><a href="#zhekoushenqing"><span style="font-family:&quot;华文楷体&quot;;">9</span><span style="font-family:华文楷体; ">、折扣申请审批流程</span></a></p>
+<p class="MsoToc2"><a href="#weijizhi"><span style="font-family:&quot;华文楷体&quot;;">10</span><span style="font-family:华文楷体; ">、危急值报告</span></a></p>
+<p class="MsoToc2">&nbsp;</p>
+<p class="MsoToc1"><a href="#_Toc476055467"><span style="font-family:华文楷体; font-size: 14pt;">五、后勤类审批流程</span></a></p>
+<p class="MsoToc1">&nbsp;</p>
+<p class="MsoToc2"><a href="#_Toc476055468"><span style="font-family:华文楷体; ">1</span><span style="font-family:华文楷体; ">、采购申请审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055469"><span style="font-family:华文楷体; ">2</span><span style="font-family:华文楷体; ">、用车申请审批流程（员工、顾客）</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055470"><span style="font-family:华文楷体; ">3</span><span style="font-family:华文楷体; ">、车辆维修保养审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055471"><span style="font-family:华文楷体; ">4</span><span style="font-family:华文楷体; ">、物业报修审批流程（总部集团、泛亚、光华、新南店）</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055472"><span style="font-family:华文楷体; ">5</span><span style="font-family:华文楷体; ">、常备物资备案审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055473"><span style="font-family:华文楷体; ">6</span><span style="font-family:华文楷体; ">、物料需求、制作申请审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055474"><span style="font-family:华文楷体; ">7</span><span style="font-family:华文楷体; ">、采购申请-</span><span style="font-family:华文楷体; ">付款-</span><span style="font-family:华文楷体; ">报销审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055475"><span style="font-family:华文楷体; ">8</span><span style="font-family:华文楷体; ">、采购申请-</span><span style="font-family:华文楷体; ">报销-</span><span style="font-family:华文楷体; ">付款审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055476"><span style="font-family:华文楷体; ">9</span><span style="font-family:华文楷体; ">、分诊异常情况删单审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055477"><span style="font-family:华文楷体; ">10</span><span style="font-family:华文楷体; ">、物资领取审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055478"><span style="font-family:华文楷体; ">11</span><span style="font-family:华文楷体; ">、系统查询申</span><span style="font-family:'华文楷体'; background:white;">请</span><span style="font-family:华文楷体; ">审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055479"><span style="font-family:华文楷体; ">12</span><span style="font-family:华文楷体; ">、物料报损审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055480"><span style="font-family:华文楷体; ">13、内部分店区域调拨审批流程</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055481"><span style="font-family:华文楷体; ">14、员工宿舍申请</span></a></p>
+<p class="MsoToc2"><a href="#_Toc476055482">15、工作手机或号码申请审批流程</a></p>
+<p class="MsoToc1">&nbsp;</p>
+<h1><a name="_Toc475091681" id="_Toc475091681"></a><a name="_Toc476055411" id="_Toc476055411"><span style="line-height:240%; font-family:华文楷体; font-size:15.0pt; ">一、考勤类审批流程</span></a> <span style="line-height:240%; font-family:华文楷体; font-size:15.0pt; font-weight:normal; "> </span></h1>
+<h2><a name="_Toc476055412" id="_Toc476055412"><span style="line-height:173%; font-family:华文楷体; font-size:12.0pt; ">1</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、考勤补签审批流程</span> <span style="line-height:173%; font-family:华文楷体; font-size:12.0pt; font-weight:normal; "> </span></h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">本流程适用于员工在特定原因情况下未打卡而发起的申请补签流程。 </span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/kaoqinbuqian.jpg" alt="" width="203" height="421" align="middle" /></span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; color:red; font-weight: bold;">注意：该审批流程申请制单过程中所有信息为必填项。 制单日期为填写申请日期，例如：2017年2月18日补签2017年2月17日的考勤，制单日期就应该是2017年2月18日,补签的时间就应该是2017年2月17日（上午或下午具体时间）。</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">乐山店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》吕庆芬==》杨平==》单婷婷==》吕庆芬</span></strong></p>
+<p class="MsoNormal">宜宾店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》徐慧==》单婷婷==》王雪晴</span></strong></p>
+<p class="MsoNormal">自贡店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王盼==》单婷婷==》徐利</span></strong></p>
+<p class="MsoNormal">新南店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》双员==》佟安娟==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">光华店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王子善==》宋媛静==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">泛亚店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<h2><a name="_Toc476055415" id="_Toc476055415"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">2</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、事假病假</span></h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">该流程为<strong><span style="color:red; ">部门负责人</span></strong>及<strong><span style="color:red; ">张总直管人员</span></strong>事假病假使用流程。</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; "><img src="__PUBLIC__/manual/top/shijiabingjia.jpg" alt="" width="205" height="485" /></span></p>
+<p class="MsoNormal" align="center" style="text-align:left;">&nbsp;</p>
+<p><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">乐山店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》吕庆芬==》杨平==》单婷婷==》吕庆芬</span></strong></p>
+<p class="MsoNormal">宜宾店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》徐慧==》单婷婷==》王雪晴</span></strong></p>
+<p class="MsoNormal">自贡店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王盼==》单婷婷==》徐利</span></strong></p>
+<p class="MsoNormal">新南店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》双员==》佟安娟==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">光华店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王子善==》宋媛静==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">泛亚店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:left;">&nbsp;</p>
+<p class="diwuge">休假方式分为两种，一种为事假，另外一种为病假；如果休假时长为2天，休假时长应填写
+  16工时。
+</p>
+<p class="diwuge">&nbsp;</p>
+<h2><a name="_Toc476055417" id="_Toc476055417"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">3</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、连休</span></h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">当<strong><span style="color: red"></span></strong>员工有连休需求时，可发起该流程。 </span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知</span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; "> </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><img src="__PUBLIC__/manual/top/lianxiu.jpg" width="239" height="450" /></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">乐山店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》吕庆芬==》杨平==》单婷婷==》吕庆芬</span></strong></p>
+<p class="MsoNormal">宜宾店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》徐慧==》单婷婷==》王雪晴</span></strong></p>
+<p class="MsoNormal">自贡店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王盼==》单婷婷==》徐利</span></strong></p>
+<p class="MsoNormal">新南店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》双员==》佟安娟==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">光华店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王子善==》宋媛静==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">泛亚店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》单婷婷==》单婷婷</span></strong></p>
+<h2><a name="_Toc476055418" id="_Toc476055418"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">4</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、补休申请</span> </h2>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">本流程适用于存修后补休申请审批。 </span></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; "><img src="__PUBLIC__/manual/top/buxiu.jpg" width="245" height="489" /></span><span style="font-family:华文楷体; "> </span></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">乐山店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》吕庆芬==》杨平==》单婷婷==》吕庆芬</span></strong></p>
+<p class="MsoNormal">宜宾店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》徐慧==》单婷婷==》王雪晴</span></strong></p>
+<p class="MsoNormal">自贡店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王盼==》单婷婷==》徐利</span></strong></p>
+<p class="MsoNormal">新南店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》双员==》佟安娟==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">光华店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王子善==》宋媛静==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">泛亚店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》单婷婷==》单婷婷</span></strong></p>
+<h2><a name="_Toc476055419" id="_Toc476055419"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">5</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、存休</span> </h2>
+<p class="MsoNormal disange" style="font-size: 12.0pt; color: #000; font-weight: normal;">员工有调休需求须同时完成存休、补休两个申请流程。</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><img src="__PUBLIC__/manual/top/cunxiu.jpg" width="253" height="516" /></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">乐山店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》吕庆芬==》杨平==》单婷婷==》吕庆芬</span></strong></p>
+<p class="MsoNormal">宜宾店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》徐慧==》单婷婷==》王雪晴</span></strong></p>
+<p class="MsoNormal">自贡店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王盼==》单婷婷==》徐利</span></strong></p>
+<p class="MsoNormal">新南店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》双员==》佟安娟==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">光华店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王子善==》宋媛静==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">泛亚店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<h2><a name="_Toc476055420" id="_Toc476055420"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">6</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、出差、公务外出</span> </h2>
+<p class="MsoNormal disange" style="font-size: 12.0pt; color: #000; font-weight: normal;">员工有出差、外出需求可发起此流程审批。</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; "><img src="__PUBLIC__/manual/top/chuchai.jpg" alt="" width="251" height="522" /></span></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">乐山店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》吕庆芬==》杨平==》单婷婷==》吕庆芬</span></strong></p>
+<p class="MsoNormal">宜宾店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》徐慧==》单婷婷==》王雪晴</span></strong></p>
+<p class="MsoNormal">自贡店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王盼==》单婷婷==》徐利</span></strong></p>
+<p class="MsoNormal">新南店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》双员==》佟安娟==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">光华店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王子善==》宋媛静==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">泛亚店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》单婷婷==》单婷婷</span></strong></p>
+<h2><a name="_Toc476055421" id="_Toc476055421"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">7</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、年假</span> </h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">本流程主要针对员工年休假需求而发起。 </span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><img src="__PUBLIC__/manual/top/nianjia.jpg" width="251" height="490" /></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">乐山店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》吕庆芬==》杨平==》单婷婷==》吕庆芬</span></strong></p>
+<p class="MsoNormal">宜宾店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》徐慧==》单婷婷==》王雪晴</span></strong></p>
+<p class="MsoNormal">自贡店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王盼==》单婷婷==》徐利</span></strong></p>
+<p class="MsoNormal">新南店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》双员==》佟安娟==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">光华店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王子善==》宋媛静==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">泛亚店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<h2><a name="_Toc476055422" id="_Toc476055422"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">8</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、法定假</span> </h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">员工有婚假、丧假、产假需求可通过法定假流程申请审批。 </span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; "><img src="__PUBLIC__/manual/top/fadingjia.jpg" alt="" width="282" height="577" /></span></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">乐山店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》吕庆芬==》杨平==》单婷婷==》吕庆芬</span></strong></p>
+<p class="MsoNormal">宜宾店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》徐慧==》单婷婷==》王雪晴</span></strong></p>
+<p class="MsoNormal">自贡店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王盼==》单婷婷==》徐利</span></strong></p>
+<p class="MsoNormal">新南店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》双员==》佟安娟==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">光华店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王子善==》宋媛静==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">泛亚店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》单婷婷==》单婷婷</span></strong></p>
+<h2>&nbsp;</h2>
+<h1><a name="_Toc476055430" id="_Toc476055430"><span style="font-family:华文楷体; font-size:15.0pt; ">二、行政人事类审批流程</span></a> <span style="font-family:华文楷体; font-size:15.0pt; font-weight:normal; "> </span></h1>
+<h2><a name="_Toc476055431" id="_Toc476055431"><span style="font-family:华文楷体; font-size:12.0pt; ">1</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、招聘需求审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></h2>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">本流程用于新增编制，<strong><span style="color:red; ">用人部门</span></strong>发起申请需求，人力资源部审核，总经理审批。 </span></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">&nbsp;</span></strong></p>
+<br clear="all" />
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image067.jpg" alt="" width="194" height="392" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》第3级主管==》周勇==》张翼翔==》杨舒</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055432" id="_Toc476055432"><span style="font-family:华文楷体; font-size:12.0pt; ">2</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、调薪申请审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">西婵内部工作人员满足薪酬调整条件后可发起本流程办理。 </span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image070.jpg" alt="" width="211" height="428" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">泛亚店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》第3级主管==》周勇==》张翼翔==》张柳叶==》李涛涛 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">乐山店</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》吕庆芬==》杨平==》周勇==》张翼翔==》吕庆芬</span></strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; "> </span></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">宜宾店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》徐慧==》周勇==》张翼翔==》徐慧</span></strong><strong><span style="font-family:华文楷体; "> </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">自贡店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》杨莹莹==》周勇==》张翼翔==》杨莹莹</span></strong><strong><span style="font-family:华文楷体; "> </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">新南店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》双员==》佟安娟==》周勇=》张翼翔==》张柳叶==》李涛涛</span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">光华店</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王子善==》宋媛静==》周勇==》张翼翔==》张柳叶==》李涛涛</span></strong><strong><span style="font-family:华文楷体; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<h2><a name="_Toc476055434" id="_Toc476055434"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">3</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、转正申请审批流程</span> </h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">内部员工转正填写申请。</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image075.jpg" alt="" width="208" height="422" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">泛亚店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》魏雪==》张柳叶==》张柳叶==》张婧（人事部）=》周勇==》张翼翔==》张柳叶 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">乐山店</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》吕庆芬==》杨平==》张婧（人事部）==》周勇==》张翼翔==》吕庆芬</span></strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; "> </span></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">宜宾店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》徐慧==》张婧（人事部）==》周勇==》张翼翔==》王雪晴</span></strong><strong><span style="font-family:华文楷体; "> </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">自贡店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王盼==》张婧（人事部）==》周勇==》张翼翔==》徐利</span></strong> </p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">新南店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》双员==》佟安娟==》魏雪==》张柳叶==》张婧（人事部）==》周勇=》张翼翔==》张柳叶</span></strong><strong><span style="font-family:华文楷体; "> </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">光华店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王子善==》宋媛静==》魏雪==》张柳叶==》张婧（人事部）==》周勇=》张翼翔==》张柳叶</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055435" id="_Toc476055435"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">4</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、咨询师项目提成申请审批流程</span> </h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">本流程由咨询发起，经咨询经理签字确认，人力资源部及总经理审核，由信息部开通相应系统权限，并告知前厅部，前厅部进行分诊相关安排，后转人力资源部备案 </span>。</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image077.jpg" alt="" width="216" height="440" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image079.jpg" alt="" width="219" height="231" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》张翼翔==》叶虹==》周朝君==》张柳叶 </span></strong></p>
+<h2><a name="_Toc476055436" id="_Toc476055436"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">5</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、工作调动审批流程</span> </h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">本流程为有工作调动方面需求的员工或部门使用。</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image082.jpg" alt="" width="205" height="416" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p style="color: #F00; font-family: '华文楷体'; font-weight: bold;"><strong>注意：调出部门为原部门，调入部门为现部门；调出部门负责人在审批过程中需要转交调入部门负责人。 </strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; text-align: center;">第1级主管==》第2级主管==》魏雪==》周勇==》张翼翔==》张柳叶==》李涛涛</span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:left;">&nbsp;</p>
+<h2><a name="_Toc476055437" id="_Toc476055437"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">6</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、晋升申请审批流程</span> </h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">西婵内部员工满足晋升条件后，可通过发起本流程办理岗位晋升。</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image087.jpg" alt="" width="193" height="398" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p style="color: #F00; font-family: '华文楷体'; font-weight: bold;">【晋升类别】分为非考试和考试晋升两种；【门店】请填写晋升人员所属的分院；【晋升情况】分为部门内晋升和跨部门晋升两种。</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">非考试晋升</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; text-align: center;">第1级主管==》第2级主管==》周勇==》张翼翔==》张柳叶==》李涛涛</span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">考试晋升</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》魏雪==》周勇==》张翼翔==》张柳叶==》李涛涛</span></strong><span style="font-family:华文楷体; "> </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<h2><a name="_Toc476055438" id="_Toc476055438"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">7</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、办公用品申请审批流程</span> </h2>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">本流程适用于各部门办公用品申请。 </span></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image090.jpg" alt="" width="191" height="386" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p style="color: #F00; font-family: '华文楷体'; font-weight: bold;">如有2种及以上办公用品需要申请，请通过增加明细再次添加品种。</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">泛亚店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》吕丹 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">乐山店-</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》吕庆芬</span></strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; "> </span></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">宜宾店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王雪晴</span></strong><strong><span style="font-family:华文楷体; "> </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">自贡店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》徐利</span></strong><strong><span style="font-family:华文楷体; "> </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">新南店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》吕丹</span></strong><strong><span style="font-family:华文楷体; "> </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">光华店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》吕丹</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055439" id="_Toc476055439"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">8</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、名片/工牌制作审批流程</span> </h2>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">本流程适用于申请制作名片/工牌。</span></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image093.jpg" alt="" width="175" height="359" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">泛亚店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》吕丹==》张婧（人事部）=》梁德国==》吕丹 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">乐山店</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》杨平==》梁德国==》吕庆芬</span></strong> </p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">宜宾店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》徐慧==》梁德国==》王雪晴</span></strong><strong><span style="font-family:华文楷体; "> </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">自贡店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》王盼==》梁德国==》徐利</span></strong> </p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">新南店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》吕丹==》张婧（人事部）==》梁德国=》吕丹 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">光华店</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; text-align: center;">第1级主管==》第2级主管==》</span><span style="font-family:华文楷体; font-size:12.0pt; ">吕丹</span><span style="font-family:华文楷体; font-size:12.0pt; ">==》张婧（人事部）</span><span style="font-family:华文楷体; font-size:12.0pt; text-align: center;">==》梁德国==》</span><span style="font-family:华文楷体; font-size:12.0pt; ">吕丹</span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<h2><a name="_Toc476055440" id="_Toc476055440"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">9</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、机票预订（适用于除韩国事业部专家外）、机票预订（韩国）（只适用于韩国事业部的专家）</span></h2>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知</span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image095.jpg" alt="" width="160" height="326" /><img src="__PUBLIC__/manual/top/image097.jpg" alt="" width="162" height="326" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">机票预订</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》张婧（人事部）==》姚文娟 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">机票预订（韩国）</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">单婷婷==》姚文娟</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055441" id="_Toc476055441"><span style="font-family:华文楷体; font-size:12.0pt; ">10</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、奖金、补贴、福利申请审批流程</span> <span style="font-family:华文楷体; font-size:12.0pt; font-weight:normal; "> </span></h2>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知</span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image099.jpg" alt="" width="158" height="319" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">泛亚店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">周勇==》张翼翔==》单婷婷 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">新南、光华、乐山店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">院办主任==》院长、总经理==》周勇==》张翼翔==》单婷婷</span></strong><span style="font-family:华文楷体; "> </span></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">宜宾、自贡店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">院办主任==》周勇==》张翼翔==》单婷婷</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055442" id="_Toc476055442"><span style="font-family:华文楷体; font-size:12.0pt; ">11</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、入职审批流程</span> </h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">上岗培训期应结束日期为入职当天起算的第8天，8天内有1天是周休</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image102.jpg" alt="" width="156" height="320" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p style="color: #F00; font-family: '华文楷体'; font-weight: bold;">入职日期选择本人入职当天日期及从当天算起的第8天日期。</p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程</span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》魏雪==》李涛涛==》张柳叶 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批要点 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">1</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; ">、部门负责人 </span></strong></p>
+<p class="MsoNormal" style="margin-left:21.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">a</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; ">、指导及评价新人上岗培训期的学习情况； </span></strong></p>
+<p class="MsoNormal" style="margin-left:21.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">b</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; ">、指定上岗培训期结束后的一对一带教导师； </span></strong></p>
+<p class="MsoNormal" style="margin-left:21.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">c</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; ">、审批时间：七天培训结束后的次日。 </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">2</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; ">、培训主管 </span></strong></p>
+<p class="MsoNormal" style="margin-left:21.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">a</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; ">、监督新人上岗培训期间的实施情况； </span></strong></p>
+<p class="MsoNormal" style="margin-left:21.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">b</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; ">、考评新人上岗培训的结果。 </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">3</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; ">、人事助理 </span></strong></p>
+<p class="MsoNormal" style="margin-left:21.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">a</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; ">、新人入职手续完善； </span></strong></p>
+<p class="MsoNormal" style="margin-left:21.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">b</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; ">、将流程转交至部门负责人指定的代教导师。 </span></strong></p>
+<h2><a name="_Toc476055443" id="_Toc476055443"><span style="font-family:华文楷体; font-size:12.0pt; ">12</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、转岗审批流程</span> </h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">在与转岗之前以及转岗之后部门负责人沟通妥善后，转岗申请人可发起本流程办理转岗手续。 </span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image104.jpg" alt="" width="164" height="331" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》魏雪==》周勇==》张翼翔==》张柳叶==》李涛涛</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055444" id="_Toc476055444"><span style="font-family:华文楷体; font-size:12.0pt; ">13</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、人事特殊流程</span> </h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">若员工有自愿放弃公司福利、公司代买公积金等需求，可发起本流程办理相关手续。</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image106.jpg" alt="" width="195" height="397" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》周勇==》张翼翔==》张柳叶</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055445" id="_Toc476055445"><span style="font-family:华文楷体; font-size:12.0pt; ">14</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、会议室使用流程</span> <span style="font-family:华文楷体; font-size:12.0pt; font-weight:normal; "> </span></h2>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image108.jpg" alt="" width="177" height="357" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》周勇==》姚文娟</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055446" id="_Toc476055446"><span style="font-family:华文楷体; font-size:12.0pt; ">15</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、酒店申请审批流程</span> </h2>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image111.jpg" alt="" width="148" height="305" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p style="color: #F00; font-weight: bold;">入住类别分为客户和专家两种。 </p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">客户 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》张翼翔==》姚文娟==》周勇==》姚文娟 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">专家 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》姚文娟==》周勇==》姚文娟</span></strong> </p>
+<h2><a name="_Toc476055447" id="_Toc476055447"><span style="font-family:华文楷体; font-size:12.0pt; ">16</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、合同/协议审批流程</span> </h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">涉及第三方合同签订可通过本流程办理。 </span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image114.jpg" alt="" width="182" height="366" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p style="font-weight: bold; color: #F00;">合同未涉及到金额的此项填写<strong>0</strong>。</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》梁然香==》张翼翔==》王盼==》许雪怡</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055448" id="_Toc476055448"><span style="font-family:华文楷体; font-size:12.0pt; ">17</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、用印审批流程</span> </h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">凡西婵内部员工需要使用各类印章可发起本流程申请。 </span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image116.jpg" alt="" width="162" height="328" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王盼==》许雪怡 </span></strong></p>
+<h2><a name="_Toc476055449" id="_Toc476055449"><span style="font-family:华文楷体; font-size:12.0pt; ">18</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、资质借用/领取审批流程</span> <span style="font-family:华文楷体; font-size:12.0pt; font-weight:normal; "> </span></h2>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image118.jpg" alt="" width="193" height="388" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王盼==》许雪怡 </span></strong></p>
+<h2><a name="_Toc476055450" id="_Toc476055450"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">19</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、排班表审批流程</span> </h2>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">此流程仅适用于各部门每周排班审批。</span></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image120.jpg" alt="" width="200" height="401" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">乐山店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》吕庆芬==》杨平==》单婷婷==》吕庆芬</span></strong></p>
+<p class="MsoNormal">宜宾店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》徐慧==》单婷婷==》王雪晴</span></strong></p>
+<p class="MsoNormal">自贡店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王盼==》单婷婷==》徐利</span></strong></p>
+<p class="MsoNormal">新南店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》双员==》佟安娟==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">光华店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王子善==》宋媛静==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal">泛亚店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》单婷婷==》单婷婷</span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<h2><a name="_Toc476055451" id="_Toc476055451"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">20</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、录用审批流程</span> </h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">各部门如果有用人需求，可通过本流程提交申请。</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image123.jpg" alt="" width="186" height="376" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">周勇==》张翼翔==》张柳叶</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055452" id="_Toc476055452"><span style="font-family:华文楷体; font-size:12.0pt; ">21</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、带教培训流程审批流程</span> </h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">入职流程全部结束后，次日提交此流程。</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image125.jpg" alt="" width="182" height="369" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">魏雪==》第1级主管==》张婧（人事部）==》周勇==》张翼翔 </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">审批要点：</span></strong><span style="font-family:华文楷体; color:red; "> </span></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">1</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">、带教导师： </span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;text-indent:24.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">a</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">、需在二阶段带教结束后，对新员工带教期间的表现时行评价； </span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;text-indent:24.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">b</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">、审批时间：二阶段带教结束后； </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">2</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">、部门负责人： </span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;text-indent:24.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">a</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">、需对新员工二阶段学习期间的表现进行评价； </span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;text-indent:24.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">b</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">、需对带教导师进行评价； </span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;text-indent:24.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">c</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">、审批时间：二阶段带教结束后。 </span></strong></p>
+<h2><a name="_Toc476055453" id="_Toc476055453"><span style="font-family:华文楷体; font-size:12.0pt; ">22</span></a><span style="font-family:华文楷体;">、外部培训申请审批流程</span> <span style="font-family:华文楷体; font-size:12.0pt; font-weight:normal; "> </span></h2>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image127.jpg" alt="" width="182" height="371" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">张翼翔==》周勇==》魏雪 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<h1><a name="_Toc476055454" id="_Toc476055454"><span style="font-family:华文楷体; font-size:15.0pt; ">三、财务类审批流程</span></a> <span style="font-family:华文楷体; font-size:15.0pt; font-weight:normal; "> </span></h1>
+<h2><a name="_Toc476055455" id="_Toc476055455"><span style="font-family:华文楷体; font-size:12.0pt; ">1</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、请款借支审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">部门或个人涉及请款借款可发起本流程。</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"> <strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image132.jpg" alt="" width="208" height="419" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image134.jpg" alt="" width="213" height="204" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:left; font-weight: bold; color: #F00; font-family: '华文楷体';">【款项使用】方式为&ldquo;借支&rdquo;或&ldquo;请款&rdquo;；【付款方式】有多种供制单人选择，支票、贷记、电汇、汇票、现金、银行卡。注意：<strong>对公转款，选电汇；通过增加明细，可以详细说明资金流向和详细用途。 </strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="left" style="text-align:left;"><span style="font-family:华文楷体; font-size:12.0pt; ">所属区域为成都区域费用 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》第3级主管==》梁然香==》张翼翔==》刘军 </span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;"><span style="font-family:华文楷体; font-size:12.0pt; ">成都区域物资 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》第3级主管==》魏小娟==》梁然香==》张翼翔==》刘军 </span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;"><span style="font-family:华文楷体; font-size:12.0pt; ">自贡区域 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》余沁兰==》杨莹莹==》梁然香==》张翼翔==》刘丽 </span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;"><span style="font-family:华文楷体; font-size:12.0pt; ">乐山区域</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》冯燕==》吕庆芬==》杨平==》梁然香==》张翼翔==》熊亮玉</span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;"><span style="font-family:华文楷体; font-size:12.0pt; ">宜宾区域 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》雷电==》徐慧==》梁然香==》张翼翔==》袁吉芳</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055456" id="_Toc476055456"><span style="font-family:华文楷体; font-size:12.0pt; ">2</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、费用审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">相关费用项目可通过本流程办理。</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image136.jpg" alt="" width="150" height="304" /><img src="__PUBLIC__/manual/top/image138.jpg" alt="" width="152" height="304" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="left" style="text-align:left;"><span style="font-family:华文楷体; font-size:12.0pt; ">所属区域为成都区域费用 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》第3级主管==》梁然香==》张翼翔==》刘军 </span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;"><span style="font-family:华文楷体; font-size:12.0pt; ">成都区域物资 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》第3级主管==》魏小娟==》梁然香==》张翼翔==》刘军 </span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;"><span style="font-family:华文楷体; font-size:12.0pt; ">自贡区域 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》余沁兰==》杨莹莹==》梁然香==》张翼翔==》刘丽 </span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;"><span style="font-family:华文楷体; font-size:12.0pt; ">乐山区域</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》冯燕==》吕庆芬==》杨平==》梁然香==》张翼翔==》熊亮玉</span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;"><span style="font-family:华文楷体; font-size:12.0pt; ">宜宾区域 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》雷电==》徐慧==》梁然香==》张翼翔==》袁吉芳</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055457" id="_Toc476055457"><span style="font-family:华文楷体; font-size:12.0pt; ">3</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、内部结算单审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></h2>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">适用于集团财务内部账务结算。</span></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image141.jpg" alt="" width="164" height="336" /></span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程</span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">成都三店费用 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》杨倩 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">成都三店成本 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》魏小娟 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">泛亚光华收入 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》叶虹 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">新南收入 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》王春梅 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">乐山店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》冯燕 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">宜宾店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》雷电 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">自贡店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》余沁兰</span></strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></p>
+<h2><a name="_Toc476055458" id="_Toc476055458"><span style="font-family:华文楷体; font-size:12.0pt; ">4</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、资产调拨审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">本流程适用于部门负责人资产调拨。 </span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image143.jpg" alt="" width="160" height="324" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》杨万军==》梁然香</span></strong><span style="font-family:华文楷体; "> </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<h1><a name="_Toc476055459" id="_Toc476055459"><span style="font-family:华文楷体; font-size:15.0pt; ">四、业务类审批流程</span></a> <span style="font-family:华文楷体; font-size:15.0pt; font-weight:normal; "> </span></h1>
+<h2><a name="_Toc476055460" id="_Toc476055460"><span style="font-family:华文楷体; font-size:12.0pt; ">1</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、禁访审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">禁访流程主要针对有需要禁止回访的顾客。</span></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:'Arial','sans-serif'; font-size:11.5pt; color:#858585; "> </span></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image146.jpg" alt="" width="199" height="404" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:left; color: #F00; font-weight: bold; font-family: '华文楷体';">该选项分为业务类、医疗类、服务类三个类别。</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程</span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">业务类 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》张翼翔==》周朝君 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">医疗类 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》黄琪平==》周朝君 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">服务类 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》周朝君</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055461" id="_Toc476055461"><span style="font-family:华文楷体; font-size:12.0pt; ">2</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、中介费申请审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知</span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image149.jpg" alt="" width="168" height="344" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">成都地区 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》叶虹==》张伯菊==》梁然香==》张翼翔==》刘军 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">乐山店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》冯燕==》杨平==》张伯菊==》梁然香==》张翼翔==》熊亮玉 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">宜宾店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》雷电==》张伯菊==》梁然香==》张翼翔==》袁吉芳 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">自贡店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》余沁兰==》张伯菊==》梁然香==》张翼翔==》刘丽</span></strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></p>
+<h2><a name="_Toc476055462" id="_Toc476055462"><span style="font-family:华文楷体; font-size:12.0pt; ">3</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、分院上送顾客审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">仅适用于各分院咨询师上送顾客联系各咨询师流程。</span></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image151.jpg" alt="" width="183" height="372" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">新南店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">陈丽莉==》双员==》吴祥 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">乐山店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">陈丽莉==》吕庆芬 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">宜宾店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">陈丽莉==》徐慧==》陈波 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">自贡店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">陈丽莉==》杨莹莹==》杨波 </span></strong></p>
+<h2><a name="_Toc476055463" id="_Toc476055463"><span style="font-family:华文楷体; font-size:12.0pt; ">4</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、领货、领药审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">本流程适用于护士领货、领药发起。</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image154.jpg" alt="" width="188" height="376" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:left; font-family: '华文楷体'; color: #F00; font-weight: bold;">如果有2种或2种以上的药品，请通过增加明细添加。</p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》杨江玲</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055464" id="_Toc476055464"><span style="font-family:华文楷体; font-size:12.0pt; ">5</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、系统异常调整审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">仅适用于医院信息系统异常需要后台进行数据调整。</span></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:'Arial','sans-serif'; font-size:11.5pt; color:#858585; "> </span></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image156.jpg" alt="" width="172" height="346" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》张翼翔==》周朝君==》叶虹</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055465" id="_Toc476055465"><span style="font-family:华文楷体; font-size:12.0pt; ">6</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、新增项目/产品价格审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">此流程仅适用于价格表上新增项目/产品。</span></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;">&nbsp;</p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;background:white;"><span style="font-family:'Arial','sans-serif'; font-size:11.5pt; color:#858585; "><img src="__PUBLIC__/manual/top/image158.jpg" alt="" width="195" height="402" /></span><span style="font-family:'Arial','sans-serif'; font-size:11.5pt; color:#858585; "> </span></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》张翼翔==》黄秋阳</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055466" id="_Toc476055466"><span style="font-family:华文楷体; font-size:12.0pt; ">7</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、治疗头申请审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">皮肤科用治疗头发起本流程。 </span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知</span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image160.jpg" alt="" width="190" height="382" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">林燕==》张翼翔==》杨江玲</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><span style="font-family:华文楷体; font-size:12.0pt; "><span class="MsoNormal"><strong><a name="tuifei" id="tuifei"></a></strong></span>8</span><span style="font-family:华文楷体; font-size:12.0pt; ">、退费审批流程 </span></h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">若涉及客户产生退费情况，需公司对接人发起本流程申请退费。</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image163.jpg" alt="" width="214" height="313" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">系统判断（退费时间是否在3天以上）==》销售经理==》会计==》张翼翔==》梁然香==》黄琪平==》出纳退款 </span></strong></p>
+<h2><span style="font-family:华文楷体; font-size:12.0pt; "><a name="zhekoushenqing" id="zhekoushenqing"></a>9</span><span style="font-family:华文楷体; font-size:12.0pt; ">、折扣申请审批流程 </span></h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">若部门有相关折扣业务申请，可发起本流程。</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image165.jpg" alt="" width="298" height="225" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">折扣申请==》销售经理==》制单人==》收银员==》会计核实 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal" align="left" style="text-align:left;"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">注意：填写相应的折扣或金额及说明，必要可上传相应图片。审批人是具有该折扣或金额的最终批复权限人。</span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;">&nbsp;</p>
+<h2><span style="font-size: 12.0pt"><a name="weijizhi" id="weijizhi"></a>10</span><span style="font-family:华文楷体; font-size:12.0pt; ">、危急值报告审批流程</span> </h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">检验组按需求发起本流程。 </span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知</span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong><img src="__PUBLIC__/manual/top/weijizhibaogao.jpg" width="199" height="460" /></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">手术地点：泛亚店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">马世春==》朱文藻==》李晋==》周三庭==》翟庆玲==》樊泽旭</span></strong></span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal">手术地点：新南店</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">马世春==》朱文藻==》李晋==》周三庭==》王秀芳==》文祝春</span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<h1><a name="_Toc476055467" id="_Toc476055467"><span style="font-family:华文楷体; font-size:15.0pt; ">五、后勤类审批流程</span></a> <span style="font-family:华文楷体; font-size:15.0pt; font-weight:normal; "> </span></h1>
+<h2><a name="_Toc476055468" id="_Toc476055468"><span style="font-family:华文楷体; font-size:12.0pt; ">1</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、采购申请审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">该审批用于各部门各类备物资申购。</span><span style="font-family:'Arial','sans-serif'; font-size:11.5pt; color:#858585; "> </span></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image170.jpg" alt="" width="184" height="374" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p style="color: #F00; font-weight: bold;">物质类别分为：常备物资，非常备物资，紧急物资；若有相关需要采购的商品文件或图片，说明等，可通过上传附件补充说明；紧急程度选项分为：1、3、7天内及7天以上到位供需求方选择，这里请根据实际需求情况选择。</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="left" style="text-align:left;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">常备物资 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》第3级主管==》李轲 </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">非常备物资 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》第3级主管==》李轲==》张翼翔==》李轲 </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">紧急物资 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》第3级主管==》杨江玲==》李轲==》张翼翔</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055469" id="_Toc476055469"><span style="font-family:华文楷体; font-size:12.0pt; ">2</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、用车申请审批流程（员工、顾客）</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">西婵内部员工或西婵顾客需要用车，可发起用车申请办理。 </span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image173.jpg" alt="" width="160" height="324" /><img src="__PUBLIC__/manual/top/image175.jpg" alt="" width="162" height="325" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">用车申请（员工） </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">成都地区 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》张婧（人事部）==》吴祥==》吕丹 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">乐山地区 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">杨平==》吕庆芬 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">宜宾地区 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》徐慧==》王雪晴 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">自贡地区 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》杨莹莹==》徐利 </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">用车申请（顾客） </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">该流程直接由审批人</span></strong><strong><span style="font-family:华文楷体; font-size:14.0pt; color:red; ">王延</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批</span></strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></p>
+<h2><a name="_Toc476055470" id="_Toc476055470"><span style="font-family:华文楷体; font-size:12.0pt; ">3</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、车辆维修保养审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">本流程主要用于公司车辆做维修保养申请。</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image177.jpg" alt="" width="176" height="360" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">吴祥==》张翼翔</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055471" id="_Toc476055471"><span style="font-family:华文楷体; font-size:12.0pt; ">4</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、物业报修审批流程（总部集团、泛亚、光华、新南店）</span> <span style="font-family:华文楷体; font-size:12.0pt; font-weight:normal; "> </span></h2>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image179.jpg" alt="" width="195" height="400" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">成都泛亚店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">杨万军 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">成都新南店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">黄刚</span></strong><span style="font-family:华文楷体; "> </span></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">成都光华店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">杨万军</span></strong><span style="font-family:华文楷体; "> </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<h2><a name="_Toc476055472" id="_Toc476055472"><span style="font-family:华文楷体; font-size:12.0pt; ">5</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、常备物资备案审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">本流程仅适用于各连锁店常备药品、产品备案。 </span></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image181.jpg" alt="" width="186" height="386" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="left" style="text-align:left;"><span style="font-family:华文楷体; font-size:12.0pt; ">泛亚药品类 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》李轲==》杨江玲 </span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;"><span style="font-family:华文楷体; font-size:12.0pt; ">泛亚物资类 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》李轲==》魏小娟 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; ">新南店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》李轲==》杨江玲 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">乐山店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》李轲 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">宜宾店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》李轲 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">自贡店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》李轲 </span></strong></p>
+<h2><a name="_Toc476055473" id="_Toc476055473"><span style="font-family:华文楷体; font-size:12.0pt; ">6</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、物料需求、制作申请审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal" style="line-height:12.75pt;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">物料需求和制作申请分别适用于全连锁宣传，布置等物料申请和联席运营中心制作全连锁各物料。</span></p>
+<p class="MsoNormal" style="line-height:12.75pt;background:white;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image183.jpg" alt="" width="174" height="359" /><img src="__PUBLIC__/manual/top/image185.jpg" alt="" width="179" height="358" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="left" style="text-align:left;"><span style="font-family:华文楷体; font-size:12.0pt; ">物料需求申请 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》郝永强==》梁德国==》张佳 </span></strong></p>
+<p class="MsoNormal" align="left" style="text-align:left;"><span style="font-family:华文楷体; font-size:12.0pt; ">物料制作申请 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》李轲==》张翼翔==》李轲 </span></strong></p>
+<h2><a name="_Toc476055474" id="_Toc476055474"><span style="font-family:华文楷体; font-size:12.0pt; ">7</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、采购申请-付款-报销审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">本流程适用于全院申请-付款-报销申请。</span></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image188.jpg" alt="" width="156" height="316" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p style="color: #F00; font-weight: bold;">紧急程序指的是根据事项的紧急程度选择申请费用多少天内交付。</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》李轲==》张翼翔==》李轲==》梁然香==》张翼翔==》刘军==》李轲==》魏小娟 </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">注意： </span></strong></p>
+<p class="MsoNormal" style="text-indent:24.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">1</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">、在总经理和采购经理审批完成后，经办人需要和财务部门核对请款事项如：付款金额/付款方式/收款方信息； </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">　　2、在出纳付款环节完成后，经办人填写报销单，完成财务审核程序，并附加照片进入报销流程。</span></strong><strong><span style="font-family:华文楷体; color:red; "> </span></strong></p>
+<h2><a name="_Toc476055475" id="_Toc476055475"><span style="font-family:华文楷体; font-size:12.0pt; ">8</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、采购申请-报销-付款审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">本流程适用于全院申请-报销-付款申请。 </span></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image190.jpg" alt="" width="161" height="327" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程</span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》李轲==》张翼翔==》李轲==》魏小娟==》梁然香==》张翼翔==》刘军 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">注意： </span></strong></p>
+<p class="MsoNormal" style="text-indent:24.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">在总经理和采购经理审批完成后，经办人验收入库，填写报销单，完成财务审核程序，并附加照片进入下一环节。 </span></strong></p>
+<h2><a name="_Toc476055476" id="_Toc476055476"><span style="font-family:华文楷体; font-size:12.0pt; ">9</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、分诊异常情况删单审批流程</span> <span style="font-family:华文楷体; font-size:12.0pt; font-weight:normal; "> </span></h2>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image193.jpg" alt="" width="169" height="341" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p align="left" style="color: #F00; font-weight: bold;">【申请时间】指的是流程发起当天时间 。</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》周朝君</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055477" id="_Toc476055477"><span style="font-family:华文楷体; font-size:12.0pt; ">10</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、物资领取审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">医院各部门领取物资前需要发起本流程。</span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image195.jpg" alt="" width="168" height="341" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》魏小娟</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055478" id="_Toc476055478"><span style="font-family:华文楷体; font-size:12.0pt; ">11</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、系统查询申</span><span style="line-height:173%; font-family:宋体; font-size:11.5pt; color:#323334; background:white; ">请</span><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">本流程适用于现场运营部申请系统查询申请。 </span></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image198.jpg" alt="" width="179" height="368" /></span></p>
+<p style="color: #F00; font-weight: bold;">【权限】是指申请人所属职位或对应的权限。 </p>
+<p class="MsoNormal" align="center" style="text-align:left;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》周朝君</span></strong><span style="font-family:华文楷体; "> </span></p>
+<h2><a name="_Toc476055479" id="_Toc476055479"><span style="font-family:华文楷体; font-size:12.0pt; ">12</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、物料报损审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;"><span style="font-family:华文楷体; font-size:12.0pt; ">此流程仅适用于物料报损申请。</span></p>
+<p class="MsoNormal" align="left" style="text-align:left;background:white;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image200.jpg" alt="" width="190" height="388" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;">&nbsp;</p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">泛亚店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》陈志方==》魏小娟==》张翼翔==》魏小娟==》陈志方 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">新南店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》魏小娟==》张凤鸣==》张翼翔==》魏小娟 ==》张凤鸣</span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">光华店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》魏小娟==》张翼翔==》魏小娟 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">乐山店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》冯燕==》魏小娟==》张翼翔==》魏小娟==》冯燕 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">宜宾店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》雷电==》魏小娟==》张翼翔==》魏小娟==》雷电 </span></strong></p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">自贡店 </span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》余沁兰==》魏小娟==》张翼翔==》魏小娟==》余沁兰</span></strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></p>
+<h2><a name="_Toc476055480" id="_Toc476055480"><span style="font-family:华文楷体; font-size:12.0pt; ">13</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、内部分店区域调拨审批流程</span><span style="font-family:华文楷体; font-size:12.0pt; "> </span></h2>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/image202.jpg" alt="" width="173" height="351" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》第2级主管==》周勇==》张翼翔==》单婷婷 </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">注意：</span></strong><span style="font-family:华文楷体; color:red; "> </span></p>
+<p class="MsoNormal" style="margin-left:42.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">1</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">、调出库管完成出库后注明单号或截图 </span></strong></p>
+<p class="MsoNormal" style="margin-left:42.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">2</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">、调出库管根据需要调入的库房自行转交调入库管 </span></strong></p>
+<p class="MsoNormal" style="margin-left:42.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">3</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">、调入库管完成入库后注明单号或截图 </span></strong></p>
+<p class="MsoNormal" style="margin-left:42.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">4</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">、成本会计核实业务完成情况 </span></strong></p>
+<p class="MsoNormal" style="margin-left:42.0pt;">&nbsp;</p>
+<h2><a name="_Toc476055481" id="_Toc476055481"><span style="font-family:华文楷体; font-size:12.0pt; ">14</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、员工宿舍申请</span> </h2>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/员工宿舍.jpg" alt="" width="167" height="349" /></span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; "> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><span style="font-family:华文楷体; font-size:12.0pt; ">泛亚店</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》周勇==》邓本前==》杨万军==》吕丹</span></strong></p>
+<p class="MsoNormal"><span style="font-family:&quot;华文楷体&quot;; font-size:12.0pt;">新南店</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">第1级主管==》周勇==》黄刚==》吕丹</span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">注意：</span></strong><span style="font-family:华文楷体; color:red; "> </span></p>
+<p class="MsoNormal" style="margin-left:42.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">1</span></strong><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">、申请出差入住的员工需要填写退房时间；</span></strong></p>
+<p class="MsoNormal" style="margin-left:42.0pt;"><strong><span style="font-family:华文楷体; font-size:12.0pt; color:red; ">2、可通过上传图片补充说明相关情况。 </span></strong></p>
+<h2><a name="_Toc476055482" id="_Toc2"><span style="font-family:华文楷体; font-size:12.0pt; ">15</span></a><span style="font-family:华文楷体; font-size:12.0pt; ">、工作手机或号码申请审批流程 </span></h2>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">制单须知 </span></strong></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong><span style="font-family:华文楷体; font-size:12.0pt; "><img src="__PUBLIC__/manual/top/钉钉企业管理员审批流程操作手册 (新)_clip_image002_0001.jpg" width="175" height="356" /> </span></strong></p>
+<p class="MsoNormal"><strong><span style="font-family:华文楷体; font-size:12.0pt; ">审批流程 </span></strong></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center;"><span style="font-family:华文楷体; ">&nbsp;</span></p>
+<p class="MsoNormal" align="center" style="text-align:center;"><strong>第1级主管==》王盼==》吕丹</strong></p>
+<p class="MsoNormal">&nbsp;</p>
+</body>
+</html>

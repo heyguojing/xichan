@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>项目中心 - {$systemConfig.SITE_INFO.name}</title> 
+    <meta name="keywords" content="{$systemConfig.SITE_INFO.keywords}" />
+    <meta name="description" content="{$systemConfig.SITE_INFO.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/member.css" rel="stylesheet" type="text/css" />
+    <script src="__PUBLIC__/js/jquery-1.9.0.min.js"></script>
+    <link href="__PUBLIC__/Css/base.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Js/asyncbox/skins/default.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/Js/base.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/functions.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.form.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/asyncbox/asyncbox.js"></script>
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+        <div class="buypaybox">      
+        	<div class="buy_orderlist">
+            	<p>订单名称：{$info.title}</p>
+                <p>订单金额：{$data.zongjia}元</p>
+            </div>
+        	<div class="buy_paylist">
+            	<ul>
+                	<li>
+                    	还需支付：<span class="color_red">{$data.zongjia}元</span>
+                    </li>
+                	<li>
+                    	<div class="paytype">
+                        	<img src="__PUBLIC__/images/member/zfb.jpg" class="payimg" />
+                            <h3>支付宝客户端</h3>
+                            <p>推荐按照支付宝客户端的用户使用</p>
+                            <span class="paysel selected" typeid="1"></span>
+                        </div>
+                    </li>
+                	<!--<li>
+                    	<div class="paytype">
+                        	<img src="__PUBLIC__/images/member/yhk.jpg" class="payimg" />
+                            <h3>银行卡支付</h3>
+                            <p>支持储蓄卡信用卡，无需开通网银</p>
+                            <span class="paysel" typeid="2"></span>
+                        </div>
+                    </li> -->
+                	<li>
+                    	<div class="paytype">
+                        	<img src="__PUBLIC__/images/member/wx.jpg" class="payimg" />
+                            <h3>微信支付</h3>
+                            <p>推荐安装微信5.0及以上版本的使用</p>
+                            <span class="paysel" typeid="2"></span>
+                        </div>
+                    </li>
+                	<!--<li>
+                    	<div class="paytype">
+                        	<img src="__PUBLIC__/images/member/cft.jpg" class="payimg" />
+                            <h3>财付通支付</h3>
+                            <p>支持银行卡和财付通账户支付</p>
+                            <span class="paysel" typeid="4"></span>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="buy_submitbox">
+               
+               <div id="zhifubao" style="display:block">
+               <form action="{:U('Pay/alipay')}" method="post" target="_blank" >
+                <input type="hidden" name="WIDout_trade_no" value="{$info.cidss}"><!--订单号 -->
+                <input type="hidden" name="WIDsubject" value="{$info.title}" />
+                <input type="hidden" name="WIDprojectid" value="{$info.id}" />
+                <input type="hidden" name="WIDreceive_mobile" value="{$data.mobile}" />
+                <input type="hidden" name="WIDtotal_fee" value="{$data.zongjia}" />
+                <input type="submit" id="btncart" name="btncart" value="提交订单" class="buy_submit" />
+                </form>
+                </div>
+                <div id="weizhifu" style="display:none">
+               <form action="/PAYWAP/alipayapi.php" method="post" target="_blank" >
+                <input type="hidden" name="WIDout_trade_no" value="{$info.cidss}"><!--订单号 -->
+                <input type="hidden" name="WIDsubject" value="{$info.title}" />
+                <input type="hidden" name="WIDtotal_fee" value="{$data.zongjia}" />
+                <input type="submit" id="btncart" name="btncart" value="提交订单" class="buy_submit" />
+                </form>
+                </div>
+            </div>
+        </div>
+    	</div>
+    </div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script>
+	$(".paysel").click(function(){
+		$(".paysel").removeClass("selected");
+		var typeid=$(this).attr("typeid");
+		$("#paytypeid").val(typeid);
+		if(typeid==1){
+			$("#weizhifu").css('display','none');
+			$("#zhifubao").css('display','block');
+			}
+		if(typeid==2){
+			$("#zhifubao").css('display','none');
+			$("#weizhifu").css('display','block');
+			}	
+		$(this).addClass("selected");
+	})
+</script>
+</body>
+</html>

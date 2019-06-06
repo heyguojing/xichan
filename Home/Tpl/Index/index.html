@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>{$systemConfig.SITE_INFO.name}</title>
+    <meta name="keywords" content="{$systemConfig.SITE_INFO.keywords}" />
+    <meta name="description" content="{$systemConfig.SITE_INFO.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+    <link rel="shortcut icon" type="image/x-icon" href="__PUBLIC__/images/xclogo.png">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/index.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="__PUBLIC__/css/swiper/idangerous.swiper.css">
+	<style> .wrapper{top:0px;}#overLayBody{top:0px;}</style>
+</head>
+
+<body>
+<script type="text/javascript">
+  var browser={
+    versions:function(){
+            var u = navigator.userAgent, app = navigator.appVersion;
+            return {         //移动终端浏览器版本信息
+                 trident: u.indexOf('Trident') > -1, //IE内核
+                presto: u.indexOf('Presto') > -1, //opera内核
+                webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+                iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+                iPad: u.indexOf('iPad') > -1, //是否iPad
+                webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+            };
+         }(),
+         language:(navigator.browserLanguage || navigator.language).toLowerCase()
+}
+if(browser.versions.android==true){
+	var url="mqqwpa://im/chat?chat_type=wpa&uin=501863587";
+    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+	}
+else{
+	}
+
+//document.writeln(" 是否为移动终端: "+browser.versions.mobile);
+//document.writeln(" ios终端: "+browser.versions.ios);
+//document.writeln(" android终端: "+browser.versions.android);
+//document.writeln(" 是否为iPhone: "+browser.versions.iPhone);
+//document.writeln(" 是否iPad: "+browser.versions.iPad);
+
+  </script>
+<include file="Public:head" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="bannerbox">
+        <div class="swiper-container" style='height: 352px;'>
+            <div class="swiper-wrapper">
+               <volist name="adlist" id="vo">
+                <div class="swiper-slide">
+                    <a href="{$vo.httpurl}"><img src="__adimg__{$vo.pic}" alt="" /></a>
+                </div>
+                </volist>
+            </div>
+            <div class="ptBg">
+                <div class="pagination"></div>
+            </div>
+        </div>
+    </div>
+    <div class="index_three">
+    	<ul class="clearfix">
+            <li><a href="{$guanggao1.httpurl}"><img src="__adimg__{$guanggao1.pic}" width="100%"/></a></li>
+            <li><a href="{$guanggao2.httpurl}"><img src="__adimg__{$guanggao2.pic}" width="100%" /></a></li>
+            <li class="nomr"><a href="{$guanggao3.httpurl}"><img src="__adimg__{$guanggao3.pic}" width="100%" /></a></li>
+        </ul>
+    </div>
+    <div class="index_ad"></div>
+    <volist name="list" id="vo">
+    <div class="indexbox">
+    	<div class="index_box_tit">{$vo.name}<span>{$vo.ename}</span></div>
+        <div class="index_box_ul">
+        	<ul class="clearfix">
+               <volist name="vo['indexbox']" id="is">
+            	<li {$is.more}><a href="{$is.httpurl}">{$is.title}{$is.shuxing}</a></li>
+                </volist>
+            	<!--<li><a href="{:U('/P_category/'.$vo['cid'].'')}">查看更多</a></li> -->
+            </ul>
+        </div>
+    </div>
+   </volist>
+    <div class="indexbox">
+    	<div class="index_box_tit">编辑推荐<span>oral beauty</span></div>
+        <div class="index_newsbox">
+               <volist name="expertlist" id="vo">
+                <div class="expertslist">
+                	<div class="expertsimg">
+                    	<a href="{:U('../?expertinfo='.$vo['id'].'')}"><img src="__expertimg__{$vo.pic}" class="aimg"></a>
+                        <div class="trasp">
+                        	<p>
+                            	坐诊时间：{$vo.zuozhengtime}<br>
+                                坐诊地点：{$vo.zuozhengaddress}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="txt">
+                        <h3>{$vo.keywords}</h3>
+                        <h1><a  href="{:U('../?expertinfo='.$vo['id'].'')}">{$vo.title1}</a></h1>
+                    </div>
+                    <div class="expertsshare clearfix">
+                        <p class="tshar">
+                            <a link="{:U('expertzhans/'.$vo['id'])}" name="expert{$vo['id']}" id="gdexpert{$vo['id']}" href="javascript:void(0)" class="{$vo.liclass}"><span id="goodexpert{$vo['id']}" class="zan {$vo.hover}">{$vo.views}</span></a>
+                             <a link="{$vo['id']}" href="javascript:void(0)" name="expert" class="kfjs"><span class="read" id="kefubackexpert{$vo['id']}">{$vo.reshow}</span></a>
+                            <!--<span class="share">{$vo.fenxiang}</span>-->
+                        </p>
+                        <div class="cname">
+                        	<em class="bg_black"><a href="{:U('/expertlist/'.$vo['cid'].'')}">{$vo.categoryname}</a></em>
+                        </div>
+                    </div>
+                </div>
+                </volist> 
+               <volist name="realitylist" id="vo">
+                <div class="realitylist">
+                    	<a href="{:U('../?realshow='.$vo['id'].'')}"><img src="__realityimg__{$vo.pic}" class="aimg"></a>
+                    <div class="txt">
+                        <h3>{$vo.keywords}</h3>
+                        <h1><a href="{:U('../?realshow='.$vo['id'].'')}">{$vo.username}  {$vo.title}</a></h1>
+                    </div>
+                    <div class="opshare clearfix">
+                        <p class="tshar">
+                            <a link="{:U('realityzhans/'.$vo['id'])}"  name="reality{$vo['id']}" id="gdreality{$vo['id']}" href="javascript:void(0)" class="{$vo.liclass}"><span id="goodreality{$vo['id']}" class="zan {$vo.hover}">{$vo.views}</span></a><!--点赞之前不要hover，点赞后才加hover-->
+                             <a link="{$vo['id']}" href="javascript:void(0)" name="reality" class="kfjs"><span class="read" id="kefubackreality{$vo['id']}">{$vo.reshow}</span></a>
+                            <!--<span class="share">{$vo.fenxiang}</span>-->
+                        </p>
+                        <div class="cname">
+                        	<em class="bg_brown"><a href="{:('/reality/index')}">真人秀</a></em>
+                        </div>
+                    </div>
+                </div>
+                </volist>
+            
+                <volist name="projectlist" id="vo">
+                <div class="projectslist">
+                    <a href="{:U('../?proinfo='.$vo['id'].'')}"><img src="__pictureimg__{$vo.pic}" class="aimg"></a>
+                    <div class="txt">
+                        <h3>{$vo.keywords}</h3>
+                        <h1><a href="{:U('../?proinfo='.$vo['id'].'')}">{$vo.title}</a></h1>
+                    </div>
+                    <div class="newshare clearfix">
+                        <p class="tshar">
+                            <a link="{:U('projectzhans/'.$vo['id'])}"  name="project{$vo['id']}" id="gdproject{$vo['id']}" href="javascript:void(0)" class="{$vo.liclass}"><span id="goodproject{$vo['id']}" class="zan {$vo.hover}">{$vo.views}</span></a><!--点赞之前不要hover，点赞后才加hover-->
+                             <a link="{$vo['id']}" href="javascript:void(0)" name="project" class="kfjs"><span class="read" id="kefubackproject{$vo['id']}">{$vo.reshow}</span></a>
+                            <!--<span class="share">{$vo.fenxiang}</span>-->
+                        </p>
+                        <div class="cname">
+                            <if condition="$vo.tuangou eq 1"><em class="bg_green"><a href="{:U('../?tuangou=1')}">团购</a></em></if>
+                            <if condition="$vo.tuangou eq 2"><em class="bg_yellow"><a href="{:U('../?tuangou=2')}">折扣</a></em></if>
+                            <em class="bg_red"><a href="{:U('/projectlist/'.$vo['cid'].'')}">{$vo.categoryname}</a></em>
+                        </div>
+                    </div>
+                </div>
+                </volist>
+               <volist name="brandlist" id="vo">
+                <div class="brandlist">
+                    <a href="{:U('../?brandinfo='.$vo['id'].'')}"><img src="__newspic__{$vo.pic}" class="aimg"></a>
+                    <div class="txt">
+                        <h3>{$vo.keywords}</h3>
+                        <h1><a href="{:U('../?brandinfo='.$vo['id'].'')}">{$vo.title}</a></h1>
+                    </div>
+                    <div class="opshare clearfix">
+                        <p class="tshar">
+                            <a link="{:U('brandzhans/'.$vo['id'])}"  name="brand{$vo['id']}" id="gdbrand{$vo['id']}" href="javascript:void(0)" class="{$vo.liclass}"><span id="goodbrand{$vo['id']}" class="zan {$vo.hover}">{$vo.views}</span></a><!--点赞之前不要hover，点赞后才加hover-->
+                             <a link="{$vo['id']}" href="javascript:void(0)" name="brand" class="kfjs"><span class="read" id="kefubackbrand{$vo['id']}">{$vo.reshow}</span></a>
+                            <!--<span class="share">{$vo.fenxiang}</span>-->
+                        </p>
+                        <div class="cname">
+                        	<em class="bg_red"><a href="{:U('/brandlist/'.$vo['cid'].'')}">{$vo.categoryname}</a></em>
+                        </div>
+                    </div>
+                </div>
+                </volist>
+            
+            <div  id="masonrybox" class="masonry">            
+                <volist name="newslist" id="vo">
+                <div class="newslist masonry-brick">
+                   <a href="{:U('../?news='.$vo['id'].'')}"><img src="__newspic__{$vo.pic}" class="aimg"></a>
+                    <div class="txt">
+                        <h3>{$vo.keywords}</h3>
+                        <h1><a  href="{:U('../?news='.$vo['id'].'')}">{$vo.title}</a></h1>
+                    </div>
+                    <div class="newshare clearfix">
+                        <p class="tshar">
+                            <a link="{:U('/newszhans/'.$vo['id'])}" name="news{$vo['id']}" id="gdnews{$vo['id']}" href="javascript:void(0)" class="{$vo.liclass}"><span id="goodnews{$vo['id']}" class="zan {$vo.hover}">{$vo.views}</span></a><!--点赞之前不要hover，点赞后才加hover-->
+                             <a link="{$vo['id']}" href="javascript:void(0)" name="news" class="kfjs"><span class="read" id="kefubacknews{$vo['id']}">{$vo.reshow}</span></a>
+                            <!--<span class="share">{$vo.fenxiang}</span>-->
+                        </p>
+                        <div class="cname">
+                        	<em class="bg_lblue"><a href="{:U('/category/'.$vo['cid'].'')}">{$vo.cidName}</a></em>
+                        </div>
+                    </div>
+                </div>
+                </volist>
+            </div>
+        </div>
+        <if condition="$pa eq 1"> 
+        <div id="page_loading"><img src="__PUBLIC__/images/loading.gif"><span>正在加载</span></div>
+        <div id="next_page" style="display:none">{$page}</div>
+        </if>
+	</div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/imgReady.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/swiper/idangerous.swiper-2.1.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/index.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/pagerefetch.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".kfjs").click(function(){
+			var delLink=$(this).attr("link");
+			var sqlname=$(this).attr("name");
+			$.getJSON("{:U('Index/kefu')}",{id:delLink,sqlname:sqlname}, function(json){
+				if(json.status == 1){
+				$("#kefuback"+sqlname+delLink).html(json.info);
+				   window.location.href = "https://static.meiqia.com/dist/standalone.html?eid=9041";
+				}
+			})
+		});
+		$(".zhan").click(function(){
+			var delLink=$(this).attr("link");
+			var delname=$(this).attr("name");
+			//alert(delLink);
+			if($(this).hasClass("zhan")){
+		   $.getJSON(""+delLink+"", function(json){
+				if(json.status == 1){
+				$("#good"+delname).html(json.info) ;
+				$("#good"+delname).addClass("hover") ;
+				$("#gd"+delname).removeClass("zhan");
+				$("#gd"+delname).addClass("hodden");
+				}
+			});
+			}
+		  else
+		  {
+			  alert("您已经赞过了");
+		  }
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>{$info.title}-{$info.cidname.name}-{$info.pidname.name}-{$systemConfig.SITE_INFO.name}</title>
+    <meta name="keywords" content="{$info.keywords}" />
+    <meta name="description" content="{$info.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+    <!--<link href="__PUBLIC__/assets/css/bootstrapTheme.css" rel="stylesheet"> -->
+    <link href="__PUBLIC__/assets/css/custom.css" rel="stylesheet">
+    <link href="__PUBLIC__/css/video-js.css" rel="stylesheet" type="text/css">
+    <!-- Owl Carousel Assets -->
+    <link href="__PUBLIC__/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="__PUBLIC__/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="__PUBLIC__/assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <script type="text/javascript" src="__PUBLIC__/js/jquery172.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/action.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/js/video.js"></script>
+    <script>
+	  videojs.options.flash.swf = "__PUBLIC__/css/video-js.swf";
+	  </script>
+	</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+    	<div class="projectshow_box">
+        	<div class="projectsad">
+            	<img src="__pictureimg__{$info.pic}" />
+                <div class="cname">
+                <if condition="$info.tuangou eq 1"><em class="bg_green"><a href="{:U('../?tuangou=1')}">团购</a></em></if>
+                <if condition="$info.tuangou eq 2"><em class="bg_yellow"><a href="{:U('../?tuangou=2')}">折扣</a></em></if>
+                <em class="bg_red"><a href="{:U('/projectlist/'.$info['cid'].'')}">{$info.cidname.name}</a></em>
+                </div>
+            </div>
+            <div class="projects_basic">
+            	<div class="projects_basic_tit clearfix">
+                	<div class="tith">{$info.title}</div>
+                    <div class="shareop">
+                    	<a href="javascript:;" title="赞" class="good {$info.hover}" id="btngood" link="{$info['id']}"></a>
+                    	<a href="javascript:;" title="分享" class="share" id="btnshare"></a>
+                    </div>
+                </div>
+                <div class="projects_basic_con">{$info.description}</div>
+            </div>
+            <if condition="$info.tuangou eq 0">
+            <!--<div class="projects_showmain">
+            	<div class="project_show_price clearfix">
+                    <div class="project_show_pl">
+                    	<strong class="price">{$info.jiage}元</strong>
+                    </div>
+                    <div class="project_show_pr">
+                    	<div class="project_buy_btn bg_green"><a href="{:U('../?payment='.$info['id'].'')}" style="color:#FFF">立刻咨询</a></div>
+                    </div>
+                </div>-->
+               <!-- <div class="project_show_time clearfix">
+                    <div class="project_show_pr notuan">
+                    	<ul class="clearfix">
+                        	<li class="yes">支持随时退款</li>
+                            <li class="salen">已售{$info.chushou}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            </if>
+            <if condition="$info.tuangou eq 1">
+            <div class="projects_showmain">
+            	<div class="project_show_price clearfix">
+                    <div class="project_show_pl">
+                    	<strong class="price">{$info.tuangoujia}</strong><em>元</em> <del>{$info.jiage}元</del>
+                    </div>
+                    <div class="project_show_pr">
+                    	<div class="project_buy_btn bg_green"><a href="{:U('../?payment='.$info['id'].'')}" style="color:#FFF">立刻团购</a></div>
+                    </div>
+                </div>
+                <div class="project_show_time clearfix">
+                    <div class="project_show_pl">
+                    	<p>团购时间：{$info.tuangoustart|date="Y.m.d",###}-{$info.tuangouend|date="m.d",###}</p>
+						<p>使用期限：{$info.shiyongstart|date="Y.m.d",###}-{$info.shiyongend|date="m.d",###}</p>
+                    </div>
+                    <div class="project_show_pr">
+                    	<ul>
+                        	<li class="yes">支持随时退款</li>
+                            <li class="salen">已售{$info.chushou}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </if>
+            <if condition="$info.tuangou eq 2">
+            <div class="projects_showmain">
+            	<div class="project_show_price clearfix">
+                    <div class="project_show_pl">
+                    	<strong class="price">{$info.dazhe}&nbsp;&nbsp;&nbsp;&nbsp;<!-- --></strong><!--价格：{$info.jiage}<em>元</em> -->
+                    </div>
+                    <div class="project_show_pr">
+                    	<div class="project_buy_btn bg_green"><a href="https://static.meiqia.com/dist/standalone.html?eid=9041" target="_blank" style="color:#FFF">立刻咨询</a></div>
+                    </div>
+                </div>
+                <div class="project_show_time clearfix" style="min-height:25px; line-height:18px;">
+                    <div class="project_show_pl" style="border:0; margin-right:0; width:100%; line-height:18px;padding:0;">
+                    	<p>打折时间：{$info.tuangoustart|date="Y.m.d",###}-{$info.tuangouend|date="m.d",###}</p>
+                    </div>
+                </div>
+            </div>
+            </if>
+            <div class="projects_showmain">
+            	<div class="showtit">项目概述</div>
+                <div class="projects_gaishu">
+                	<ul>
+                    	<li class=" clearfix">
+                        	<strong class="dt">效果：</strong>
+                            <p>{$info.xiaoguo}</p>
+                        </li>
+                    	<li class=" clearfix">
+                        	<strong class="dt">疗程：</strong>
+                            <p>{$info.liaocheng}</p>
+                        </li>
+                    	<li class=" clearfix">
+                        	<strong class="dt">恢复：</strong>
+                            <p>{$info.huifu}</p>
+                        </li>
+                    	<li class=" clearfix">
+                        	<strong class="dt">价格：</strong>
+                            <p><if condition="$info.tuangou eq 1"><strong>{$info.tuangoujia}元</strong>&nbsp;&nbsp; <del>原价：{$info.jiage}元</del><elseif condition="$info.tuangou eq 2" /><strong>{$info.dazhe}</strong>&nbsp;&nbsp; <del>原价：{$info.jiage}元</del> <!----><else />{$info.jiage}元</if></p>
+                        </li>
+                    	<li class=" clearfix">
+                        	<strong class="dt">适应：</strong>
+                            <p>{$info.shiying}</p>
+                        </li>
+                    	<li class=" clearfix">
+                        	<strong class="dt">专家：</strong>
+
+                            <p>
+                             <volist name="info['zhuanjia']" id="vo">
+                               <a href="{:U('../?expertinfo='.$vo['id'].'')}">{$vo.title}</a>
+                            </volist></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="projects_showmain">
+            	<div class="showtit">项目详情</div>
+                <div class="projects_tese">
+                	{$info.content}
+                </div>
+            </div>
+            <!--<div class="projects_showmain">
+            	<div class="showtit">经典案例</div>
+                <div class="guess_yourlove">
+                   {$info.caselist}
+                </div>
+            </div>-->
+            <div class="projects_showmain">
+            	<div class="showtit">注意事项</div>
+                <div class="projects_zysx">
+                	<ul>
+                    	<li class=" clearfix">
+                        	<strong class="dt">术前：</strong>
+                            <p>{$info.shuqian}</p>
+                        </li>
+                    	<li class=" clearfix">
+                        	<strong class="dt">术后：</strong>
+                            <p>{$info.shuhou}</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <if condition="$info.videoty eq 1">
+            <div class="projects_showmain">
+            	<div class="showtit">参考视频</div>
+                    <video id="example_video_1" class="video-js vjs-default-skin" controls preload="none" width="100%" height="264" poster="__pictureimg__{$info.pic}" data-setup="{}">
+                        <source src="__flv__{$info.video}" type='video/mp4' />
+                        <source src="oceans-clip.webm" type='video/webm' />
+                        <source src="oceans-clip.ogv" type='video/ogg' />
+                        <track kind="captions" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                        <track kind="subtitles" src="demo.captions.vtt" srclang="en" label="English"></track><!-- Tracks need an ending tag thanks to IE9 -->
+                    </video>
+                    </div> 
+                </div>
+            </div>
+            </if>
+            <if condition="$lovecount gt 0">
+            <div class="projects_showmain">
+            	<div class="guesstit">猜你喜欢</div>
+                 <div id="demo">
+                    <div class="container">
+                      <div class="row">
+                        <div class="span12">
+                          <div id="owl-example" class="owl-carousel">
+                            <volist name="lovelist" id="vo">
+                              <div class="item"><a href="{$vo.urlclass}"><img src="__pictureimg__{$vo.picurl}"><p>{$vo.title}</p></a></div>
+                            </volist>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            </if>
+    	</div>
+    </div>
+</div>
+<include file="Public:footer" />
+<!--底部固定咨询-->
+<include file="Public:gudingzixun" />
+<!--更多热门项目-->
+<div class="divmoreitem">
+	<div class="itemmoer">
+    	<h3>热门项目</h3>
+        <p>
+           <volist name="hotlist" id="vo">
+            <a href="{:U('../?proinfo='.$vo['id'].'')}">{$vo.title}</a>
+           </volist>
+        </p>
+    </div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/pagerefetch.js"></script>
+<script src="__PUBLIC__/js/jquery-1.9.0.min.js"></script>
+<script src="__PUBLIC__/owl-carousel/owl.carousel.min.js"></script>
+
+<!-- Frontpage Demo -->
+<script>
+
+    $(document).ready(function($) {
+      $("#owl-example").owlCarousel();
+    });
+
+
+    $("body").data("page", "frontpage");
+
+    </script>
+<script src="__PUBLIC__/assets/js/bootstrap-collapse.js"></script>
+<script src="__PUBLIC__/assets/js/bootstrap-transition.js"></script>
+<script src="__PUBLIC__/assets/js/google-code-prettify/prettify.js"></script>
+<script src="__PUBLIC__/assets/js/application.js"></script>
+<script type="text/javascript">
+    jQuery(function($){
+      var disqus_loaded = false;
+      var top = $("#faq").offset().top;
+      var owldomain = window.location.hostname.indexOf("owlgraphic");
+      var comments = window.location.href.indexOf("comment");
+
+      if(owldomain !== -1){
+        function check(){
+          if ( (!disqus_loaded && $(window).scrollTop() + $(window).height() > top) || (comments !== -1) ){
+            $(window).off( "scroll" )
+            disqus_loaded = true;
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'owlcarousel'; // required: replace example with your forum shortname
+            var disqus_identifier = 'OWL Carousel';
+            //var disqus_url = 'http://owlgraphic.com/owlcarousel/';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+          }
+        }
+        $(window).on( "scroll", check )
+        check();
+      } else {
+        $('.disqus').hide();
+      }
+    });
+    </script>
+
+<script>
+$(function(){
+		var boady_height=parseFloat($(document).height());
+		$(".sharediv").css({"height":boady_height+"px"});
+})
+$("#btnshare").click(function(){
+	$(".sharediv").show();
+})
+
+$("#btngood").click(function(){
+	var delLink=$(this).attr("link");
+	//alert(delLink);
+	if($(this).hasClass("hover")){
+		alert('你已经赞过了');
+		}else{
+   $.getJSON("{:U('projectzhan/"+delLink+"')}", function(json){
+		if(json.status == 1){
+		//$("#good"+delLink).html('<span class="zan hover">'+json.info+'</span>')
+		$("#btngood").addClass("hover");
+		}
+	});}
+});
+$("#shareli li").click(function(){
+	$(".sharediv").hide();
+})
+$("#fixeopenmore").click(function(){
+	$(".divmoreitem").show();
+})
+</script>
+
+</body>
+</html>

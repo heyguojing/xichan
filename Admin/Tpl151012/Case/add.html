@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{$titlename} - 案例管理 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='案例管理 > '.$titlename;
+        </php>
+        <include file="Common:intoHead" />
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">{$titlename}</div>
+                    </div>
+                    <form enctype="multipart/form-data">
+                    <input type="hidden" name="refeurl" value="{$refeurl}" />
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                            <tr>
+                                <th width="100">案例标题：</th>
+                                <td><input id="title" type="text" class="input" size="60" name="info[title]" value="{$info.title}"/> <a href="javascript:void(0)" id="checkNewsTitle">检测是否重复</a></td>
+                            </tr>
+
+                            <tr>
+                                <th width="100">发布状态：</th>
+                                <td><label><input type="radio" name="info[status]" value="0" <if condition="$info.status eq 0"> checked="checked"</if> /> 审核状态</label> &nbsp; <label><input type="radio" name="info[status]" value="1" <if condition="$info.status eq 1"> checked="checked"</if> /> 发布状态</label> </td>
+                            </tr>
+                            <tr>
+                                <th>所属分类：</th>
+                                <td>
+                                    <select name="info[cid]">
+                                        <volist name="list" id="vo">
+                                            <if condition="$vo[cid] eq $info[cid]">
+                                                <option value="{$vo.cid}" selected="selected">{$vo.fullname}</option>
+                                                <else/>
+                                                <option value="{$vo.cid}">{$vo.fullname}</option>
+                                            </if>
+                                        </volist>
+                                    </select></td>
+                            </tr>
+							<tr>
+                                <th>案例封面：</th>
+                                <td><input type="file" class="input" name='upload'><if condition="$info['pic']"><input type="hidden" name="info[pic]" value="{$info.pic}" /><a href="/Uploads/image/picture/{$info.pic}" target="_blank" >查看封面</a></if></td>
+                            </tr>
+                            <tr>
+                                <th>使用项目：</th>
+                                <td>
+                                 <div ID="contain">
+                                   <volist name="info['project']" id="vo">
+                                    <dd>
+                                     项目名字：<input name="info[projecttitle][]" type="text" id="userTelephone"  value="{$vo.title}" class="input" size="20"/>
+                                     项目链接地址：<input name="info[projecturl][]" type="text" id="userTelephone"  value="{$vo.url}"  class="input" size="40"/>
+                                     <span class="tips_normal"></span>              
+                                   </dd>
+                                   </volist>
+                                  </div>
+                                   <a href="javascript:;" class="link_blue" id="addTel">添加</a>
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <th>热门：</th>
+                                <td><label><input type="radio" name="info[hot]" value="0" <if condition="$info.hot eq 0"> checked="checked"</if> /> 普通</label> &nbsp; <label><input type="radio" name="info[hot]" value="1" <if condition="$info.hot eq 1"> checked="checked"</if> /> 热门</label> </td>
+                            </tr>
+                            <tr>
+                                <th width="100">其他：</th>
+                                <td>浏览数：<input id="reshow" type="text" class="input" size="10" name="info[reshow]" value="{$info.reshow}"/> 
+                               &nbsp;   分享：
+                               <input id="fenxiang" type="text" class="input" size="10" name="info[fenxiang]" value="{$info.fenxiang}"/>
+                               &nbsp;&nbsp; 赞：
+                               <input id="fenxiang" type="text" class="input" size="10" name="info[views]" value="{$info.views}"/></td>
+                            </tr>
+                            <tr>
+                                <th>排序：</th>
+                                <td><input type="text" class="input" size="10" name="info[paixu]" value="{$info.paixu}"/></td>
+                            </tr>
+                            <!--<tr>
+                                <th>案例介绍：</th>
+                                <td><textarea id="content" class="input" style="height: 300px; width: 100%;" name="info[content]">{$info.content}</textarea></td> -->
+                            </tr>
+                        </table>
+                        <input type="hidden" name="info[id]" value="{$info.id}" />
+                    </form>
+                    <div class="commonBtnArea" >
+                        <button class="btn submit">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <js href="__PUBLIC__/kindeditor/kindeditor.js,__PUBLIC__/kindeditor/lang/zh_CN.js"/>
+        <script type="text/javascript">
+            $(function(){var  content ;
+                KindEditor.ready(function(K) {
+                    content = K.create('#content');
+                });
+                $("#checkNewsTitle").click(function(){
+                    $.getJSON("__URL__/checkNewsTitle", { title:$("#title").val(),id:"{$info.id}"}, function(json){
+                        $("#checkNewsTitle").css("color",json.status==1?"#0f0":"#f00").html(json.info);
+                    });
+                });
+			$("#addTel").click(function(){
+     
+              var ul = document.getElementById("contain");  
+              var temp =   '<dd>'+
+                          '项目名字：<input name="info[projecttitle][]" type="text"" class="input" size="20"/> '+
+                          '项目链接地址：<input name="info[projecturl][]" type="text"  value="" class="input" size="40"/>'+
+                          '</dd>'
+                           
+                $("#contain").append(temp);
+             });
+                $(".submit").click(function(){
+                   // content.sync();
+                    commonAjaxSubmit();
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>

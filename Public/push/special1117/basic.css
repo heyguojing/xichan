@@ -1,0 +1,73 @@
+.main{margin-top:-23px;}
+.main img{width:100%;}
+.main .index{position:relative;}
+.main .index div{position:absolute;}
+
+
+
+
+
+
+#footer{margin-top:-23px;}
+.animation1{
+animation:mymove 1s linear 0s infinite;
+-webkit-animation:mymove 1s  linear 0s infinite  ; /*Safari and Chrome*/
+-ms-animation:mymove 1s  linear 0s infinite  ;
+-moz-animation:mymove 1s  linear 0s infinite  ;
+}
+@keyframes mymove
+{
+25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+@-moz-keyframes mymove
+{
+25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+@-ms-keyframes mymove
+{
+ 25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+@-webkit-keyframes mymove
+{
+25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+
+
+.animation2{
+animation:mymove1 1s linear 0s infinite;
+-webkit-animation:mymove1 1s  linear 0s infinite  ; /*Safari and Chrome*/
+-ms-animation:mymove1 1s  linear 0s infinite  ;
+-moz-animation:mymove1 1s  linear 0s infinite  ;
+}
+@keyframes mymove1
+{
+25% {transform: translatex(-2px);}
+0%,50%, 100% {transform: translatex(0);}
+75% {transform: translatex(2px);}
+}
+@-moz-keyframes mymove1
+{
+ 25% {transform: translatex(-2px);}
+ 0%, 50%, 100% {transform: translatex(0);}
+ 75% {transform: translatex(2px);}
+}
+@-ms-keyframes mymove1
+{
+ 25% {transform: translatex(-2px);}
+ 0%, 50%, 100% {transform: translatex(0);}
+ 75% {transform: translatex(2px);}
+}
+@-webkit-keyframes mymove1
+{
+ 25% {transform: translatex(-2px);}
+ 0%, 50%, 100% {transform: translatex(0);}
+ 75% {transform: translatex(2px);}
+}

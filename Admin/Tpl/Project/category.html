@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>项目分类管理 - 项目管理 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='项目管理 > 项目分类管理';
+        </php>
+        <include file="Common:intoHead" />
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">项目分类管理</div>
+                    </div>
+                    <div style="width:100%">
+                     <span style="float:left"><b>添加分类：</b></span>
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="tab">
+                    <form  enctype="multipart/form-data">
+                      <input type="hidden" name="act" value="{$act}" /> &nbsp;
+                        <tr>
+                                <th width="119">顶级分类</th>
+                                <td width="862"><span style="float:left">
+                                  <select name="info[pid]" id="selclass" onchange="">
+                                    <option value="0">顶级分类</option>
+                                    <volist name="list" id="vo">
+                                      <option value="{$vo.cid}">{$vo.fullname}</option>
+                                    </volist>
+                                  </select>
+                                </span><span style="float:left">
+                                  <input placeholder="分类名称" id="newName" class="input" type="text" name="info[name]" value="{$cinfo.name}" />
+                                </span><span style="float:left">
+                                <input placeholder="关键字" class="input" type="text" name="info[keywords]" size="50" value="{$cinfo.keywords}" />
+                                </span></td>
+                      </tr>
+
+                            <tr>
+                                <th width="119">图片：</th>
+                                <td><input type="file" class="input" name='upload'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="119">图片：</th>
+                                <td><input placeholder="排序" class="input" type="text" name="info[paixu]" size="50" value="{$cinfo.paixu}" />
+                                </td>
+                            </tr>
+          <input type="hidden" name="info[cid]" value="{$cinfo.cid}" />
+                            <tr>
+                                <th></th>
+                                <td><button class="btn quickSubmit">确定添加</button></td>
+                            </tr>
+                        </form>
+                      </table>
+                        
+                      <span style="float:left">&nbsp;</span>
+                        <span style="float:left">&nbsp;</span><!-- -->
+                      <span style="float:left; margin-left:5px;"></span>
+                    
+            </div>
+                  <div style="clear:both"></div>
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="tab">
+                        <thead>
+                            <tr align="center">
+                                <td width="10%">CID</td>
+                                <td width="20%">原分类结构 <b title="单击分类隐藏/显示该分类下在子类">[i]</b></td>
+                                <td width="20%" align="left">图片</td>
+                                <td width="10%">关键字</td>
+                                <td width="10%">排序</td>
+                              <td width="10%">操作</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <volist name="list" id="tree">
+                                <tr pid="{$tree.pid}" cid="{$tree.cid}">
+                                    <td align="center">{$tree.cid}<input type="hidden" name="cid" value="{$tree.cid}"/></td>
+                                    <td class="tree" style="cursor: pointer;">{$tree.name}</td>
+                                    <td><img src="/Uploads/image/picture/{$tree.pic}" width="70" /></td>
+                                    <td>{$tree.keywords}</td>
+                                    <td>{$tree.paixu}</td>
+                                    <td align="center"><a href="__URL__/category?id={$tree.cid}">修改</a>  <a link="{$tree.cid}" href="javascript:void(0)" name="{$tree.name}" class="del">删除</a></td>
+                                </tr>
+                            </volist>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <script type="text/javascript">
+            $(function(){
+				$(".quickSubmit").click(function(){
+                    if($("#newName").val()==''){
+                        popup.alert("分类名称不能为空滴！");
+                        return false;
+                    }
+                    commonAjaxSubmit();
+                    return false;
+                });
+                $(".del").click(function(){
+                    var delLink=$(this).attr("link");
+                    popup.confirm('你真的打算删除【<b>'+$(this).attr("name")+'</b>】吗?','温馨提示',function(action){
+                        if(action == 'ok'){
+                            $.getJSON("__URL__/cdel", { id:delLink}, function(json){
+								if(json.status == 0){
+									alert(json.info);
+								 }
+								else{
+									alert(json.info);
+									top.window.location.href=json.url;
+								}
+							});
+                        }
+                    });
+                    return false;
+                });
+                var chn=function(cid,op){
+                    if(op=="show"){
+                        $("tr[pid='"+cid+"']").each(function(){
+                            $(this).removeAttr("status").show();
+                            chn($(this).attr("cid"),"show");
+                        });
+                    }else{
+                        $("tr[pid='"+cid+"']").each(function(){
+                            $(this).attr("status",1).hide();
+                            chn($(this).attr("cid"),"hide");
+                        });
+                    }
+                }
+                $(".tree").click(function(){
+                    if($(this).attr("status")!=1){
+                        chn($(this).parent().attr("cid"),"hide");
+                        $(this).attr("status",1);
+                    }else{
+                        chn($(this).parent().attr("cid"),"show");
+                        $(this).removeAttr("status");
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{$titlename} - 商品管理 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='商品管理 > '.$titlename;
+        </php>
+        
+        <include file="Common:intoHead" />
+		<script type="text/javascript" src="__PUBLIC__/Js/my97datepicker/wdatepicker.js"></script>
+        <style type="text/css">
+           .t_link a{ padding:5px; background:#CCC; }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">{$titlename}</div>
+                    </div>
+                    <form enctype="multipart/form-data">
+                    <input type="hidden" name="refeurl" value="{$refeurl}" />
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                            <tr>
+                                <th width="100">商品标题：</th>
+                                <td>{$info.title}</td>
+                            </tr>
+
+                            <tr>
+                                <th width="100">订单号：</th>
+                                <td>{$info.order_num}</td>
+                            </tr>
+                            <tr>
+                                <th>订单总额：</th>
+                                <td>￥　{$info.price}元</td>
+                            </tr>
+                            <tr>
+                                <th>创建时间：</th>
+                                <td>{$info.ctime|date='Y-m-d H:i:s',###}</td>
+                            </tr>
+                            <tr>
+                                <th>商品订单数量：</th>
+                                <td>{$info.total_num}</td>
+                            </tr>
+							<tr>
+                                <th>订单状态：</th>
+                                <td>
+                                    <select name='status'>
+                                        <volist name='status' id='vo' key='key'>
+                                            <option <if condition='$info.status eq $key'>selected='selected'</if> value='{$key}'>{$vo}</option>
+                                        </volist>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>用户昵称[ID]：</th>
+                                <td>{$info.nickname}　[{$info.uid}]</td>
+                            </tr>
+                            <tr>
+                                <th valign="top">商品使用情况：</th><td> 
+                                <volist name='orderC' id='vo'>
+                                    <p style="margin-top:5px;"><span style="margin-right:5px;">{$vo.goods_name}</span>
+                                    ｜ 购买数量:{$vo.num}　｜　未消费:{$vo.surplus}　｜ 本次消费: <input class="input" value='{$vo.surplus}' name="info[num]"></p>
+                                </volist>
+                            </td></tr>
+                        </table>
+                        <input type="hidden" name="info[id]" value="{$info.id}" />
+                    </form>
+                    <div class="commonBtnArea" >
+                        <button class="btn submit">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <js href="__PUBLIC__/kindeditor/kindeditor.js,__PUBLIC__/kindeditor/lang/zh_CN.js"/>
+        <script type="text/javascript">
+            $(function(){
+                $("#checkNewsTitle").click(function(){
+                    $.getJSON("__URL__/checkNewsTitle", { title:$("#title").val(),id:"{$info.id}"}, function(json){
+                        $("#checkNewsTitle").css("color",json.status==1?"#0f0":"#f00").html(json.info);
+                    });
+                });
+      				$("testCheckbox").change(function() { 
+      				alert("Option changed!"); 
+      				}); 
+
+                $(".submit").click(function(){
+                  if($('#title').val() == ''){
+                    popup.alert('商品名称不能为空');
+                    return false;
+                  }
+                  if($('#price').val() == ''){
+                    popup.alert('商品价格不能为空');
+                    return false;
+                  }
+                  if($('#des').val() == ''){
+                    popup.alert('商品描述不能为空');
+                    return false;
+                  }
+                    commonAjaxSubmit();
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>

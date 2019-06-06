@@ -1,0 +1,99 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>无龄美眸三折季- {$systemConfig.SITE_INFO.name}</title>
+		<meta name="description" content="无龄美眸三折季" />
+		<meta name="keywords" content="无龄美眸三折季" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+		<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="__PUBLIC__/push/0627/tipDialog.css" rel="stylesheet" type="text/css" />
+		<link href='__PUBLIC__/push/special1117/basic.css' rel='stylesheet' type='text/css'/>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/jquery-1.9.0.min.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/js/common.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/jquery-1.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/scrollReveal.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/tipDialog.js'></script>
+	</head>
+	<body>
+		<include file="Public:head" />
+		<div class='wrapper' style='max-width:750px;margin-left:auto;margin-right:auto;'>
+			 <include file="Public:menu" />
+				<div class='main'>
+					<img src='__PUBLIC__/push/special1117/index_01.png'/>
+					<img src='__PUBLIC__/push/special1117/index_02.png'/>
+					<div class='index'>
+						<img src='__PUBLIC__/push/special1117/index_03.png'/>
+						<img src='__PUBLIC__/push/special1117/index_04.png'/>
+						<div style='width:27.4%;left:12.4%;top:0;z-index:1;'><img data-scroll-reveal="enter top after .2s" src='__PUBLIC__/push/special1117/i2_01.png'/></div>
+						<div style='width:27.4%;right:12.6%;top:0;z-index:1;'><img data-scroll-reveal="enter top after .2s" src='__PUBLIC__/push/special1117/i2_02.png'/></div>
+						<div style='width:38.7%;left:30.5%;top:3.5%;'><img src='__PUBLIC__/push/special1117/i2_03.png'/></div>
+						<div style='width:48%;left:2%;top:18.9%;'><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter bottom after .2s" src='__PUBLIC__/push/special1117/i2_04.png'/></a></div>
+						<div style='width:48%;right:2%;top:18.9%;'><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img  data-scroll-reveal="enter bottom after .2s" src='__PUBLIC__/push/special1117/i2_05.png'/></a></div>
+					</div>
+					<div class='index'>
+						<img src='__PUBLIC__/push/special1117/index_05.png'/>
+						<div style='width:28%;left:12%;top:-23.7%;z-index:1;' data-scroll-reveal="enter top after .4s"><img src='__PUBLIC__/push/special1117/i3_01.png'/></div>
+						<div style='width:28%;left:36%;top:-43%;z-index:1;' data-scroll-reveal="enter top after .2s"><img src='__PUBLIC__/push/special1117/i3_02.png'/></div>
+						<div style='width:28%;right:12%;top:-23.7%;z-index:1;' data-scroll-reveal="enter top after .4s"><img src='__PUBLIC__/push/special1117/i3_03.png'/></div>
+						<div style='width:38.7%;left:30.5%;top:-20%;'><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special1117/i3_04.png'/></a></div>
+						<div style='width:48%;left:1.8%;top:0;'><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter bottom after .2s" src='__PUBLIC__/push/special1117/i3_05.png'/></a></div>
+						<div style='width:48%;right:2%;top:0'><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter bottom after .2s" src='__PUBLIC__/push/special1117/i3_06.png'/></a></div>
+
+					</div>
+					<img src='__PUBLIC__/push/special1117/index_05_01.png'/>
+					<img src='__PUBLIC__/push/special1117/index_06.png'/>
+					<div class='index'>
+						<img src='__PUBLIC__/push/special1117/index_07.png'/>
+						<div style='width:49.2%;left:25%;top:-185%;z-index:1;'><img data-scroll-reveal="enter top after .2s" src='__PUBLIC__/push/special1117/i4_01.png'/></div>
+						<div style='width:78.4%;left:10.4%;top:-145%;'><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special1117/i4_02.png'/></a></div>
+						<div class='animation1' style='width:55%;left:21.5%;top:-8%;'><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special1117/i4_03.png'/></a></div>
+					</div>	
+					<img src='__PUBLIC__/push/special1117/index_08.png'/>
+					<img src='__PUBLIC__/push/special1117/index_09.png'/>
+
+					
+				</div>
+		 <include file="Public:footer" />
+	</div>
+	</body>
+	<script>
+		(function(){
+			window.scrollReveal = new scrollReveal({reset: true});
+		})();
+	</script>
+	<script type='text/javascript'>	$(function(){
+		$('.btn').click(function(){
+			if($('#username').val() =='' ){
+				tipDialog('请填写您的姓名！','error','',2);
+				return false;
+			}
+			if($('#tel').val() =='' || $('#tel').val().length !=11){
+				tipDialog('请填写十一位手机号码！','error','',2);
+				return false;
+			}
+			if($('#project').val() ==''){
+				tipDialog('请选择一个项目！','error','',2);
+				return false;
+			}
+			$.ajax({
+				type:'post',
+				url:'',
+				data:$('#myform').serialize(),
+				dataType:'json',
+				success:function(dat){
+					if(dat.status == 1){
+						tipDialog(dat.info,'ok','',2);
+						setTimeout(function(){
+							window.location.reload();	
+						},2000);
+					}
+					if(dat.status == 0){
+						tipDialog(dat.info,'error','',2);
+					}
+				}
+			})
+		});
+	})</script> 
+</html>

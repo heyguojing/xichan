@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>雪肤红唇季,美白保湿、紧致亮肤,多种美丽秘籍任性挑  - {$systemConfig.SITE_INFO.name}</title>
+		<meta name="description" content="雪肤红唇季,美白保湿、紧致亮肤,多种美丽秘籍任性挑" />
+		<meta name="keywords" content="雪肤红唇季,美白保湿、紧致亮肤,多种美丽秘籍任性挑  更多优惠项目尽在西婵" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+		<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+		<link href='__PUBLIC__/push/special914/basic.css' rel='stylesheet' type='text/css'/>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/jquery-1.9.0.min.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/js/common.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/jquery-1.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/scrollReveal.js'></script>
+	<style>
+		
+		
+		.loading{display:block;position:fixed;top:0;left:0;height:100%;width:100%;background:rgb(255,255,255);z-index: 10;text-align: center;padding-top:40%;}
+	</style>
+	</head>
+	<body>
+		<include file="Public:head" />
+		<div class='wrapper'>
+			 <include file="Public:menu" />
+				<div style='clear:both;'></div>
+				<div class='main'>
+					<div class='index1 index'>
+						<img src='__PUBLIC__/push/special914/img1_01.png'/>
+						<img src='__PUBLIC__/push/special914/img1_02.png'/>
+						<img src='__PUBLIC__/push/special914/img1_03.png'/>
+						<div class='wz'><img src='__PUBLIC__/push/special914/img1_wz.png'/></div>
+						<div class='down animation1'><img src='__PUBLIC__/push/special914/img1_b.png'/></div>
+					</div>	
+					<div class='index2 index'>
+						<div class='i2_bg '>
+							<span><雪肤红唇季   更白更出色></span>
+						</div>
+							<img src='__PUBLIC__/push/special914/img2_01.png'/>
+							<div class='button'><a href='javascript:;' onclick="_MEIQIA._SHOWPANEL()"><img src='__PUBLIC__/push/special914/img2_button.png'/></a></div>
+					</div>
+					<div class='index3 index'>
+						<ul>
+							<li data-scroll-reveal="enter top after .2s"><a href='javascript:;' onclick='_MEIQIA._SHOWPANEL()'><img src='__PUBLIC__/push/special914/img3_01.png'/></a></li>
+							<li data-scroll-reveal="enter left after .2s" class='right'><a href='javascript:;' onclick='_MEIQIA._SHOWPANEL()'><img src='__PUBLIC__/push/special914/img3_02.png'/></a></li>
+							<li data-scroll-reveal="enter left after .2s"><a href='javascript:;' onclick='_MEIQIA._SHOWPANEL()'><img src='__PUBLIC__/push/special914/img3_03.png'/></a></li>
+							<li data-scroll-reveal="enter right after .2s" class='right'><a href='javascript:;' onclick='_MEIQIA._SHOWPANEL()'><img src='__PUBLIC__/push/special914/img3_04.png'/></a></li>
+							<li data-scroll-reveal="enter buttom after .2s"><a href='javascript:;' onclick='_MEIQIA._SHOWPANEL()'><img src='__PUBLIC__/push/special914/img3_05.png'/></a></li>
+							<li data-scroll-reveal="enter left after .2s" class='right'><a href='javascript:;' onclick='_MEIQIA._SHOWPANEL()'><img src='__PUBLIC__/push/special914/img3_06.png'/></a></li>
+						</ul>
+						<div style='clear:both;'></div>
+					</div>
+					<div class='i3_btn'>
+						<img src='__PUBLIC__/push/special914/img3_bg.png'/>
+						<div class='button'><a href='javascript:;' onclick='_MEIQIA._SHOWPANEL()'><img src='__PUBLIC__/push/special914/i3_btn.png'/></a></div>
+					</div>
+					
+					<div class='index4 index'>
+							<img src='__PUBLIC__/push/special914/img4_01.png'/>
+							<img src='__PUBLIC__/push/special914/img4_02.png'/>
+							<img src='__PUBLIC__/push/special914/img4_03.png'/>
+							<img src='__PUBLIC__/push/special914/img4_04.png'/>
+					</div>
+			</div>
+		 <include file="Public:footer" />
+	</div>
+	</body>
+	<script>
+		(function(){
+			window.scrollReveal = new scrollReveal({reset: true});
+		})();
+	</script> 
+</html>

@@ -1,0 +1,16 @@
+/.idea
+/.vscode
+/vendor
+*.log
+thinkphp
+.env
+.DS_Store
+
+/adv/
+/aspnet_client/
+/cache/
+/Databases/
+/ThinkPHP/
+/special/
+/Uploads/
+/wxpay/

@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>西婵闭馆礼遇 爽购12月，和'礼'一起过圣诞- {$systemConfig.SITE_INFO.name}</title>
+		<meta name="description" content="西婵闭馆礼遇 爽购12月，和'礼'一起过圣诞" />
+		<meta name="keywords" content="西婵闭馆礼遇 爽购12月，和'礼'一起过圣诞" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+		<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+		<link href="__PUBLIC__/push/0627/tipDialog.css" rel="stylesheet" type="text/css" />
+		<link href='__PUBLIC__/push/special1207/basic.css' rel='stylesheet' type='text/css'/>
+		<link href='__PUBLIC__/push/special1207/basic.css' rel='stylesheet' type='text/css'/>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/jquery-1.9.0.min.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/js/common.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/jquery-1.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/scrollReveal.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/tipDialog.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/special1207/jquery-latest.min.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/special1207/snowfall.jquery.js'></script>
+		<style>
+			#MEIQIA-INVITE{z-index:2147482 !important;}
+			.wrapper{margin-top:23px;}
+		</style>
+	</head>
+	<body>
+		<include file="Public:head" />
+		<div class='wrapper' style='max-width:750px;margin-left:auto;margin-right:auto;'>
+			 <include file="Public:menu" />
+				<div style='clear:both;'></div>
+				<div class='main'>
+					<img src='__PUBLIC__/push/special1207/main_01.png'/>
+					<div class='index'>
+						<img src='__PUBLIC__/push/special1207/main_02.png'/>
+						<div class='m2'>
+							<ul>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter right after .2s" src='__PUBLIC__/push/special1207/m2_01.png'/></a></li>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter top after .2s" src='__PUBLIC__/push/special1207/m2_02.png'/></a></li>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter left after .2s" src='__PUBLIC__/push/special1207/m2_03.png'/></a></li>
+							</ul>
+							<div style='clear:both;'></div>
+						</div>
+					</div>
+					<img src='__PUBLIC__/push/special1207/main_03.png'/>
+					<div class='index main4'>
+						<div class='m4'>
+							<ul>
+								<li style='position:relative;'><img data-scroll-reveal="enter top after .2s" src='__PUBLIC__/push/special1207/m4_01.png'/>
+								<form>
+									<input type='hidden' name='SN' value='XCSN86'/>
+									<input type='hidden' name='price' value='12'/>
+									<input type='hidden' name='goods_name' value='素颜水光' />
+								</form>
+								<span class='buy' style='display: block;position:absolute;bottom:2%;right:2%'><a href='{:U("Shop/settlement")}'>购买</a></span></li>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter top after .2s" src='__PUBLIC__/push/special1207/m4_02.png'/></a></li>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter left after .2s" src='__PUBLIC__/push/special1207/m4_03.png'/></a></li>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter left after .2s" src='__PUBLIC__/push/special1207/m4_04.png'/></a></li>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter left after .2s" src='__PUBLIC__/push/special1207/m4_05.png'/></a></li>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter left after .2s" src='__PUBLIC__/push/special1207/m4_06.png'/></a></li>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter bottom after .2s" src='__PUBLIC__/push/special1207/m4_07.png'/></a></li>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter bottom after .2s" src='__PUBLIC__/push/special1207/m4_08.png'/></a></li>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter bottom after .2s" src='__PUBLIC__/push/special1207/m4_09.png'/></a></li>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter bottom after .2s" src='__PUBLIC__/push/special1207/m4_10.png'/></a></li>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter bottom after .2s" src='__PUBLIC__/push/special1207/m4_11.png'/></a></li>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter bottom after .2s" src='__PUBLIC__/push/special1207/m4_12.png'/></a></li>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter bottom after .2s" src='__PUBLIC__/push/special1207/m4_13.png'/></a></li>
+								<li><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"><img data-scroll-reveal="enter bottom after .2s" src='__PUBLIC__/push/special1207/m4_14.png'/></a></li>
+							</ul>
+							<div style='clear:both;'></div>
+						</div>
+					</div>
+					<div class='index'>
+						<img src='__PUBLIC__/push/special1207/main_04.png'/>
+						<div class='m04_1'><img data-scroll-reveal="enter left after .2s" src='__PUBLIC__/push/special1207/m04_1.png'/></div>
+						<div class='m_04'><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"></a></div>
+					</div>
+					<div class='index'>
+						<img src='__PUBLIC__/push/special1207/main_05.png'/>
+						<div class='m05_1'><img data-scroll-reveal="enter left after .2s" src='__PUBLIC__/push/special1207/m05_1.png'/></div>
+					</div>
+					<div class='index'>
+						<img src='__PUBLIC__/push/special1207/main_06.png'/>
+						<div class='m_06'><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"></a></div>
+					</div>
+					<div class='index'>
+						<img src='__PUBLIC__/push/special1207/main_07.png'/>
+						<div class='m07_1'><img data-scroll-reveal="enter left after .2s" src='__PUBLIC__/push/special1207/m07_1.png'/></div>
+						<div class='m_07'><a href='javascript:;'  onclick="_MEIQIA._SHOWPANEL()"></a></div>
+					</div>
+					<img src='__PUBLIC__/push/special1207/main_08.png'/>
+					<img src='__PUBLIC__/push/special1207/main_09.png'/>
+					<img src='__PUBLIC__/push/special1207/main_10.png'/>
+					<img src='__PUBLIC__/push/special1207/main_11.png'/>
+					<img src='__PUBLIC__/push/special1207/main_12.png'/>
+				</div>
+		 <include file="Public:footer" />
+	</div>
+	</body>
+	<script>
+		(function(){
+			window.scrollReveal = new scrollReveal({reset: true});
+
+			$('.buy').click(function(){
+				// var dat = $('.buy').parent().children('form').serialize();
+			})
+		})();
+		$('.collectonme').hide();
+
+			//Start the snow default options you can also make it snow in certain elements, etc.
+		$(document).snowfall({deviceorientation : true, round : true, minSize: 5, maxSize:10});
+
+			// $(document).snowfall();
+
+	</script>
+</html>

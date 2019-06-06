@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>订单验证 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='订单管理 > 订单验证';
+        </php>
+        <include file="Common:intoHead" />
+        <style>input{height:25px;line-height: 25px;padding-left:5px;}</style>
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">订单验证</div>
+                    </div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                            <form action="__URL__/order" method="post">
+                            <tr><td>查找订单</td></tr>
+                            <tr>
+                                <td>验证手机：<input type="text" placeholder='请输入手机号码' name="mobile" id='mobile' size="20"/></td>
+                            </tr>
+                            <tr>
+                                <td width="36%"> 订单号　：<input type="text" placeholder='请输入订单号' name="order_num" id='order_num'  size="40"/>　 <div class="btn">查询</div>  </td>
+                            </tr>
+                             </form>
+                        </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab resu">
+<thead>
+                            <tr>
+                                <td>选择</td>
+                                <td>ID</td>
+                                <td>订单编号</td>
+                                <td>订单名称</td>
+                                <td>用户昵称[ID]</td>
+                                <td>订单总额</td>
+                                <td>创建时间</td>
+                                <td>订单商品数量</td>
+                                <td>订单状态</td>
+                                <td>操作</td>
+                            </tr>
+                        </thead>
+                        <form action="__URL__/submit" method="post" id="opForm">
+                            <tr class='cont' align="center" >
+                            </tr>
+                        </form>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <include file="Common:foot" />
+       <script type="text/javascript">
+        function Save(ID) {
+            var t_ids = ID == 0 ? $('input[name="t_id"]') : $('#t_id_' + ID);
+            var o;
+			var ids='';
+			var pai='';
+            for (var i = 0; i < t_ids.length; i++) {
+                o = $('#t_orderid_' + t_ids[i].value).val();
+                if (o != $('#t_orderid_' + t_ids[i].value).attr('ovalue')) {
+                   ids = ids==''?  t_ids[i].value :ids+','+t_ids[i].value;
+				   pai = pai==''? o:pai+','+o;
+                }
+            }
+			 $.getJSON("__URL__/paixu", { id:ids,paixu:pai}, function(json){
+					  if(json.status == 0){
+						  alert(json.info);
+					   }
+					  else{
+						  alert(json.info);
+						  top.window.location.href=window.location.href;
+					  }
+					 });
+        }
+		clickCheckbox();
+        if( $.trim($('.cont').html()) == '' || $.trim($('.cont').html().length) ==0){
+            $('.cont').html('<td colspan="10">暂时没有结果!</td>');
+        }
+        $('.btn').click(function(){
+            if($('#mobile').val().length != 11){
+                popup.alert('手机号码格式错误!');
+                return false;
+            }
+            if($('#order_num').val() ==''){
+                popup.alert('请输入订单号');
+                return false;
+            }
+            $.ajax({
+                url:'/admins.php/Shop/validata',
+                dataType:'json',
+                type:'post',
+                data:$('form').serialize(),
+                success:function(dat){
+                    if(dat.status ==0){
+                        popup.error(dat.info);
+                        setTimeout(function(){
+                            popup.close('asyncbox_error');
+                        },2000);
+                    }else{
+                        popup.success('已查询到相关信息');
+                        setTimeout(function(){
+                            popup.close('asyncbox_success');
+                        },1000);
+                        $('.cont').html(" <td><input name="+dat.id+"  type='checkbox' id='t_id_'"+dat.uid+" value='"+dat.uid+"'></td><td>"+dat.id+"</td><td align='left'>"+dat.order_num+"</td><td>"+dat.title+"</td><td>"+dat.nickname+"["+dat.uid+"]</td><td>"+dat.price+"</td><td>"+dat.ctime+"</td><td>"+dat.total_num+"</td><td>"+dat.status+"</td><td>[ "+dat.save+" ] </td>");
+                    }
+                  
+                }
+            })
+        })
+
+
+
+
+    </script>
+    </body>
+</html>

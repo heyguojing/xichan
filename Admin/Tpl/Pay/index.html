@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title> 支付设置 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='支付设置 ';
+        </php>
+        <include file="Common:intoHead" />
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">{$alipay.name}信息设置</div>
+                    </div>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                            <tr>
+                                <th width="15%">支付宝账号 :</th>
+                                <td width="85%"><input type="text" name="alipayname" id="alipayname" class="input" size="60" value="{$alipay.alipayname}"></td>
+                            </tr>
+                             <tr>
+                                <th>合作身份者id :</th>
+                                <td><input type="text" name="partner" id="alipaypartner" class="input" size="60" value="{$alipay.partner}"></td>
+                            </tr>
+                             <tr>
+                                <th>安全检验码 :</th>
+                                <td><input type="text" name="key" id="alipaykey" class="input" size="60" value="{$alipay.key}"></td>
+                            </tr>
+                            <!-- <tr>
+                                <th>是否显示:</th>
+                                <td>
+                                <input type="radio" name="status" class="input-radio" value="1"<if condition="$alipay.status eq 1">checked="checked"</if>  />显示
+                                <input type="radio" name="status" class="input-radio" value="0"<if condition="$alipay.status eq 0">checked="checked"</if> />隐藏
+                            </td> 
+                            </tr>-->
+                            <tr>
+                                <th></th>
+                                <td><button class="btn alipaysubmit">提交</button></td>
+                            </tr>
+                        </table>
+                        <div class="Item hr">
+                        <div class="current">{$wxpay.name}设置</div>
+                    </div>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                            <tr>
+                            <th width="15%">身份标识(appId):</th>
+                            <td width="85%"><input type="text" name="appid" id="w_appid" class="input" size="60" value="{$wxpay.appid}"></td>
+                        </tr>
+                         <tr>
+                            <th>身份密钥(appSecret):</th>
+                            <td><input type="text" name="appsecret" id="w_secret" class="input" size="60" value="{$wxpay.appsecret}"></td>
+                        </tr>
+                         <tr>
+                            <th>通信密钥(paySignKey):</th>
+                            <td><input type="text" name="signkey" id="w_signkey" class="input" size="60" value="{$wxpay.signkey}"></td>
+                        </tr>
+                        <tr>
+                            <th>商户身份(partnerId):</th>
+                            <td><input type="text" name="partnerid" id="w_partnerid" class="input" size="60" value="{$wxpay.partnerid}"></td>
+                        </tr>
+                        <tr>
+                            <th>商户密钥(partnerKey):</th>
+                            <td><input type="text" name="partnerkey" id="w_partnerkey" class="input" size="60" value="{$wxpay.partnerkey}"></td>
+                        </tr>
+                         <!--<tr>
+                            <th>是否开启:</th>
+                            <td>
+                            <input type="radio" name="status" class="input-radio" value="1"<if condition="$wxinfo.status eq 1">checked="checked"</if>  />开启
+                            <input type="radio" name="status" class="input-radio" value="0"<if condition="$wxinfo.status eq 0">checked="checked"</if> />关闭
+                        </td>
+                        </tr> -->
+                        <tr>
+                                <th></th>
+                                <td><button class="btn wxpaysubmit">提交</button></td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+        </div>
+     
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <js href="__PUBLIC__/kindeditor/kindeditor.js,__PUBLIC__/kindeditor/lang/zh_CN.js"/>
+        <script type="text/javascript">
+            $(function(){
+              $(".alipaysubmit").click(function(){
+				  $.getJSON("{:U('Pay/alipay')}", { alipayname:$("#alipayname").val(),alipaypartner:$("#alipaypartner").val(),alipaykey:$("#alipaykey").val()}, function(json){
+					  if(json.status=="0"){
+							alert(json.info);
+						 }else{
+							alert(json.info);
+							top.window.location.href=window.location.href;
+						 }
+					  
+				  });
+			  });
+			  $(".wxpaysubmit").click(function(){
+				  $.getJSON("{:U('Pay/wxpay')}", {w_appid:$("#w_appid").val(),w_secret:$("#w_secret").val(),w_signkey:$("#w_signkey").val(),w_partnerid:$("#w_partnerid").val(),w_partnerkey:$("#w_partnerkey").val()}, function(json){
+					  
+					  if(json.status=="0"){
+							alert(json.info);
+						 }else{
+							alert(json.info);
+							top.window.location.href=window.location.href;
+						 }
+					  
+				  });
+			  });
+            });
+        </script>
+    </body>
+</html>

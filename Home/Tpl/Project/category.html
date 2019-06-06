@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>西婵</title>   
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+    	<div class="projectspage">
+            <div  id="masonrybox" class="masonry">
+                <volist name="list" id="vo">
+                <div class="project_item masonry-brick">
+                    <img src="__PUBLIC__/images/project/135x135.jpg" class="itemimg">
+                    <div class="txt">
+                        <h1>{$vo.name}</h1>
+                        <p><volist name="vo['project']" id="vk">
+                        <a href="{:U('../?proinfo='.$vk['id'].'')}">{$vk.title}</a>&nbsp; &nbsp;
+                        </volist></p>
+                    </div>
+                    <span class="ic_ri"><a  href="{:U('/projectlist/'.$vo['cid'].'')}" style=" width:40px; height:40px; position:absolute; top:-20px; left:-20px;"></a></span>
+                    
+                </div>        
+               </volist>
+            </div>    
+    	</div>
+    </div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/pagerefetch.js"></script>
+</body>
+</html>

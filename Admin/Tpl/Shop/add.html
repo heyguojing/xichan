@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{$titlename} - 商品管理 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='商品管理 > '.$titlename;
+        </php>
+        
+        <include file="Common:intoHead" />
+		<script type="text/javascript" src="__PUBLIC__/Js/my97datepicker/wdatepicker.js"></script>
+        <style type="text/css">
+           .t_link a{ padding:5px; background:#CCC; }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">{$titlename}</div>
+                    </div>
+                    <form enctype="multipart/form-data">
+                    <input type="hidden" name="refeurl" value="{$refeurl}" />
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                            <tr>
+                                <th width="100">商品标题：</th>
+                                <td><input id="title" type="text" class="input" size="60" name="info[goods_name]" value="{$info.goods_name}"/> <a href="javascript:void(0)" id="checkNewsTitle">检测是否重复</a></td>
+                            </tr>
+
+                            <tr>
+                                <th width="100">发布状态：</th>
+                                <td><label><input type="radio" name="info[status]" value="0" <if condition="$info.status eq 0"> checked="checked"</if> /> 审核状态</label> &nbsp; <label><input type="radio" name="info[status]" value="1" <if condition="$info.status eq 1"> checked="checked"</if> /> 发布状态</label> </td>
+                            </tr>
+                            <tr>
+                                <th>所属分类：</th>
+                                <td>
+                                    <select name="info[cid]">
+                                        <volist name="list" id="vo">
+                                            <if condition="$vo[cid] eq $info[cid]">
+                                                <option value="{$vo.cid}" selected="selected">{$vo.cname}</option>
+                                                <else/>
+                                                <option value="{$vo.cid}">{$vo.cname}</option>
+                                            </if>
+                                        </volist>
+                                    </select></td>
+                            </tr>
+							<tr>
+                                <th>商品封面：</th>
+                                <td><input type="file" id='file' class="input" name='upload'> 用于做商品的图片标识 <if condition="$info['pic']"><input type="hidden" name="info[pic]" value="{$info.pic}" /><a href="/Uploads/image/picture/{$info.pic}" target="_blank" title="查看文章封面">查看封面</a></if></td>
+                            </tr>
+                            <tr>
+                                <th>描述/简介：</th>
+                                <td><textarea class="input" id='des' style="height: 40px; width: 600px;" name="info[description]">{$info.description}</textarea> </td>
+                            </tr>
+                            <tr>
+                                <th>商品价格：</th>
+                               <td><input placeholder='0.00' id='price' class="input" style="height: 20px; width: 100px;" name="info[price]" value='{$info.price}'>　默认保留两位小数</td> 
+                            </tr>
+                            <tr>
+                                <th>商品序列号：</th>
+                               <td><input  class="input" disabled='disabled' style="height: 20px; width: 100px;"value='{$info.SN}'>　每个商品唯一序列号,自动生成，无需填写 </td> 
+                            </tr>
+                        </table>
+                        <input type="hidden" name="info[id]" value="{$info.id}" />
+                    </form>
+                    <div class="commonBtnArea" >
+                        <button class="btn submit">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <js href="__PUBLIC__/kindeditor/kindeditor.js,__PUBLIC__/kindeditor/lang/zh_CN.js"/>
+        <script type="text/javascript">
+            $(function(){
+                $("#checkNewsTitle").click(function(){
+                    $.getJSON("__URL__/checkNewsTitle", { title:$("#title").val(),id:"{$info.id}"}, function(json){
+                        $("#checkNewsTitle").css("color",json.status==1?"#0f0":"#f00").html(json.info);
+                    });
+                });
+      				$("testCheckbox").change(function() { 
+      				alert("Option changed!"); 
+      				}); 
+
+                $(".submit").click(function(){
+                  if($('#title').val() == ''){
+                    popup.alert('商品名称不能为空');
+                    return false;
+                  }
+                  if($('#price').val() == ''){
+                    popup.alert('商品价格不能为空');
+                    return false;
+                  }
+                  if($('#des').val() == ''){
+                    popup.alert('商品描述不能为空');
+                    return false;
+                  }
+                    commonAjaxSubmit();
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>

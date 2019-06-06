@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<meta http-equiv='Content-Type' content='text/html; charset=utf-8' /> 
+		<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+		<title>珠宝销售图</title>
+		<link href="__PUBLIC__/push/css/swiper-3.4.2.min.css" rel="stylesheet" type="text/css" />
+		<script type='text/javascript' src='__PUBLIC__/push/0627/jquery-1.9.0.min.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/js/swiper-3.4.2.jquery.min.js'></script>
+
+		<style>
+			body,ul,li{margin: 0;padding: 0;list-style: none;}
+			.wrap{
+				text-align:center;
+				max-width:750px;
+				width:100%;
+				min-width:320px;
+				margin-left:auto;
+				margin-right:auto;
+			}
+			.wrap img{width:100%;}
+			.wrap .ioc{width:auto;}
+			.wrap h1{margin-top:50px;margin-bottom: 20px;}
+			.wrap .dir {background:#A4D3EE;}
+			table{width:100%;}
+			table tr{width:100%;background:#ccc;}
+			table tr td{text-align:center;}
+			.wrap .q_all{width:13%;height:40px;line-height: 40px;float:left;cursor:pointer;}
+			.wrap .q_download{width:15%;height:40px;min-width:70px;line-height: 40px;float:left;cursor:pointer;}
+		</style>
+	</head>
+	<body>
+		<div class='wrap'>
+			  <div class="swiper-container">
+		            <div class="swiper-wrapper">
+		            <volist name='url' id='vo'>
+		               <div class="swiper-slide">
+							<img src='{$vo.file_uri}'/>
+		                </div>
+		            </volist>
+		       		</div>
+	                <div class="pagination"></div>
+	                <div style='clear:both;'></div>
+			</div>
+		</div>
+		<script type='text/javascript'>
+			$(function(){
+				 var mySwiper = new Swiper('.swiper-container',{
+				    pagination: '.pagination',
+				    loop:true,
+				    moveStartThreshold: 5,
+				    autoplay:6000,
+				    grabCursor: true,
+				    paginationClickable: true
+				 });
+			})
+		  </script>
+		<script>
+			var _hmt = _hmt || [];
+			(function() {
+				var hm = document.createElement("script");
+				hm.src = "https://hm.baidu.com/hm.js?96e76211d21b66fbdaf1a05498b4417a";
+				var s = document.getElementsByTagName("script")[0]; 
+				s.parentNode.insertBefore(hm, s);
+			})();
+		</script>
+	</body>
+</html>

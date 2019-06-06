@@ -1,0 +1,97 @@
+/*----------basic----------*/
+/**/
+body{
+	font-size: 12px;
+}
+a{
+	cursor: pointer;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: underline;
+}
+.opac:hover{
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+.btn:hover,
+.btn:hover *{
+	cursor: pointer;
+	text-decoration: none;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+
+.clear{
+	display: block;
+	clear: both;
+}
+.fwrap{
+	display: block;
+	width: 115%;
+}
+.fwrap.lt{
+	width: 105%;
+}
+.fwrap.gt{
+	width: 125%;
+}
+
+.ie-radius{
+	border-radius: 5px;
+	behavior: url(css/ie-css3.htc);
+}
+
+hr{
+	padding:0;
+	margin: 0;
+	border: none;
+	border-bottom: 1px solid #999;
+}
+
+h2, h3, input{
+	padding: 0;
+	margin: 0;
+}
+.ht05{
+	height: 5px;
+}
+.ht10{
+	height: 10px;
+}
+.ht15{
+	height: 15px;
+}
+.ht20{
+	height: 20px;
+}
+.ht25{
+	height: 25px;
+}
+.ht30{
+	height: 30px;
+}
+.ht35{
+	height: 35px;
+}
+.ht40{
+	height: 40px;
+}
+.ht45{
+	height: 45px;
+}
+.ht50{
+	height: 50px;
+}
+.ht100{
+	height: 100px;
+}
+
+.none{
+	display: none;
+}
+.hide{
+	opacity:0;
+	filter:alpha(opacity=0);
+}
+/*----------plugin----------*/

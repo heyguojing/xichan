@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>编辑专家关联信息 - 项目管理 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='项目管理 > 编辑专家关联信息';
+        </php>
+        
+        <include file="Common:intoHead" />
+		<script type="text/javascript" src="__PUBLIC__/Js/my97datepicker/wdatepicker.js"></script>
+        <style type="text/css">
+           .t_link a{ padding:5px; background:#CCC; }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">编辑专家关联信息</div>
+                    </div>
+                    <div style="width:100%">
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="table1">
+                      <form  enctype="multipart/form-data">
+                      <input type="hidden" name="act" value="{$act}" /> 
+                      <input type="hidden" name="cid" value="{$cid}" />
+                        <tr>
+                          <th width="119">标题</th>
+                          <td width="862"><input id="title" class="input" type="text" size="50" name="info[title]" value="{$cinfo.title}" /></td>
+                      </tr>
+                      <tr>
+                          <th width="119">链接地址</th>
+                          <td width="862"><input class="input" type="text" name="info[urlclass]" size="50" value="{$cinfo.urlclass}" /></td>
+                      </tr>
+                            <tr>
+                                <th width="119">展示图片：</th>
+                                <td><input type="file" class="input" name='upload'>
+                                </td>
+                            </tr>
+                            <input type="hidden" name="info[id]" value="{$cinfo.id}" />
+                            </form>
+                            <tr>
+                                <th></th>
+                                <td><button class="btn quickSubmit">确定添加</button></td>
+                            </tr>
+                      </table>
+                     
+                </div>
+                <br />
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                       <thead>
+                            <tr>
+                                <td>选择</td>
+                                <td>显示图片</td>
+                                <td>所在分类</td>
+                                <td>状态</td>
+                                <td>排序</td>
+                                <td>操作</td>
+                            </tr>
+                        </thead>
+                        <volist name="list" id="vo">
+                        <tbody>
+                            <tr align="center" id="From_{$vo.id}">
+                                <td><input name="t_id"  type='checkbox' id="t_id_{$vo.id}" value='{$vo.id}'></td>
+                                <td align="left"><img src="/Uploads/image/picture/{$vo.picurl}" width="121" height="73" /></td>
+                                <td align="left">{$vo.title}</td>
+                                <td align="left">{$vo.urlclass}</td>
+                                 <td><input type="text" value="{$vo.paixu}" name="t_orderid_{$vo.id}" id="t_orderid_{$vo.id}" class="input" onkeyup="this.value=this.value.replace(/\D/g,'');" size="6" maxlength="6" ovalue="{$vo.paixu}"/><a href="javascript:void(0);" onclick="Save({$vo.id});return false;" p="7">保存</a>
+                               </td>
+                                <td> [ <a href="__URL__/guanlian?id={$vo.id}&cid={$cid}">编辑 </a> ] [ <a href="javascript:void(0);" onclick="Del({$vo.id});return false;" p="8">删除</a> ]</td>
+                            </tr>
+                            </tbody>
+                        </volist>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                            <tr>
+                              <td width="50%"><label><input name="" class="chooseAll" type="checkbox"/> 全选</label>&nbsp;&nbsp;&nbsp;&nbsp;<label><input name="" class="unsetAll" type="checkbox"/> 反选</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="javascript:void(0);" class=" btn"  onclick="Del(0);return false;">删除选中</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:void(0);" class="btn" onclick="Save(0);return false;">批量排序保存</a></td>
+                                
+                                <td width="50%" align="right">{$page}</td>
+                            </tr>
+                        </table>
+                </div>
+            </div>
+        </div>
+     
+        <div class="clear"></div>
+        <include file="Common:foot" />
+         <script type="text/javascript">
+            $(function(){
+                $(".quickSubmit").click(function(){
+                    commonAjaxSubmit();
+                    return false;
+                });
+            });
+        function Save(ID) {
+            var t_ids = ID == 0 ? $('input[name="t_id"]') : $('#t_id_' + ID);
+            var o;
+			var ids='';
+			var pai='';
+            for (var i = 0; i < t_ids.length; i++) {
+                o = $('#t_orderid_' + t_ids[i].value).val();
+                if (o != $('#t_orderid_' + t_ids[i].value).attr('ovalue')) {
+                   ids = ids==''?  t_ids[i].value :ids+','+t_ids[i].value;
+				   pai = pai==''? o:pai+','+o;
+                }
+            }
+			 $.getJSON("__URL__/guanpaixu", { id:ids,paixu:pai}, function(json){
+					  if(json.status == 0){
+						  alert(json.info);
+					   }
+					  else{
+						  alert(json.info);
+						  top.window.location.href=window.location.href;
+					  }
+					 });
+        }
+		clickCheckbox();
+        function Del(ID) {
+            var t_ids;
+            if (ID > 0) {
+                t_ids=  ID;
+            } else {
+                t_ids = $("input[name='t_id']").serialize().replace(/&t_id=/g, ',').replace('t_id=','');
+            }
+			if(t_ids==''){
+				alert('请选择');
+				}
+			else{	
+           popup.confirm('删除后将无法恢复，你真的打算删?','温馨提示',function(action){
+                        if(action == 'ok'){
+                           $.getJSON("__URL__/guansubmit", { id:t_ids}, function(json){
+								if(json.status == 0){
+									alert(json.info);
+								 }
+								else{
+									alert(json.info);
+									top.window.location.href=window.location.href;
+								}
+							});
+                        }
+                    });
+                    return false; 
+		    }
+        }
+        
+    //-->
+    </script>
+    </body>
+</html>

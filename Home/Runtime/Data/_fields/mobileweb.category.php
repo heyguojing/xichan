@@ -1,0 +1,1 @@
+<?php	return array ( 0 => 'cid', 1 => 'pid', 2 => 'name', '_autoinc' => true, '_pk' => 'cid', '_type' => array ( 'cid' => 'int(5)', 'pid' => 'int(5)', 'name' => 'varchar(20)', ), );?>

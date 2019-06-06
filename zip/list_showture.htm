@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from win.qbt8.com/xichan/show.html by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 04 Aug 2015 03:10:42 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.typename/}-{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}" />
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" /><!-- 防止IE8,7进入怪异模式 -->
+<link rel="icon" href="/public/templets/2015/images/favicon.gif" type="image/gif" >
+<link rel="shortcut icon" href="/public/templets/2015/images/favicon.ico">
+<script type="text/javascript" src="/public/templets/2015/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/public/templets/2015/js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="/public/templets/2015/js/jquery.touchSlider.js"></script><!--控制banner切换效果-->
+<link href='/public/templets/2015/css/pc.css' rel='stylesheet' type='text/css'>
+<link href='/public/templets/2015/css/pc5.css' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="/public/templets/2015/js/zongh1.js"></script>
+
+
+
+<script type="text/javascript"  src="/public/templets/2015/js/nav.js"></script><!--控制顶部店铺列表下拉效果-->
+<script type="text/javascript" src="/public/templets/2015/js/popwin.js"></script><!--返回顶部特效-->
+</head>
+
+<body  style="background:#f7f7f7;">
+     <!--#include file="/public/includ/header.html"-->
+  <!--nav部分 结束-->  
+<div class="b1200">
+ <div class="location b_center">{dede:field name='position'/}</div>
+  </div>
+  <div class="blank30 blank20_pad"></div>
+  <!--banner star-->
+   <div class="main_visual">
+    <div class="flicking_con">
+      <div class="flicking_inner">
+        <a href="javascipt:;" target="_self">1</a>
+        <a href="javascipt:;" target="_self">2</a>
+        <a href="javascipt:;" target="_self">3</a>
+      </div>
+    </div>
+	<div class="main_image">
+	 {dede:field.content/}
+	  <a href="javascript:;" id="btn_prev"></a>
+	  <a href="javascript:;" id="btn_next"></a>
+    </div>
+  </div>
+  <!--banner end-->
+ <div class="blank40 blank20_pad"></div>
+ 
+ <!--p1200 star-->
+ <div class="p1200 b_center" id="tests">
+   <div class="appeal_t_h5"></div>
+   <div class="show_logo"><img src="/public/templets/2015/images/show_logo.png" /></div>
+
+	 <!-- {dede:list pagesize="12000000000000" titlelen="60"}
+	<span class="show_t_tui fl">
+	  <div class="show_t_tui_img"><a href="[field:arcurl/]"  target="_blank"><img src="[field:picname/]" /></a></div>
+	  <div class="show_r_tui_con">
+	   <div class="title"><a href="[field:arcurl/]"  target="_blank">[field:title/]</a></div>
+	   <div class="about">[field:dyshow/]</div>
+	  </div>
+	  show_r_tui_con end
+	 </span>
+   {/dede:list}--> 
+
+ </div>
+ 	  <style>
+         #tests span:nth-child(n) {margin-right: 17px;}
+         #tests span:nth-child(2n) {margin-right: 17px;}
+         #tests span:nth-child(3n) {margin-right: 17px;}
+		 #tests span:nth-child(4n) {margin-right: 0px;}
+		 .fenye{ width:1198px; margin:0 auto; padding:30px 0; clear:both;}
+		.fenye li{ float:left; list-style:none; text-align:center; margin-left:14px; margin-right:5px; padding:5px 5px;}
+		.fenye li,.fenye li a{font-size:18px;color:#888;}
+		.fenye li:hover a,.fenye li.thisclass a{color:#fff;}
+		.fenye li:hover,.fenye li.thisclass{ border:0; color:#fff;background:#888;}
+      </style>
+ <!--p1200 end-->
+
+ <div class="clear"></div>
+        <div class="honor_more b_center" id="showids"><a href="javascript:;">查看更多</a><input type="text"  id="picval" value="0"  style=" display:none;"/></div>
+
+        <ul class="fenye" id="page" style="display:none;">
+            {dede:pagelist istitem="index,pre,next,end," listsize="5"/}
+        </ul>
+    <script>    
+	var geshu = 4;//每行默认个数
+	var msx = 2;//默认显示行数,默认为1;
+	var sd = geshu*msx//点击出现栅格的总共个数
+	var vlz = msx-1;
+	var y=2;//点击显示行数
+    $(function(){
+		/*给input赋值*/
+		$("#picval").val(vlz)
+		/*判断宽度设置每行显示*/
+        var xzq = $("#tests span");
+        xzq.hide();
+		for(var i= msx*geshu;i>0;i--){xzq.eq(msx*geshu-i).show();}//默认显示个数
+        
+        if(geshu<xzq.size()){
+            $("#showids").click(function(){
+                for(var j=0;j<geshu*y;j++)
+				{
+					xzq.eq(j+sd).slideDown();
+				}				
+                sd = sd+geshu;
+				var pval = $("#picval").val();
+				pval++;
+				$("#picval").val(pval);/*值自加，然后赋值给input*/
+				
+				if(pval*geshu*y>xzq.size()-geshu){
+				}
+            })
+        }
+        
+    })
+     </script>
+ <div class="blank40 blank20_pad"></div>
+
+ <!--abk_f_100 star-->
+<!--#include file="/public/includ/footer.html"-->
+</body>
+
+<!-- Mirrored from win.qbt8.com/xichan/show.html by HTTrack Website Copier/3.x [XR&CO'2013], Tue, 04 Aug 2015 03:10:54 GMT -->
+</html>

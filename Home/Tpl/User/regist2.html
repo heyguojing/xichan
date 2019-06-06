@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>  -->
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>用户登录 - {$systemConfig.SITE_INFO.name}</title> 
+    <meta name="keywords" content="{$systemConfig.SITE_INFO.keywords}" />
+    <meta name="description" content="{$systemConfig.SITE_INFO.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/member.css" rel="stylesheet" type="text/css" />
+    <script src="__PUBLIC__/js/jquery-1.9.0.min.js"></script>
+    <link href="__PUBLIC__/Css/base.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="__PUBLIC__/Js/asyncbox/skins/default.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/Js/functions.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/jquery.form.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Js/asyncbox/asyncbox.js"></script>
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+    	<div class="loginreg">
+        	<ul>
+              <form id="form1" action="" method="post">
+            	<li class="clearfix">
+                	<div class="inner_li">
+                    	<strong>邮箱：</strong>
+                        <input type="text" id="email" placeholder='请输入邮箱地址' name="email" class="inner_input" value="" />
+                    </div>
+                </li>
+            	<li class="clearfix">
+                	<div class="inner_li">
+                    	<strong>密码：</strong>
+                        <input type="password" id="pwd" placeholder='密码至少包含数字和字母' name="pwd" class="inner_input" value="" />
+                    </div>
+                </li>
+                <!-- <li class="clearfix">
+                    <div class="inner_li">
+                        <strong>确认密码：</strong>
+                        <input type="password" id="pwd1" name="pwd" class="inner_input" value="" />
+                    </div>
+                </li> -->
+                <li class="clearfix">
+                	<div class="inner_li">
+                    	<strong>昵称：</strong>
+                        <input type="text" id="nickname" name="nickname" class="inner_input" value="" />
+                    </div>
+                </li>
+                <li class="clearfix">
+                	<div class="inner_li">
+                    	<strong>电话：</strong>
+                        <input type="text" id="mobile" name="mobile" class="inner_input" value="" />
+                    </div>
+                </li>
+                </form>
+                <li class="clearfix">
+                	<button id="btnlogin" name="btnogin" class="btn_login submit">注册</button>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript">
+        $(function(){
+            $(".submit").click(function(){
+				// if(!isEmail($("input[name='email']").val())){
+				// 	popup.alert("邮箱格式错误");
+				// 	return false;
+				// }
+				// if($("#pwd").val()==''){
+    //                 popup.alert("请填写密码");
+    //                 return false;
+    //             }
+              
+				// if($("#nickname").val()==''){
+    //                 popup.alert("请填写用户名");
+    //                 return false;
+    //             }
+    //            if(!isMobile($("input[name='mobile']").val())){
+				// 	popup.alert("手机号码格式错误");
+				// 	return false;
+				// }
+                commonAjaxSubmit();
+            });
+        });
+    </script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+</body>
+</html>

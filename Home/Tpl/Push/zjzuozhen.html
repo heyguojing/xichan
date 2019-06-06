@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>西婵全球专家坐诊信息 - {$systemConfig.SITE_INFO.name}</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+		<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+		<link href='__PUBLIC__/push/0627/push0627.css' rel='stylesheet' type='text/css'/>
+    	<link href='__PUBLIC__/push/0627/swiper.min.css' rel='stylesheet' type='text/css'/>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/jquery-1.9.0.min.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/jquery.form.js'></script>
+		<script type='text/javascript' src='__PUBLIC__/js/common.js'></script>
+	    <link rel="stylesheet" type="text/css" href="__PUBLIC__/push/0627/tipDialog.css"/>
+	    <script type="text/javascript" src="__PUBLIC__/push/0627/tipDialog.js"></script>
+	<style>
+		body{padding: 0;margin: 0;}
+		.wrapper{width:100%;adding:0;margin:0;max-width: 1200px;min-width: 320px;margin-top: -22px;}
+		img{width:100%;display: block;}
+		.bt{position:absolute;left:33%;width:33%;z-index: 1;}
+		.btn1{top:30%;}
+		.btn2{top:3%;}
+		.btn3{top:-7%;}
+		.btn4{top:44.5%;}
+		#footer{padding: 10px 0px 20px;margin-top:0;border: none;}
+		#overLayBody{margin-top:22px;}
+		.swiper-slide{height:auto;}
+	</style>
+	</head>
+	<body>
+		<include file="Public:head" />
+		<div class='wrapper' style='max-width:1200px;'>
+			 <include file="Public:menu" />
+				<div style='clear:both;'></div>
+				<div class='main'>
+					<div><img src='__PUBLIC__/push/0627/top.jpg'/></div>
+					<div class="swiper-container">
+				        <div class="swiper-wrapper" style='height:auto;'>
+				        	<volist name='list' id='vo'>
+					            <div  class="swiper-slide" style='margin:0 auto;'>
+									<img src='/Uploads/image/ad/{$vo.pic}'/>
+					            </div>
+				        	</volist>
+				        </div>  
+			            <div class="swiper-button-prev"></div>
+  						<div class="swiper-button-next"></div>
+			    	</div> 
+					<div><img src='__PUBLIC__/push/0627/doctor.jpg'/></div>
+					<div><a href='javascript:;' onclick='_MEIQIA._SHOWPANEL()'><img src='__PUBLIC__/push/0627/online.jpg'/></a></div>
+				</div>
+		 <include file="Public:footer" />
+		</div>
+		<script type='text/javascript' src='__PUBLIC__/push/0627/swiper.jquery.min.js'></script>
+		<script type="text/javascript">
+			window.onload = function() {
+			  var mySwiper = new Swiper('.swiper-container',{
+			    direction:"horizontal", 
+	            loop:true,
+                nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+	            autoplay:4000,  
+	            autoplayDisableOnInteraction : false,
+			  });  
+			}
+		</script>
+	</body>
+</html>

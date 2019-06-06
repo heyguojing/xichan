@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{$titlename} - 短信管理 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='短信管理 > '.$titlename;
+        </php>
+        
+        <include file="Common:intoHead" />
+		<script type="text/javascript" src="__PUBLIC__/Js/my97datepicker/wdatepicker.js"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">{$titlename}</div>
+                    </div>
+                    <form enctype="multipart/form-data">
+                    <input type="hidden" name="refeurl" value="{$refeurl}" />
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table1">
+                            <tr>
+                                <th width="100">电话号码：<font style='color:red;'>*</font></th>
+                                <td>{$info.tel}</td>
+                            </tr>
+                             <tr>
+                                <th width="100">会员姓名：</th>
+                                <td><if condition='$info[member_name] neq NULL'>{$info.member_name}<else/>未填写</if></td>
+                            </tr>
+                             <tr>
+                                <th width="100">会员卡号：</th>
+                                <td><if condition='$info[member_id] neq NULL'>{$info.member_id}<else/>未填写</if></td>
+                            </tr>
+                             <tr>
+                                <th width="100">乘车人数：</th>
+                                <td>{$info.people_num}人</td>
+                            </tr>
+                            <tr>
+                                <th width="100">有效时间：<font style='color:red;'>*</font></th>
+                                <td>{$info.e_start_time|date='Y-m-d',###}－－{$info.e_end_time|date='Y-m-d',###}　    　　　　*生效时间是指选择当天的0时0分开始；过期时间是指选择当天的23时0分结束
+                                </td>
+                            </tr>
+                             <tr>
+                                <th width="100">验证码：</th>
+                                <td>{$info.code}</td>
+                            </tr>
+                             <tr>
+                                <th width="100">短信发送时间：</th>
+                                <td>{$info.published|date="Y-m-d H:i:s",###}</td>
+                            </tr>
+                            <tr>
+                                <th width="100">是否验证：</th>
+                                <td><if condition="$info[is_verify] eq 1">未验证<else/>已验证</if></td>
+                            </tr>
+                            <tr>
+                                <th width="100">验证时间：</th>
+                                <td><if condition="$info[verify_time] neq NULL">{$info.verify_time|date="Y-m-d H:i:s",###}<else/>未验证</if></td>
+                            </tr>
+                          	<tr>
+                                <th width="100">短信内容：</th>
+                                <td style='width:400px;'><if condition="$info[verify_time] neq NULL">{$info.content}</td>
+                            </tr>
+                        </table>
+                        <input type="hidden" name="info[id]" value="{$info.id}" />
+                    </form>
+                    <div class="commonBtnArea" >
+                        <button class="btn submit">发送</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+        <div class="clear"></div>
+        <include file="Common:foot" />
+        <js href="__PUBLIC__/kindeditor/kindeditor.js,__PUBLIC__/kindeditor/lang/zh_CN.js"/>
+        <script type="text/javascript">
+        
+            $(".submit").click(function(){
+            	if($('#tel').val() =='' || $('#e_start_time').val()=='' || $('#e_end_time').val()=='' || $('#template').val()=='0' || $('#template').val()==''){
+            		alert('请填写完带星号的内容再提交！');
+            		return false;
+            	}
+                commonAjaxSubmit();
+                return false;
+            });
+        </script>
+    </body>
+</html>

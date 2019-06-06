@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>会员信息 - 后台管理中心 - {$site.SITE_INFO.name}</title>
+        <php>
+            $currentNav ='会员管理 > 会员信息';
+        </php>
+        <include file="Common:intoHead" />
+    </head>
+    <body>
+        <div class="wrap">
+            <include file="Common:head" />
+            <div class="mainBody">
+                <include file="Common:left" />
+                <div id="Right">
+                    <div class="Item hr">
+                        <div class="current">会员信息</div>
+                    </div>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="tab">
+                                <tr>
+                                    <td width="120" align="right">用户ID：</td>
+                                    <td>{$info.uid}</td>
+                                    <td width="120" align="right">邮箱：</td>
+                                    <td>{$info.email}</td>
+                                </tr>
+                                <tr>
+                                    <td width="120" align="right">昵称：</td>
+                                    <td>{$info.nickname}</td>
+                                    <td width="120" align="right">电话：</td>
+                                    <td>{$info.mobile}</td>
+                                </tr>
+                                <tr>
+                                    <td width="120" align="right">注册时间：</td>
+                                    <td>{$info.reg_date|date="Y-m-d h:i:s",###}</td>
+                                    <td width="120" align="right">注册ip地址：</td>
+                                    <td>{$info.reg_ip}</td>
+                                </tr>
+                                 <tr>
+                                    <td width="120" align="right">登录时间：</td>
+                                    <td>{$info.login_time|date="Y-m-d h:i:s",###}</td>
+                                    <td width="120" align="right">登录ip地址：</td>
+                                    <td>{$info.login_ip}</td>
+                                </tr>
+                                  <tr>
+                                    <td width="120" align="right">sinaID：</td>
+                                    <td>{$info.weibo_uid}</td>
+                                    <td width="120" align="right">腾讯ID：</td>
+                                    <td>{$info.tencent_uid}</td>
+                                </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <include file="Common:foot" />
+    </body>
+</html>

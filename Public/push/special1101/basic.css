@@ -1,0 +1,89 @@
+.main{margin-top:-23px;}
+.main img{width:100%;}
+.main .index{position:relative;}
+.index .online{position:absolute;bottom:4%;left:33.2%;display: block;width:14%;height:21%;}
+.index .tel{position:absolute;bottom:4%;left:52.2%;display: block;width:14%;height:21%;}
+.index .f5_tz{position:absolute;width:83%;top:24%;left:10%;}
+.index .f5_tz ul li{width:29.5%;float:left;padding-left:3%;padding-top:2.5%;}
+.index .double{width:41%;position:absolute;top:54.5%;left:30%;}
+.index .p_left{width:25.3%;position:absolute;left:4%;top:22%;}
+.index .p_right{width:25.3%;position:absolute;right:4%;top:22%;}
+.index .p_left img {padding-top:28%;}
+.index .p_right img{padding-top:28%;}
+.i_ss{background:#f5f33c;}
+.i_ss .shesays{width:44.4%;margin-left:auto;margin-right:auto;padding-top:20px;}
+.i_ss .online1{width:13.3%;margin-left:auto;margin-right:auto;padding-top:8px;padding-bottom: 20px;}
+.tj_project{background:#ffffff;padding-top:40px;}
+.tj_project .xm{width:92%;margin-left:auto;margin-right:auto;}
+.tj_project .xm ul li a img{width:48%;float:left;padding-left:3%;padding-top:20px;}
+.pd0{padding-left:0.5% !important;}
+.tj_project .form_s{margin-top:50px;position:relative;}
+.form_s .form_bd{position:absolute;top:18%;left:12%;text-align:center;width:75%;max-width:520px;font-size:17px;color:#a43397;font-family: '微软雅黑'}
+.form_bd form input,select{width:64%;padding:5px 10px;margin-top:15px;line-height:24px;font-size:16px;}
+.form_bd form select{appearance:none;
+-moz-appearance:none;
+-webkit-appearance:none;background: none;background:url(./down.png) no-repeat;background-position:right;}
+.form_bd .btn{width:88.6%;padding-top:30px;margin-left:auto;margin-right:auto;}
+#footer{margin-top:-23px;}
+.animation1{
+animation:mymove 1s linear 0s infinite;
+-webkit-animation:mymove 1s  linear 0s infinite  ; /*Safari and Chrome*/
+-ms-animation:mymove 1s  linear 0s infinite  ;
+-moz-animation:mymove 1s  linear 0s infinite  ;
+}
+@keyframes mymove
+{
+25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+@-moz-keyframes mymove
+{
+25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+@-ms-keyframes mymove
+{
+ 25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+@-webkit-keyframes mymove
+{
+25% {transform: scale(1.05);}
+0%,50%, 100% {transform: translatex(1);}
+75% {transform: translatex(0.95);}
+}
+
+
+.animation2{
+animation:mymove1 1s linear 0s infinite;
+-webkit-animation:mymove1 1s  linear 0s infinite  ; /*Safari and Chrome*/
+-ms-animation:mymove1 1s  linear 0s infinite  ;
+-moz-animation:mymove1 1s  linear 0s infinite  ;
+}
+@keyframes mymove1
+{
+25% {transform: translatex(-2px);}
+0%,50%, 100% {transform: translatex(0);}
+75% {transform: translatex(2px);}
+}
+@-moz-keyframes mymove1
+{
+ 25% {transform: translatex(-2px);}
+ 0%, 50%, 100% {transform: translatex(0);}
+ 75% {transform: translatex(2px);}
+}
+@-ms-keyframes mymove1
+{
+ 25% {transform: translatex(-2px);}
+ 0%, 50%, 100% {transform: translatex(0);}
+ 75% {transform: translatex(2px);}
+}
+@-webkit-keyframes mymove1
+{
+ 25% {transform: translatex(-2px);}
+ 0%, 50%, 100% {transform: translatex(0);}
+ 75% {transform: translatex(2px);}
+}

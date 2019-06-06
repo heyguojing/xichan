@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>搜索</title>   
+    <meta name="keywords" content="{$info.keywords}" />
+    <meta name="description" content="{$info.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<include file="Public:head2" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+    	<div class="searchpage">
+        	<div class="searchtit">与"<strong>{$keywords}</strong>"相关的文章有{$count}篇</div>
+            <div  id="masonrybox" class="masonry">
+                <volist name="list" id="vo">
+                <div class="newslist masonry-brick">
+                   <a href="{:U('../?'.$vo['curl'].'='.$vo['keyid'].'')}"><img src="{$vo.picurl}{$vo.pic}" class="aimg"></a>
+                    <div class="txt">
+                        <h3>{$vo.keywords}</h3>
+                        <h1><a  href="{:U('../?'.$vo['curl'].'='.$vo['keyid'].'')}">{$vo.title}</a></h1>
+                    </div>
+                    <div class="newshare clearfix">
+                        <p class="tshar">
+                            <if condition="$vo.url neq 'case'"><a link="{$vo['keyid']}" href="javascript:void(0)" class="{$vo.liclass}" id="gd{$vo['keyid']}"><span id="good{$vo['keyid']}" class="zan {$vo.hover}">{$vo.views}</span></a></if>
+                             <a link="{$vo['keyid']}" href="javascript:void(0)"  class="kfjs"><span class="read kefuback{$vo['keyid']}">{$vo.reshow}</span></a>
+                            <!--<span class="share">{$vo.fenxiang}</span>-->
+                        </p>
+                        <div class="cname">
+                        	<em class="bg_lblue"><a href="{:U('/'.$vo['cat'].'/'.$vo['cid'].'')}">{$vo.category}</a></em>
+                        </div>
+                    </div>
+                </div>
+                </volist>
+                </div>
+            </div>    	
+            <div id="page_loading"><img src="__PUBLIC__/images/load.png"></div>
+            <div id="next_page" style="display:none">{$page}</div> 
+            </div>
+    	</div>
+    </div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/pagerefetch.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".kfjs").click(function(){
+			var delLink=$(this).attr("link");
+			var sqlname=$(this).attr("name");
+			$.getJSON("{:U('Index/kefu')}",{id:delLink,sqlname:sqlname}, function(json){
+				if(json.status == 1){
+				$("#kefuback"+delLink).html(json.info); 
+				   window.location.href = "https://static.meiqia.com/dist/standalone.html?eid=9041";
+				}
+			})
+		});
+		$(".zhan").click(function(){
+			var delLink=$(this).attr("link");
+			//alert(delLink);
+		   $.getJSON("{:U('newszhan/"+delLink+"')}", function(json){
+				if(json.status == 1){
+				$(".zhan").html('<span class="zan hover">'+json.info+'</span>') 
+				}
+			});
+		});
+	});
+</script>
+</body>
+</html>

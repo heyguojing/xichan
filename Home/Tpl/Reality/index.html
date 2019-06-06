@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>美人制造 - {$systemConfig.SITE_INFO.name}</title>
+    <meta name="keywords" content="{$systemConfig.SITE_INFO.keywords}" />
+    <meta name="description" content="{$systemConfig.SITE_INFO.description}" />
+    <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport">
+	<link href="__PUBLIC__/css/global.css" rel="stylesheet" type="text/css" />
+	<link href="__PUBLIC__/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<include file="Public:head" />
+<div class="wrapper">
+    <include file="Public:menu" />
+    <div class="wrapper">
+    	<div class="realityAd"><a href="{$adbanerlist.httpurl}"><img src="__adimg__{$adbanerlist.pic}" class="aimg"></a></div>
+    	<div class="realitypage">
+            <div  id="masonrybox" class="masonry">
+<!--               <volist name="list" id="vo">
+                <div class="realitylist masonry-brick">
+                    	<a href="{:U('../?realshow='.$vo['id'].'')}"><img src="__realityimg__{$vo.pic}" class="aimg"></a>
+                    <div class="txt">
+                        <h3>{$vo.keywords}</h3>
+                        <h1><a href="{:U('../?realshow='.$vo['id'].'')}">{$vo.username}  {$vo.title}</a></h1>
+                    </div>
+                    <div class="opshare clearfix">
+                        <p class="tshar">
+                            <a link="{$vo['id']}" href="javascript:void(0)" class="{$vo.liclass}" id="gd{$vo['id']}"><span id="good{$vo['id']}" class="zan {$vo.hover}">{$vo.views}</span></a>
+                             <span class="read" id="kefuback{$vo['id']}">{$vo.reshow}</span>
+                        </p>
+                        <div class="cname">
+                        	<em class="bg_brown"><a href="{:('/index.php/reality/index')}">真人秀</a></em>
+                        </div>
+                    </div>
+                </div>
+                </volist>
+            </div> 
+            <if condition="$pa eq 1">    	
+            <div id="page_loading"><img src="__PUBLIC__/images/loading.gif"><span>正在加载</span></div>
+            <div id="next_page" style="display:none">{$page}</div>
+            </if>-->
+            </div>
+    	</div>
+    </div>
+</div>
+<include file="Public:footer" />
+<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/common.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/pagerefetch.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".kfjs").click(function(){
+			var delLink=$(this).attr("link");
+			$.getJSON("{:U('Index/kefu')}",{id:delLink,sqlname:'reality'}, function(json){
+				if(json.status == 1){
+				$("#kefuback"+delLink).html(json.info); 
+				   window.location.href = "https://static.meiqia.com/dist/standalone.html?eid=9041";
+				}
+			})
+		});
+		$(".zhan").click(function(){
+			var delLink=$(this).attr("link");
+			if($(this).hasClass("zhan")){
+			 $.getJSON("{:U('realityzhan/"+delLink+"')}", function(json){
+				  if(json.status == 1){
+					  $("#good"+delLink).html(json.info);
+					  $("#good"+delLink).addClass("hover");
+					  $("#gd"+delLink).removeClass("zhan"); 
+					  $("#gd"+delLink).addClass("hodden"); 
+				  }
+			  });
+		  }
+		  else
+		  {
+			  alert("您已经赞过了");
+		  }
+		});
+	});
+</script>
+</body>
+</html>

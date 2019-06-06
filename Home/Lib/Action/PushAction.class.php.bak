@@ -1,0 +1,17 @@
+<?php
+	class PushAction extends CommonAction{
+		public function shouhuzt(){
+			
+			$ad = M('ad');
+			$res = $ad->where('status=1 and cid = 6')->order('id desc')->limit(0,6)->select();
+			$adlist = $ad->where('status=1 and cid = 7')->order('paixu asc')->select();
+			$this->assign('ad1',$adlist[0]);
+			$this->assign('ad2',$adlist[1]);
+			$this->assign('ad3',$adlist[2]);
+			$this->assign('adlist',$adlist);
+			$this->assign('banner',$res);
+			$this->display('zt170627');
+		}
+		
+	}
+?>
